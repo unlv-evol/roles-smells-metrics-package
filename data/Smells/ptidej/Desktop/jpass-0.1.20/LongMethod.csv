@@ -1,0 +1,7 @@
+FullClassPath,AntiPattern
+jpass.crypt.io.CryptInputStream,LongMethod
+jpass.ui.helper.EntryHelper,LongMethod
+jpass.JPass,LongMethod
+jpass.crypt.Aes256,LongMethod
+jpass.ui.EntryDialog,LongMethod
+jpass.ui.JPassFrame,LongMethod

@@ -1,0 +1,12 @@
+FullClassPath,AntiPattern
+net.azib.ipscan.core.ScanningSubject,ComplexClass
+net.azib.ipscan.gui.actions.StartStopScanningAction,ComplexClass
+net.azib.ipscan.config.CommandLineProcessor,ComplexClass
+net.azib.ipscan.gui.StatusBar,ComplexClass
+net.azib.ipscan.gui.PreferencesDialog,ComplexClass
+net.azib.ipscan.core.ScanningResultList,ComplexClass
+net.azib.ipscan.gui.PreferencesDialog,ComplexClass
+net.azib.ipscan.exporters.TXTExporter,ComplexClass
+net.azib.ipscan.core.ScanningResultList,ComplexClass
+net.azib.ipscan.gui.AbstractModalDialog,ComplexClass
+net.azib.ipscan.gui.actions.CommandsMenuActions,ComplexClass

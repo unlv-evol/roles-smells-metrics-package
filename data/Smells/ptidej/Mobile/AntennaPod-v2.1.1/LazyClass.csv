@@ -1,0 +1,9 @@
+FullClassPath,AntiPattern
+de.danoeh.antennapod.core.event.PlayerStatusEvent,LazyClass
+de.danoeh.antennapod.core.event.PlayerStatusEvent,LazyClass
+de.danoeh.antennapod.config.ClientConfigurator,LazyClass
+de.danoeh.antennapod.config.ClientConfigurator,LazyClass
+de.danoeh.antennapod.core.event.DiscoveryDefaultUpdateEvent,LazyClass
+de.danoeh.antennapod.core.event.DiscoveryDefaultUpdateEvent,LazyClass
+de.danoeh.antennapod.core.event.UnreadItemsUpdateEvent,LazyClass
+de.danoeh.antennapod.core.event.UnreadItemsUpdateEvent,LazyClass

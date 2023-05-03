@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+com.chatroom.models.Request,LongParameterList
+com.chatroom.models.Response,LongParameterList
+com.chatroom.server.RequestAnalyser,LongParameterList
+com.chatroom.others.TextBubbleBorder,LongParameterList

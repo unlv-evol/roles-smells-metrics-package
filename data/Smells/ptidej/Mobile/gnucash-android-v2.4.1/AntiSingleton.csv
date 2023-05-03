@@ -1,0 +1,9 @@
+FullClassPath,AntiPattern
+org.gnucash.android.export.Exporter,AntiSingleton
+org.gnucash.android.app.GnuCashApplication,AntiSingleton
+org.gnucash.android.export.ofx.OfxHelper,AntiSingleton
+org.gnucash.android.ui.account.AccountsActivity,AntiSingleton
+org.gnucash.android.ui.settings.BackupPreferenceFragment,AntiSingleton
+org.gnucash.android.model.Commodity,AntiSingleton
+org.gnucash.android.ui.report.BaseReportFragment,AntiSingleton
+org.gnucash.android.model.Money,AntiSingleton

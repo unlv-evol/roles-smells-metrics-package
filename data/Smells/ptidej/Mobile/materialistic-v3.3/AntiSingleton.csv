@@ -1,0 +1,4 @@
+FullClassPath,AntiPattern
+io.github.hidroh.materialistic.data.AlgoliaClient,AntiSingleton
+io.github.hidroh.materialistic.Application,AntiSingleton
+io.github.hidroh.materialistic.Preferences,AntiSingleton

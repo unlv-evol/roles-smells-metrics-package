@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+com.chatroom.ui.ChatActivity,ComplexClass
+com.chatroom.server.MessageHandler,ComplexClass
+com.chatroom.server.RequestAnalyser,ComplexClass
+com.chatroom.client.Client,ComplexClass

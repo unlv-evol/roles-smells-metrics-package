@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+de.danoeh.antennapod.core.service.download.DownloadService,ClassDataShouldBePrivate
+de.danoeh.antennapod.core.service.download.Downloader,ClassDataShouldBePrivate
+de.danoeh.antennapod.adapter.NavListAdapter,ClassDataShouldBePrivate
+de.danoeh.antennapod.core.service.playback.PlaybackService,ClassDataShouldBePrivate

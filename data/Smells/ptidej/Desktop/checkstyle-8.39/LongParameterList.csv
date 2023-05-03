@@ -1,0 +1,6 @@
+FullClassPath,AntiPattern
+com.google.checkstyle.test.chapter3filestructure.rule332nolinewrap.InputLineLength,LongParameterList
+com.google.checkstyle.test.chapter4formatting.rule44columnlimit.InputLineLength,LongParameterList
+com.google.checkstyle.test.chapter5naming.rule526parameternames.InputParameterNameSimplePub,LongParameterList
+com.google.checkstyle.test.chapter2filebasic.rule231filetab.InputFileTabCharacter,LongParameterList
+org.checkstyle.base.AbstractItModuleTestSupport,LongParameterList

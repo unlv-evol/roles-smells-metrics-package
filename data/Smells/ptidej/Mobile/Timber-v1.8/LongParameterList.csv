@@ -1,0 +1,11 @@
+FullClassPath,AntiPattern
+com.naman14.timber.models.Song,LongParameterList
+com.naman14.timber.MusicPlayer,LongParameterList
+com.naman14.timber.models.Album,LongParameterList
+com.naman14.timber.WearBrowserService,LongParameterList
+com.naman14.timber.utils.NavigationUtils,LongParameterList
+com.naman14.timber.adapters.BaseSongAdapter,LongParameterList
+com.naman14.timber.slidinguppanel.ViewDragHelper,LongParameterList
+com.naman14.timber.slidinguppanel.SlidingUpPanelLayout,LongParameterList
+com.naman14.timber.cast.WebServer,LongParameterList
+com.naman14.timber.utils.TimberUtils,LongParameterList

@@ -1,0 +1,11 @@
+FullClassPath,AntiPattern
+com.xiecc.seeWeather.modules.domain.Province,ClassDataShouldBePrivate
+com.xiecc.seeWeather.modules.domain.VersionAPI,ClassDataShouldBePrivate
+com.xiecc.seeWeather.base.BaseActivity,ClassDataShouldBePrivate
+com.xiecc.seeWeather.modules.ui.MainActivity,ClassDataShouldBePrivate
+com.xiecc.seeWeather.modules.domain.Setting,ClassDataShouldBePrivate
+com.xiecc.seeWeather.modules.domain.City,ClassDataShouldBePrivate
+com.xiecc.seeWeather.modules.domain.Weather,ClassDataShouldBePrivate
+com.xiecc.seeWeather.component.RetrofitSingleton,ClassDataShouldBePrivate
+com.xiecc.seeWeather.base.BaseApplication,ClassDataShouldBePrivate
+com.xiecc.seeWeather.modules.domain.WeatherAPI,ClassDataShouldBePrivate

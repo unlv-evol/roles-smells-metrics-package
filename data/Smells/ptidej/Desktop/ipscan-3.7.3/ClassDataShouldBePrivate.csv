@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+net.azib.ipscan.config.Config,ClassDataShouldBePrivate
+net.azib.ipscan.gui.actions.CommandsMenuActions,ClassDataShouldBePrivate
+net.azib.ipscan.config.ScannerConfig,ClassDataShouldBePrivate
+net.azib.ipscan.config.GUIConfig,ClassDataShouldBePrivate

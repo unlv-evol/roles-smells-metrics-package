@@ -1,0 +1,10 @@
+FullClassPath,AntiPattern
+it.feio.android.omninotes.async.bus.NotesDeletedEvent,ClassDataShouldBePrivate
+it.feio.android.omninotes.async.bus.NotesUpdatedEvent,ClassDataShouldBePrivate
+it.feio.android.omninotes.DetailFragment,ClassDataShouldBePrivate
+it.feio.android.omninotes.MainActivity,ClassDataShouldBePrivate
+it.feio.android.omninotes.async.bus.SwitchFragmentEvent,ClassDataShouldBePrivate
+it.feio.android.omninotes.models.holders.NoteViewHolder,ClassDataShouldBePrivate
+it.feio.android.omninotes.async.bus.PushbulletReplyEvent,ClassDataShouldBePrivate
+it.feio.android.omninotes.async.bus.NotificationRemovedEvent,ClassDataShouldBePrivate
+it.feio.android.omninotes.async.bus.NotesLoadedEvent,ClassDataShouldBePrivate

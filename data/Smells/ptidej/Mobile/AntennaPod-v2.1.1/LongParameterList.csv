@@ -1,0 +1,16 @@
+FullClassPath,AntiPattern
+de.danoeh.antennapod.view.LockableBottomSheetBehavior,LongParameterList
+de.danoeh.antennapod.core.service.download.DownloadStatus,LongParameterList
+de.danoeh.antennapod.dialog.AuthenticationDialog,LongParameterList
+de.danoeh.antennapod.core.service.playback.LocalPSMP,LongParameterList
+de.danoeh.antennapod.core.util.playback.RemoteMedia,LongParameterList
+de.danoeh.antennapod.core.service.download.DownloadRequest,LongParameterList
+de.danoeh.antennapod.core.storage.DownloadRequester,LongParameterList
+de.danoeh.antennapod.core.feed.FeedMedia,LongParameterList
+de.danoeh.antennapod.core.sync.gpoddernet.model.GpodnetPodcast,LongParameterList
+de.danoeh.antennapod.core.storage.StatisticsItem,LongParameterList
+de.danoeh.antennapod.core.feed.FeedPreferences,LongParameterList
+de.danoeh.antennapod.core.service.download.ProxyConfig,LongParameterList
+de.danoeh.antennapod.core.feed.Feed,LongParameterList
+de.danoeh.antennapod.core.storage.DBTasks,LongParameterList
+de.danoeh.antennapod.core.feed.FeedItem,LongParameterList

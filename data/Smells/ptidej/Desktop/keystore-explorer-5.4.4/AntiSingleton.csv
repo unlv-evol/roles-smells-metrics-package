@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+org.kse.utilities.history.AlwaysIdenticalKeyStoreState,AntiSingleton
+org.kse.gui.actions.KeyStoreExplorerAction,AntiSingleton
+org.kse.gui.dialogs.DViewCertificate,AntiSingleton
+org.kse.utilities.history.KeyStoreState,AntiSingleton

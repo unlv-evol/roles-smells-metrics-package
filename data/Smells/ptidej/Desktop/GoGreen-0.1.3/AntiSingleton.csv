@@ -1,0 +1,4 @@
+FullClassPath,AntiPattern
+groupxii.server.security.SecurityKey,AntiSingleton
+groupxii.client.connector.Connector,AntiSingleton
+groupxii.client.TokenManager,AntiSingleton

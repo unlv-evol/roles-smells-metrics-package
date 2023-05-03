@@ -1,0 +1,24 @@
+index,Fullpathname,Classname,loc,numAttr,numMethod,setters,getters,isPersist,isCollection,numWordName,isOrEr,isController,numIfs,numParameters,numImports,numOutboundInvocation,numInnerClasses,isStaticClass,isInterface,isInnerClass,isClass,isEnum,classPublicity,numPublicMethods,numPrivateMethods,numProtectedMethods,isAbstract,label
+0,LiveChatServer-v4.1/src/com/chatroom/Database/createdb.java,createdb,49,0,1,0,0,TRUE,FALSE,1,FALSE,FALSE,0,1,6,7,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+1,LiveChatServer-v4.1/src/com/chatroom/client/Client.java,Client,343,13,7,0,0,FALSE,FALSE,1,FALSE,FALSE,18,2,15,76,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+2,LiveChatServer-v4.1/src/com/chatroom/client/ClientExec.java,ClientExec,45,0,1,0,0,FALSE,FALSE,2,FALSE,FALSE,3,1,6,8,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+3,LiveChatServer-v4.1/src/com/chatroom/client/ClientModel.java,ClientModel,51,7,4,2,2,FALSE,FALSE,2,FALSE,FALSE,0,2,6,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+4,LiveChatServer-v4.1/src/com/chatroom/configuration/Config.java,Config,18,11,0,0,0,FALSE,FALSE,1,FALSE,FALSE,0,0,2,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+5,LiveChatServer-v4.1/src/com/chatroom/models/MessageTrackObject.java,MessageTrackObject,23,2,3,0,2,FALSE,FALSE,3,FALSE,FALSE,0,0,0,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+6,LiveChatServer-v4.1/src/com/chatroom/models/Request.java,Request,62,5,10,5,5,FALSE,FALSE,1,FALSE,FALSE,0,5,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+7,LiveChatServer-v4.1/src/com/chatroom/models/Response.java,Response,42,3,6,3,3,FALSE,FALSE,1,FALSE,FALSE,0,3,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+8,LiveChatServer-v4.1/src/com/chatroom/others/Hash.java,Hash,31,1,1,0,1,FALSE,FALSE,1,FALSE,FALSE,0,1,6,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+9,LiveChatServer-v4.1/src/com/chatroom/others/LogFileWriter.java,LogFileWriter,30,1,1,0,0,FALSE,FALSE,3,TRUE,FALSE,0,1,8,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+10,LiveChatServer-v4.1/src/com/chatroom/others/Message.java,Message,11,0,2,0,0,FALSE,FALSE,1,FALSE,FALSE,0,2,0,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+11,LiveChatServer-v4.1/src/com/chatroom/others/TextBubbleBorder.java,TextBubbleBorder,143,10,3,0,2,FALSE,FALSE,3,TRUE,FALSE,2,9,12,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+12,LiveChatServer-v4.1/src/com/chatroom/server/ClientThread.java,ClientThread,70,4,1,0,0,FALSE,FALSE,2,FALSE,FALSE,4,0,9,12,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+13,LiveChatServer-v4.1/src/com/chatroom/server/ResponseHolder.java,ResponseHolder,16,2,0,0,0,FALSE,FALSE,2,TRUE,FALSE,0,0,2,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+14,LiveChatServer-v4.1/src/com/chatroom/server/Server.java,Server,638,28,11,0,3,TRUE,FALSE,1,TRUE,FALSE,43,7,31,132,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+15,LiveChatServer-v4.1/src/com/chatroom/server/ServerExec.java,ServerExec,39,0,1,0,0,FALSE,FALSE,2,FALSE,FALSE,2,1,6,6,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+16,LiveChatServer-v4.1/src/com/chatroom/server/ServerOperations.java,ServerOperations,48,2,1,0,0,FALSE,FALSE,2,FALSE,FALSE,1,0,4,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+17,LiveChatServer-v4.1/src/com/chatroom/ui/ChatActivity.java,ChatActivity,454,26,7,2,0,FALSE,FALSE,2,FALSE,FALSE,12,3,33,74,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+18,LiveChatServer-v4.1/src/com/chatroom/ui/MainMenuOptions.java,MainMenuOptions,280,11,5,0,0,FALSE,FALSE,3,FALSE,FALSE,7,3,21,33,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+19,LiveChatServer-v4.1/src/com/chatroom/ui/MainSplash.java,MainSplash,133,6,2,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,21,10,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+20,LiveChatServer-v4.1/src/com/chatroom/ui/SignInActivity.java,SignInActivity,272,11,3,0,0,FALSE,FALSE,3,FALSE,FALSE,6,2,32,28,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+21,LiveChatServer-v4.1/src/com/chatroom/ui/SignUpActivity.java,SignUpActivity,281,11,3,0,0,FALSE,FALSE,3,FALSE,FALSE,7,2,31,30,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+22,LiveChatServer-v4.1/src/com/chatroom/ui/ViewRoomsActivity.java,ViewRoomsActivity,237,11,4,0,1,FALSE,FALSE,3,FALSE,FALSE,4,2,25,35,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider

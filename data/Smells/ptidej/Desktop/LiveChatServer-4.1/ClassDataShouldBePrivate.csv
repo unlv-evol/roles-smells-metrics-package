@@ -1,0 +1,3 @@
+FullClassPath,AntiPattern
+com.chatroom.client.ClientModel,ClassDataShouldBePrivate
+com.chatroom.configuration.Config,ClassDataShouldBePrivate

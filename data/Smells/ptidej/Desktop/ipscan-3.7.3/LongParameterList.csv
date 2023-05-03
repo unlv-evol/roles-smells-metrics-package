@@ -1,0 +1,16 @@
+FullClassPath,AntiPattern
+net.azib.ipscan.gui.actions.StartStopScanningAction,LongParameterList
+net.azib.ipscan.gui.util.LayoutHelper,LongParameterList
+net.azib.ipscan.gui.MainMenu,LongParameterList
+net.azib.ipscan.gui.menu.ColumnsMenu,LongParameterList
+net.azib.ipscan.gui.StatusBar,LongParameterList
+net.azib.ipscan.core.ScannerDispatcherThread,LongParameterList
+net.azib.ipscan.gui.MacApplicationMenu,LongParameterList
+net.azib.ipscan.gui.menu.ScanMenu,LongParameterList
+net.azib.ipscan.gui.menu.ToolsMenu,LongParameterList
+net.azib.ipscan.gui.MainWindow,LongParameterList
+net.azib.ipscan.gui.menu.GotoMenu,LongParameterList
+net.azib.ipscan.gui.menu.ExtendableMenu,LongParameterList
+net.azib.ipscan.gui.ResultTable,LongParameterList
+net.azib.ipscan.gui.menu.HelpMenu,LongParameterList
+net.azib.ipscan.gui.actions.CommandsMenuActions,LongParameterList

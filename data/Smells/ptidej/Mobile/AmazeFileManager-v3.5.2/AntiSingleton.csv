@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+com.amaze.filemanager.utils.MainActivityHelper,AntiSingleton
+com.amaze.filemanager.ui.activities.MainActivity,AntiSingleton
+com.amaze.filemanager.asynchronous.management.ServiceWatcherUtil,AntiSingleton
+com.amaze.filemanager.asynchronous.services.ftp.FtpService,AntiSingleton

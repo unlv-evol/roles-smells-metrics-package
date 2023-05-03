@@ -1,0 +1,7 @@
+FullClassPath,AntiPattern
+com.chatroom.server.Server,AntiSingleton
+com.chatroom.client.ClientModel,AntiSingleton
+com.chatroom.configuration.Config,AntiSingleton
+com.chatroom.server.ServerOperations,AntiSingleton
+com.chatroom.others.Hash,AntiSingleton
+com.chatroom.others.LogFileWriter,AntiSingleton

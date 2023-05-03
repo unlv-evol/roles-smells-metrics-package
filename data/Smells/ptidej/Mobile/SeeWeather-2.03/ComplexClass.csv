@@ -1,0 +1,7 @@
+FullClassPath,AntiPattern
+com.xiecc.seeWeather.common.FileSizeUtil,ComplexClass
+com.xiecc.seeWeather.modules.ui.MainActivity,ComplexClass
+com.xiecc.seeWeather.modules.ui.MainActivity,ComplexClass
+com.xiecc.seeWeather.common.ACache,ComplexClass
+com.xiecc.seeWeather.modules.adatper.WeatherAdapter,ComplexClass
+com.xiecc.seeWeather.common.ACache,ComplexClass

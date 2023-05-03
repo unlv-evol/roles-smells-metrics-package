@@ -1,0 +1,9 @@
+FullClassPath,AntiPattern
+it.feio.android.omninotes.async.bus.DynamicNavigationReadyEvent,LazyClass
+it.feio.android.omninotes.async.bus.DynamicNavigationReadyEvent,LazyClass
+it.feio.android.omninotes.exceptions.GenericException,LazyClass
+it.feio.android.omninotes.exceptions.GenericException,LazyClass
+it.feio.android.omninotes.async.bus.PasswordRemovedEvent,LazyClass
+it.feio.android.omninotes.async.bus.PasswordRemovedEvent,LazyClass
+it.feio.android.omninotes.async.bus.CategoriesUpdatedEvent,LazyClass
+it.feio.android.omninotes.async.bus.CategoriesUpdatedEvent,LazyClass

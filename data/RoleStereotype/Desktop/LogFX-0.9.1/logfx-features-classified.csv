@@ -1,0 +1,45 @@
+index,Fullpathname,Classname,loc,numAttr,numMethod,setters,getters,isPersist,isCollection,numWordName,isOrEr,isController,numIfs,numParameters,numImports,numOutboundInvocation,numInnerClasses,isStaticClass,isInterface,isInnerClass,isClass,isEnum,classPublicity,numPublicMethods,numPrivateMethods,numProtectedMethods,isAbstract,label
+0,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/LogFX.java,LogFX,340,10,12,1,0,FALSE,FALSE,3,FALSE,FALSE,10,11,47,62,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+1,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/SetupMacTrayIcon.java,SetupMacTrayIcon,28,0,1,0,0,FALSE,FALSE,4,FALSE,FALSE,0,0,2,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Service Provider
+2,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/binding/BindableValue.java,BindableValue,26,1,2,1,1,FALSE,FALSE,2,FALSE,FALSE,0,1,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+3,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/concurrency/Cancellable.java,Cancellable,13,0,0,0,0,FALSE,FALSE,1,FALSE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+4,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/concurrency/TaskRunner.java,TaskRunner,184,5,6,0,1,FALSE,FALSE,2,TRUE,FALSE,7,8,11,11,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+5,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/config/Config.java,Config,204,3,10,0,3,FALSE,FALSE,1,FALSE,FALSE,3,9,28,24,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+6,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/config/ConfigParser.java,ConfigParser,323,3,11,0,0,FALSE,FALSE,2,TRUE,FALSE,30,17,14,43,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Service Provider
+7,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/config/ConfigProperties.java,ConfigProperties,38,7,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,15,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Information Holder
+8,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/config/Properties.java,Properties,96,5,4,0,3,FALSE,FALSE,1,FALSE,FALSE,7,0,5,9,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+9,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/data/LogLineColors.java,LogLineColors,25,2,2,0,2,FALSE,FALSE,3,FALSE,FALSE,0,0,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+10,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/file/FileChangeWatcher.java,FileChangeWatcher,160,8,2,0,0,FALSE,FALSE,3,TRUE,FALSE,9,1,16,23,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+11,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/file/FileContentReader.java,FileContentReader,139,0,0,0,0,FALSE,FALSE,3,TRUE,FALSE,0,0,6,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+12,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/file/FileLineStarts.java,FileLineStarts,66,2,7,0,2,FALSE,FALSE,3,FALSE,FALSE,3,3,1,9,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Service Provider
+13,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/file/FileReader.java,FileReader,665,10,13,1,1,FALSE,FALSE,2,TRUE,FALSE,57,19,17,72,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+14,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/file/OutsideRangeQueryResult.java,OutsideRangeQueryResult,37,3,4,0,0,FALSE,FALSE,4,FALSE,FALSE,0,0,1,0,0,TRUE,FALSE,FALSE,FALSE,TRUE,public,0,0,0,FALSE,Information Holder
+15,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/file/SuccessfulQueryResult.java,SuccessfulQueryResult,39,1,5,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Information Holder
+16,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/file/UnsuccessfulQueryResult.java,UnsuccessfulQueryResult,31,1,5,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,0,0,0,TRUE,FALSE,FALSE,FALSE,TRUE,default,0,0,0,FALSE,Information Holder
+17,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/log/LogFXLogFactory.java,LogFXLogFactory,29,3,3,0,2,FALSE,FALSE,5,FALSE,FALSE,0,2,4,2,0,TRUE,FALSE,FALSE,FALSE,TRUE,public,0,0,0,FALSE,Information Holder
+18,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/log/LogFXLogger.java,LogFXLogger,235,3,32,0,0,FALSE,FALSE,4,TRUE,FALSE,3,56,12,12,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Service Provider
+19,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/log/LogLevel.java,LogLevel,8,5,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,0,0,0,TRUE,FALSE,FALSE,FALSE,TRUE,public,0,0,0,FALSE,Information Holder
+20,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/log/LogTarget.java,LogTarget,47,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,8,2,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+21,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/text/DateTimeFormatGuess.java,DateTimeFormatGuess,20,0,0,0,0,FALSE,FALSE,4,FALSE,FALSE,0,0,2,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+22,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/text/DateTimeFormatGuesser.java,DateTimeFormatGuesser,232,4,2,0,0,FALSE,FALSE,4,TRUE,FALSE,9,1,18,20,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+23,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/text/HighlightExpression.java,HighlightExpression,74,4,8,0,4,FALSE,FALSE,2,FALSE,FALSE,1,2,3,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+24,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/AboutLogFXView.java,AboutLogFXView,62,1,2,0,0,FALSE,FALSE,5,FALSE,FALSE,0,0,8,7,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+25,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/Arrow.java,Arrow,53,3,2,0,0,FALSE,FALSE,1,FALSE,FALSE,1,5,8,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+26,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/AwesomeIcons.java,AwesomeIcons,72,7,9,0,0,FALSE,FALSE,2,FALSE,FALSE,0,16,3,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+27,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/BottomMessagePane.java,BottomMessagePane,42,2,3,1,0,FALSE,FALSE,3,FALSE,FALSE,1,2,6,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+28,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/ColorChooser.java,ColorChooser,114,4,3,0,1,FALSE,FALSE,2,TRUE,FALSE,3,1,13,17,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+29,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/Dialog.java,Dialog,286,8,17,8,1,FALSE,FALSE,1,FALSE,FALSE,10,13,31,40,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+30,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/FileDragAndDrop.java,FileDragAndDrop,153,1,2,0,0,FALSE,FALSE,4,FALSE,FALSE,8,6,12,37,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+31,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/FileOpener.java,FileOpener,29,1,0,0,0,FALSE,FALSE,2,TRUE,FALSE,1,0,6,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+32,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/FontPicker.java,FontPicker,52,0,1,0,0,FALSE,FALSE,2,TRUE,FALSE,0,1,10,8,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+33,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/FxUtils.java,FxUtils,104,2,2,1,0,FALSE,FALSE,2,FALSE,FALSE,4,2,16,12,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+34,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/GoToDateView.java,GoToDateView,164,1,1,0,0,FALSE,FALSE,4,FALSE,FALSE,4,0,24,20,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Interfacer
+35,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/HighlightOptions.java,HighlightOptions,366,5,10,0,3,FALSE,FALSE,2,FALSE,FALSE,7,4,42,50,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+36,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/LogFxButton.java,LogFxButton,33,2,2,0,0,FALSE,FALSE,3,FALSE,FALSE,0,2,3,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+37,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/LogLine.java,LogLine,94,0,4,3,0,FALSE,FALSE,2,FALSE,FALSE,3,7,12,6,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Service Provider
+38,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/LogView.java,LogView,348,19,10,1,1,FALSE,FALSE,2,FALSE,FALSE,13,4,37,69,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+39,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/LogViewPane.java,LogViewPane,640,11,17,0,2,FALSE,FALSE,3,FALSE,FALSE,35,1,41,108,0,TRUE,FALSE,FALSE,TRUE,FALSE,private,0,0,0,FALSE,Interfacer
+40,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/MustCallOnJavaFXThread.java,MustCallOnJavaFXThread,14,0,0,0,0,FALSE,FALSE,7,FALSE,FALSE,0,0,4,0,0,TRUE,FALSE,FALSE,FALSE,FALSE,default,0,0,0,FALSE,Service Provider
+41,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/SelectionHandler.java,SelectionHandler,197,3,8,0,3,FALSE,FALSE,2,TRUE,FALSE,16,7,13,21,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Service Provider
+42,LogFX-v0.9.1/src/main/java/com/athaydes/logfx/ui/StartUpView.java,StartUpView,43,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,8,6,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+43,LogFX-v0.9.1/src/main/java/org/slf4j/impl/StaticLoggerBinder.java,StaticLoggerBinder,45,4,3,0,3,FALSE,FALSE,3,TRUE,FALSE,0,0,4,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder

@@ -1,0 +1,9 @@
+FullClassPath,AntiPattern
+com.chatroom.ui.SignInActivity,LongMethod
+com.chatroom.server.RequestAnalyser,LongMethod
+com.chatroom.ui.SignUpActivity,LongMethod
+com.chatroom.client.Client,LongMethod
+com.chatroom.ui.ChatActivity,LongMethod
+com.chatroom.server.MessageHandler,LongMethod
+com.chatroom.ui.MainMenuOptions,LongMethod
+com.chatroom.ui.ViewRoomsActivity,LongMethod

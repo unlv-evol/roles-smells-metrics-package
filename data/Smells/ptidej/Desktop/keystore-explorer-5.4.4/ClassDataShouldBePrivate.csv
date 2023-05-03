@@ -1,0 +1,2 @@
+FullClassPath,AntiPattern
+org.kse.gui.dialogs.DViewCertificate,ClassDataShouldBePrivate

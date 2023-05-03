@@ -1,0 +1,8 @@
+FullClassPath,AntiPattern
+com.athaydes.logfx.config.Config,LongParameterList
+com.athaydes.logfx.ui.FileDragAndDrop,LongParameterList
+com.athaydes.logfx.ui.LogView,LongParameterList
+com.athaydes.logfx.file.FileReader,LongParameterList
+com.athaydes.logfx.ui.LogLine,LongParameterList
+com.athaydes.logfx.config.ConfigParser,LongParameterList
+com.athaydes.logfx.text.HighlightExpression,LongParameterList

@@ -1,0 +1,6 @@
+FullClassPath,AntiPattern
+com.xiecc.seeWeather.modules.ui.MainActivity,LongParameterList
+com.xiecc.seeWeather.common.ACache,LongParameterList
+com.xiecc.seeWeather.modules.listener.HidingScrollListener,LongParameterList
+com.xiecc.seeWeather.common.PLog,LongParameterList
+com.xiecc.seeWeather.component.RetrofitSingleton,LongParameterList

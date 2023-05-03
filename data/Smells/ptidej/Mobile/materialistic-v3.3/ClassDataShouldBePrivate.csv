@@ -1,0 +1,3 @@
+FullClassPath,AntiPattern
+io.github.hidroh.materialistic.data.AlgoliaClient,ClassDataShouldBePrivate
+io.github.hidroh.materialistic.Application,ClassDataShouldBePrivate

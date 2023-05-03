@@ -1,0 +1,3 @@
+FullClassPath,AntiPattern
+de.danoeh.antennapod.core.feed.Feed,Blob
+de.danoeh.antennapod.core.feed.FeedItem,Blob

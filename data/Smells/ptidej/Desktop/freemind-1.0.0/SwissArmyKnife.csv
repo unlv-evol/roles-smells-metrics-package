@@ -1,0 +1,6 @@
+FullClassPath,AntiPattern
+freemind.modes.mindmapmode.actions.NodeHookAction,SwissArmyKnife
+freemind.controller.MenuItemEnabledListener,SwissArmyKnife
+freemind.modes.mindmapmode.actions.xml.ActorXml,SwissArmyKnife
+freemind.controller.MenuItemSelectedListener,SwissArmyKnife
+freemind.modes.mindmapmode.actions.HookAction,SwissArmyKnife

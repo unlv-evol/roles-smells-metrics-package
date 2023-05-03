@@ -1,0 +1,4 @@
+FullClassPath,AntiPattern
+com.xiecc.seeWeather.base.BaseApplication,AntiSingleton
+com.xiecc.seeWeather.modules.domain.Setting,AntiSingleton
+com.xiecc.seeWeather.component.RetrofitSingleton,AntiSingleton

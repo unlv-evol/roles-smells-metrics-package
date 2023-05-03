@@ -1,0 +1,1998 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Analysis Date="07-09-2022 19:20:34" Language="java" Tool="DesigniteJava" Version="2.1.0">
+    <Solution>
+        <Name>SeeWeather-2.03</Name>
+        <Path>../../data/SourceProjects//Mobile/SeeWeather-2.03</Path>
+        <LOC>3107</LOC>
+        <ComponentCount>11</ComponentCount>
+        <TypeCount>64</TypeCount>
+        <MethodCount>200</MethodCount>
+        <SmellDensity>3.54</SmellDensity>
+        <CodeDuplication>-1</CodeDuplication>
+        <MetricVoilations>-1</MetricVoilations>
+        <TotalArchSmellCount>11</TotalArchSmellCount>
+        <TotalDesignSmellCount>92</TotalDesignSmellCount>
+        <TotalImplSmellCount>94</TotalImplSmellCount>
+        <Project>
+            <Name>SeeWeather-2.03</Name>
+            <LOC>3107</LOC>
+            <ComponentCount>11</ComponentCount>
+            <TypeCount>64</TypeCount>
+            <MethodCount>200</MethodCount>
+            <SmellDensity>3.54</SmellDensity>
+            <CodeDuplication>-1</CodeDuplication>
+            <MetricVoilations>-1</MetricVoilations>
+            <TotalArchSmellCount>11</TotalArchSmellCount>
+            <TotalDesignSmellCount>92</TotalDesignSmellCount>
+            <TotalImplSmellCount>94</TotalImplSmellCount>
+            <ComponentMetrics>
+                <ComponentMetric LOC="16" Name="com.xiecc.seeWeather" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="51" Name="com.xiecc.seeWeather.component" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="1188" Name="com.xiecc.seeWeather.common" OutgoingDependencies="com.xiecc.seeWeather.modules.domain,com.xiecc.seeWeather.component,com.xiecc.seeWeather.base" SmellDensity="3.37"/>
+                <ComponentMetric LOC="487" Name="com.xiecc.seeWeather.modules.ui" OutgoingDependencies="com.xiecc.seeWeather.modules.adatper,com.xiecc.seeWeather.modules.domain,com.xiecc.seeWeather.common,com.xiecc.seeWeather.component,com.xiecc.seeWeather.modules.db" SmellDensity="0.00"/>
+                <ComponentMetric LOC="135" Name="com.xiecc.seeWeather.modules.ui.about" OutgoingDependencies="com.xiecc.seeWeather.modules.domain,com.xiecc.seeWeather.common" SmellDensity="0.00"/>
+                <ComponentMetric LOC="106" Name="com.xiecc.seeWeather.modules.ui.setting" OutgoingDependencies="com.xiecc.seeWeather.modules.domain,com.xiecc.seeWeather.common,com.xiecc.seeWeather.base" SmellDensity="0.00"/>
+                <ComponentMetric LOC="26" Name="com.xiecc.seeWeather.modules.listener" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="393" Name="com.xiecc.seeWeather.modules.adatper" OutgoingDependencies="com.xiecc.seeWeather.modules.domain,com.xiecc.seeWeather.common" SmellDensity="2.54"/>
+                <ComponentMetric LOC="93" Name="com.xiecc.seeWeather.modules.db" OutgoingDependencies="com.xiecc.seeWeather.modules.domain" SmellDensity="0.00"/>
+                <ComponentMetric LOC="547" Name="com.xiecc.seeWeather.modules.domain" OutgoingDependencies="com.xiecc.seeWeather.base" SmellDensity="7.31"/>
+                <ComponentMetric LOC="65" Name="com.xiecc.seeWeather.base" OutgoingDependencies="com.xiecc.seeWeather.component,com.xiecc.seeWeather.common,com.xiecc.seeWeather.modules.domain" SmellDensity="30.77"/>
+            </ComponentMetrics>
+            <ClassMetrics>
+                <ClassMetric Component="com.xiecc.seeWeather" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="8" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ApplicationTest" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="8" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ExampleUnitTest" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather.component" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="8" NC="0" NOF="1" NOM="2" NOP="0" NOPF="0" NOPM="0" Name="ApiInterface" WMC="2"/>
+                <ClassMetric Component="com.xiecc.seeWeather.component" DIT="0" FANIN="3" FANOUT="1" LCOM="0.00" LOC="43" NC="0" NOF="5" NOM="5" NOP="0" NOPF="1" NOPM="5" Name="RetrofitSingleton" WMC="9"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="3" FANOUT="0" LCOM="-1.00" LOC="52" NC="0" NOF="0" NOM="3" NOP="0" NOPF="0" NOPM="3" Name="Util" WMC="5"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="2" FANOUT="5" LCOM="0.67" LOC="51" NC="0" NOF="1" NOM="6" NOP="0" NOPF="0" NOPM="6" Name="CheckVersion" WMC="14"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="39" NC="0" NOF="0" NOM="4" NOP="0" NOPF="0" NOPM="4" Name="Time" WMC="4"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="0" NC="0" NOF="4" NOM="6" NOP="0" NOPF="4" NOPM="2" Name="FileSizeUtil" WMC="19"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="4" FANOUT="2" LCOM="0.00" LOC="88" NC="0" NOF="3" NOM="7" NOP="0" NOPF="3" NOPM="6" Name="PLog" WMC="13"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="2" FANOUT="3" LCOM="0.13" LOC="651" NC="0" NOF="13" NOM="31" NOP="0" NOPF="2" NOPM="29" Name="ACache" WMC="51"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="120" NC="0" NOF="6" NOM="10" NOP="0" NOPF="0" NOPM="1" Name="ACacheManager" WMC="23"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="1" FANOUT="0" LCOM="0.40" LOC="122" NC="0" NOF="1" NOM="15" NOP="0" NOPF="0" NOPM="0" Name="Utils" WMC="29"/>
+                <ClassMetric Component="com.xiecc.seeWeather.common" DIT="0" FANIN="1" FANOUT="1" LCOM="0.00" LOC="65" NC="0" NOF="3" NOM="6" NOP="0" NOPF="0" NOPM="6" Name="CrashHandler" WMC="6"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="19" NC="0" NOF="1" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="FirstActivity" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui" DIT="0" FANIN="0" FANOUT="1" LCOM="-1.00" LOC="9" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="switchHandler" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui" DIT="0" FANIN="0" FANOUT="8" LCOM="0.25" LOC="303" NC="0" NOF="16" NOM="24" NOP="0" NOPF="2" NOPM="14" Name="MainActivity" WMC="39"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="21" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="RefreshHandler" WMC="5"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui" DIT="0" FANIN="0" FANOUT="6" LCOM="0.19" LOC="135" NC="0" NOF="15" NOM="16" NOP="0" NOPF="2" NOPM="10" Name="ChoiceCityActivity" WMC="23"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui.about" DIT="0" FANIN="0" FANOUT="1" LCOM="-1.00" LOC="25" NC="0" NOF="0" NOM="2" NOP="0" NOPF="0" NOPM="1" Name="AboutActivity" WMC="3"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui.about" DIT="0" FANIN="0" FANOUT="2" LCOM="0.33" LOC="110" NC="0" NOF="18" NOM="6" NOP="0" NOPF="0" NOPM="5" Name="AboutFragment" WMC="15"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui.setting" DIT="0" FANIN="0" FANOUT="1" LCOM="-1.00" LOC="25" NC="0" NOF="0" NOM="2" NOP="0" NOPF="0" NOPM="1" Name="SettingActivity" WMC="3"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.ui.setting" DIT="0" FANIN="0" FANOUT="4" LCOM="0.00" LOC="81" NC="0" NOF="6" NOM="6" NOP="0" NOPF="0" NOPM="4" Name="SettingFragment" WMC="19"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.listener" DIT="0" FANIN="0" FANOUT="0" LCOM="0.00" LOC="26" NC="0" NOF="3" NOM="3" NOP="0" NOPF="0" NOPM="3" Name="HidingScrollListener" WMC="6"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="1" FANOUT="2" LCOM="0.00" LOC="42" NC="0" NOF="5" NOM="6" NOP="0" NOPF="0" NOPM="6" Name="CityAdapter" WMC="6"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="3" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="OnRecyclerViewItemClickListener" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="9" NC="0" NOF="2" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="CityViewHolder" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="1" FANOUT="3" LCOM="0.33" LOC="247" NC="0" NOF="34" NOM="6" NOP="0" NOPF="0" NOPM="6" Name="WeatherAdapter" WMC="28"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="0" FANOUT="0" LCOM="0.00" LOC="22" NC="0" NOF="7" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="NowWeatherViewHolder" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="0" FANOUT="0" LCOM="0.00" LOC="22" NC="0" NOF="5" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="HoursWeatherViewHolder" WMC="2"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="0" FANOUT="0" LCOM="0.00" LOC="26" NC="0" NOF="9" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="SuggestionViewHolder" WMC="1"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.adatper" DIT="0" FANIN="0" FANOUT="0" LCOM="0.00" LOC="22" NC="0" NOF="5" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ForecastViewHolder" WMC="2"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.db" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="54" NC="0" NOF="7" NOM="6" NOP="0" NOPF="3" NOPM="5" Name="DBManager" WMC="8"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.db" DIT="0" FANIN="1" FANOUT="2" LCOM="1.00" LOC="39" NC="0" NOF="1" NOM="3" NOP="0" NOPF="0" NOPM="3" Name="WeatherDB" WMC="7"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="3" NC="0" NOF="1" NOM="0" NOP="0" NOPF="1" NOPM="0" Name="WeatherAPI" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="17" LCOM="-1.00" LOC="206" NC="0" NOF="91" NOM="0" NOP="0" NOPF="91" NOPM="0" Name="Weather" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="1" FANOUT="1" LCOM="-1.00" LOC="16" NC="0" NOF="9" NOM="0" NOP="0" NOPF="9" NOPM="0" Name="AqiEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="10" NC="0" NOF="8" NOM="0" NOP="0" NOPF="8" NOPM="0" Name="CityEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="1" FANOUT="1" LCOM="-1.00" LOC="15" NC="0" NOF="8" NOM="0" NOP="0" NOPF="8" NOPM="0" Name="BasicEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="UpdateEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="1" FANOUT="2" LCOM="-1.00" LOC="26" NC="0" NOF="14" NOM="0" NOP="0" NOPF="14" NOPM="0" Name="NowEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="3" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="CondEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="4" FANOUT="0" LCOM="-1.00" LOC="6" NC="0" NOF="4" NOM="0" NOP="0" NOPF="4" NOPM="0" Name="WindEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="1" FANOUT="7" LCOM="-1.00" LOC="58" NC="0" NOF="21" NOM="0" NOP="0" NOPF="21" NOPM="0" Name="SuggestionEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="ComfEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="CwEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="DrsgEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="FluEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="SportEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="TravEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="UvEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="0" FANOUT="4" LCOM="-1.00" LOC="44" NC="0" NOF="22" NOM="0" NOP="0" NOPF="22" NOPM="0" Name="DailyForecastEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="AstroEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="6" NC="0" NOF="4" NOM="0" NOP="0" NOPF="4" NOPM="0" Name="CondEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="TmpEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="6" NC="0" NOF="4" NOM="0" NOP="0" NOPF="4" NOPM="0" Name="WindEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="0" FANOUT="1" LCOM="-1.00" LOC="17" NC="0" NOF="10" NOM="0" NOP="0" NOPF="10" NOPM="0" Name="HourlyForecastEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="6" NC="0" NOF="4" NOM="0" NOP="0" NOPF="4" NOPM="0" Name="WindEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="7" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="Province" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="7" NC="0" NOF="2" NOM="0" NOP="0" NOPF="2" NOPM="0" Name="City" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="8" FANOUT="1" LCOM="0.25" LOC="46" NC="0" NOF="11" NOM="8" NOP="0" NOPF="9" NOPM="7" Name="Setting" WMC="9"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="1" FANOUT="1" LCOM="-1.00" LOC="21" NC="0" NOF="11" NOM="0" NOP="0" NOPF="11" NOPM="0" Name="VersionAPI" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.modules.domain" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="3" NC="0" NOF="1" NOM="0" NOP="0" NOPF="1" NOPM="0" Name="BinaryEntity" WMC="0"/>
+                <ClassMetric Component="com.xiecc.seeWeather.base" DIT="0" FANIN="4" FANOUT="2" LCOM="0.00" LOC="27" NC="0" NOF="2" NOM="2" NOP="0" NOPF="2" NOPM="1" Name="BaseApplication" WMC="4"/>
+                <ClassMetric Component="com.xiecc.seeWeather.base" DIT="0" FANIN="0" FANOUT="2" LCOM="1.00" LOC="38" NC="0" NOF="2" NOM="4" NOP="0" NOPF="2" NOPM="3" Name="BaseActivity" WMC="7"/>
+            </ClassMetrics>
+            <MethodMetrics>
+                <MethodMetric CC="1" Class="ApplicationTest" Component="com.xiecc.seeWeather" LOC="3" Name="ApplicationTest" PC="0"/>
+                <MethodMetric CC="1" Class="ExampleUnitTest" Component="com.xiecc.seeWeather" LOC="3" Name="addition_isCorrect" PC="0"/>
+                <MethodMetric CC="1" Class="ApiInterface" Component="com.xiecc.seeWeather.component" LOC="0" Name="mWeatherAPI" PC="2"/>
+                <MethodMetric CC="1" Class="ApiInterface" Component="com.xiecc.seeWeather.component" LOC="0" Name="mVersionAPI" PC="1"/>
+                <MethodMetric CC="1" Class="RetrofitSingleton" Component="com.xiecc.seeWeather.component" LOC="6" Name="init" PC="1"/>
+                <MethodMetric CC="2" Class="RetrofitSingleton" Component="com.xiecc.seeWeather.component" LOC="5" Name="getApiService" PC="1"/>
+                <MethodMetric CC="2" Class="RetrofitSingleton" Component="com.xiecc.seeWeather.component" LOC="5" Name="getRetrofit" PC="1"/>
+                <MethodMetric CC="2" Class="RetrofitSingleton" Component="com.xiecc.seeWeather.component" LOC="5" Name="getOkHttpClient" PC="1"/>
+                <MethodMetric CC="2" Class="RetrofitSingleton" Component="com.xiecc.seeWeather.component" LOC="9" Name="disposeFailureInfo" PC="3"/>
+                <MethodMetric CC="1" Class="Util" Component="com.xiecc.seeWeather.common" LOC="12" Name="getVersion" PC="1"/>
+                <MethodMetric CC="1" Class="Util" Component="com.xiecc.seeWeather.common" LOC="12" Name="getVersionCode" PC="1"/>
+                <MethodMetric CC="3" Class="Util" Component="com.xiecc.seeWeather.common" LOC="10" Name="isNetworkConnected" PC="1"/>
+                <MethodMetric CC="5" Class="CheckVersion" Component="com.xiecc.seeWeather.common" LOC="32" Name="checkVersion" PC="2"/>
+                <MethodMetric CC="1" Class="CheckVersion" Component="com.xiecc.seeWeather.common" LOC="2" Name="onCompleted" PC="0"/>
+                <MethodMetric CC="1" Class="CheckVersion" Component="com.xiecc.seeWeather.common" LOC="3" Name="onError" PC="1"/>
+                <MethodMetric CC="5" Class="CheckVersion" Component="com.xiecc.seeWeather.common" LOC="22" Name="onNext" PC="1"/>
+                <MethodMetric CC="1" Class="CheckVersion" Component="com.xiecc.seeWeather.common" LOC="13" Name="showUpdateDialog" PC="2"/>
+                <MethodMetric CC="1" Class="CheckVersion" Component="com.xiecc.seeWeather.common" LOC="7" Name="onClick" PC="2"/>
+                <MethodMetric CC="1" Class="Time" Component="com.xiecc.seeWeather.common" LOC="5" Name="getNowYMDHMSTime" PC="0"/>
+                <MethodMetric CC="1" Class="Time" Component="com.xiecc.seeWeather.common" LOC="5" Name="getNowMDHMSTime" PC="0"/>
+                <MethodMetric CC="1" Class="Time" Component="com.xiecc.seeWeather.common" LOC="5" Name="getNowYMD" PC="0"/>
+                <MethodMetric CC="1" Class="Time" Component="com.xiecc.seeWeather.common" LOC="5" Name="getYMD" PC="1"/>
+                <MethodMetric CC="2" Class="FileSizeUtil" Component="com.xiecc.seeWeather.common" LOC="17" Name="getFileOrFilesSize" PC="2"/>
+                <MethodMetric CC="2" Class="FileSizeUtil" Component="com.xiecc.seeWeather.common" LOC="17" Name="getAutoFileOrFilesSize" PC="1"/>
+                <MethodMetric CC="2" Class="FileSizeUtil" Component="com.xiecc.seeWeather.common" LOC="13" Name="getFileSize" PC="1"/>
+                <MethodMetric CC="3" Class="FileSizeUtil" Component="com.xiecc.seeWeather.common" LOC="13" Name="getFileSizes" PC="1"/>
+                <MethodMetric CC="5" Class="FileSizeUtil" Component="com.xiecc.seeWeather.common" LOC="21" Name="FormetFileSize" PC="1"/>
+                <MethodMetric CC="5" Class="FileSizeUtil" Component="com.xiecc.seeWeather.common" LOC="0" Name="FormetFileSize" PC="2"/>
+                <MethodMetric CC="2" Class="PLog" Component="com.xiecc.seeWeather.common" LOC="4" Name="e" PC="2"/>
+                <MethodMetric CC="2" Class="PLog" Component="com.xiecc.seeWeather.common" LOC="4" Name="w" PC="2"/>
+                <MethodMetric CC="2" Class="PLog" Component="com.xiecc.seeWeather.common" LOC="4" Name="d" PC="2"/>
+                <MethodMetric CC="2" Class="PLog" Component="com.xiecc.seeWeather.common" LOC="4" Name="i" PC="2"/>
+                <MethodMetric CC="1" Class="PLog" Component="com.xiecc.seeWeather.common" LOC="16" Name="writeLogtoFile" PC="3"/>
+                <MethodMetric CC="2" Class="PLog" Component="com.xiecc.seeWeather.common" LOC="6" Name="delFile" PC="0"/>
+                <MethodMetric CC="2" Class="PLog" Component="com.xiecc.seeWeather.common" LOC="6" Name="isExist" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="get" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="4" Name="get" PC="2"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="get" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="4" Name="get" PC="3"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="8" Name="get" PC="3"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="myPid" PC="0"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="6" Name="ACache" PC="3"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="23" Name="put" PC="2"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="3"/>
+                <MethodMetric CC="6" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="36" Name="getAsString" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="2"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="3"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="11" Name="getAsJSONObject" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="2"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="3"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="11" Name="getAsJSONArray" PC="1"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="23" Name="put" PC="2"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="3"/>
+                <MethodMetric CC="5" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="33" Name="getAsBinary" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="2"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="26" Name="put" PC="3"/>
+                <MethodMetric CC="4" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="32" Name="getAsObject" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="2"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="3"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="6" Name="getAsBitmap" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="2"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="put" PC="3"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="6" Name="getAsDrawable" PC="1"/>
+                <MethodMetric CC="2" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="5" Name="file" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="remove" PC="1"/>
+                <MethodMetric CC="1" Class="ACache" Component="com.xiecc.seeWeather.common" LOC="3" Name="clear" PC="0"/>
+                <MethodMetric CC="1" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="8" Name="ACacheManager" PC="3"/>
+                <MethodMetric CC="3" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="19" Name="calculateCacheSizeAndCacheCount" PC="0"/>
+                <MethodMetric CC="3" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="14" Name="run" PC="0"/>
+                <MethodMetric CC="3" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="19" Name="put" PC="1"/>
+                <MethodMetric CC="1" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="7" Name="get" PC="1"/>
+                <MethodMetric CC="1" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="3" Name="newFile" PC="1"/>
+                <MethodMetric CC="1" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="4" Name="remove" PC="1"/>
+                <MethodMetric CC="3" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="10" Name="clear" PC="0"/>
+                <MethodMetric CC="6" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="28" Name="removeNext" PC="0"/>
+                <MethodMetric CC="1" Class="ACacheManager" Component="com.xiecc.seeWeather.common" LOC="3" Name="calculateSize" PC="1"/>
+                <MethodMetric CC="1" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="3" Name="isDue" PC="1"/>
+                <MethodMetric CC="4" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="15" Name="isDue" PC="1"/>
+                <MethodMetric CC="1" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="3" Name="newStringWithDateInfo" PC="2"/>
+                <MethodMetric CC="1" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="7" Name="newByteArrayWithDateInfo" PC="2"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="6" Name="clearDateInfo" PC="1"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="6" Name="clearDateInfo" PC="1"/>
+                <MethodMetric CC="1" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="3" Name="hasDateInfo" PC="1"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="8" Name="getDateInfoFromDate" PC="1"/>
+                <MethodMetric CC="3" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="8" Name="indexOf" PC="2"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="7" Name="copyOfRange" PC="3"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="7" Name="createDateInfo" PC="1"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="8" Name="Bitmap2Bytes" PC="1"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="6" Name="Bytes2Bimap" PC="1"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="13" Name="drawable2Bitmap" PC="1"/>
+                <MethodMetric CC="2" Class="Utils" Component="com.xiecc.seeWeather.common" LOC="6" Name="bitmap2Drawable" PC="1"/>
+                <MethodMetric CC="1" Class="CrashHandler" Component="com.xiecc.seeWeather.common" LOC="3" Name="CrashHandler" PC="1"/>
+                <MethodMetric CC="1" Class="CrashHandler" Component="com.xiecc.seeWeather.common" LOC="4" Name="init" PC="1"/>
+                <MethodMetric CC="1" Class="CrashHandler" Component="com.xiecc.seeWeather.common" LOC="7" Name="uncaughtException" PC="2"/>
+                <MethodMetric CC="1" Class="CrashHandler" Component="com.xiecc.seeWeather.common" LOC="7" Name="getCrashInfo" PC="1"/>
+                <MethodMetric CC="1" Class="CrashHandler" Component="com.xiecc.seeWeather.common" LOC="7" Name="collectCrashDeviceInfo" PC="0"/>
+                <MethodMetric CC="1" Class="CrashHandler" Component="com.xiecc.seeWeather.common" LOC="13" Name="getVersionName" PC="0"/>
+                <MethodMetric CC="1" Class="FirstActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="4" Name="onCreate" PC="1"/>
+                <MethodMetric CC="1" Class="switchHandler" Component="com.xiecc.seeWeather.modules.ui" LOC="7" Name="handleMessage" PC="1"/>
+                <MethodMetric CC="3" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="15" Name="onCreate" PC="1"/>
+                <MethodMetric CC="2" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="40" Name="initView" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="onClick" PC="1"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="onHide" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="onShow" PC="0"/>
+                <MethodMetric CC="2" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="13" Name="initDrawer" PC="0"/>
+                <MethodMetric CC="2" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="33" Name="initIcon" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="20" Name="fetchData" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="onCompleted" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="4" Name="onError" PC="1"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="7" Name="onNext" PC="1"/>
+                <MethodMetric CC="2" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="15" Name="fetchDataByCache" PC="1"/>
+                <MethodMetric CC="2" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="22" Name="fetchDataByNetWork" PC="1"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="call" PC="1"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="call" PC="1"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="call" PC="1"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="12" Name="showFabDialog" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="7" Name="onClick" PC="2"/>
+                <MethodMetric CC="4" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="17" Name="onNavigationItemSelected" PC="1"/>
+                <MethodMetric CC="3" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="14" Name="onBackPressed" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="onRefresh" PC="0"/>
+                <MethodMetric CC="1" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="13" Name="location" PC="0"/>
+                <MethodMetric CC="3" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="13" Name="onLocationChanged" PC="1"/>
+                <MethodMetric CC="2" Class="MainActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="8" Name="onActivityResult" PC="3"/>
+                <MethodMetric CC="5" Class="RefreshHandler" Component="com.xiecc.seeWeather.modules.ui" LOC="19" Name="handleMessage" PC="1"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="10" Name="onCreate" PC="1"/>
+                <MethodMetric CC="2" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="12" Name="initView" PC="0"/>
+                <MethodMetric CC="3" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="25" Name="initRecyclerView" PC="0"/>
+                <MethodMetric CC="3" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="15" Name="onItemClick" PC="2"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="23" Name="queryProvinces" PC="0"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="5" Name="call" PC="1"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="5" Name="onCompleted" PC="0"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="2" Name="onError" PC="1"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="onNext" PC="1"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="23" Name="queryCities" PC="0"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="4" Name="call" PC="1"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="5" Name="onCompleted" PC="0"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="2" Name="onError" PC="1"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="3" Name="onNext" PC="1"/>
+                <MethodMetric CC="3" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="12" Name="onKeyDown" PC="2"/>
+                <MethodMetric CC="1" Class="ChoiceCityActivity" Component="com.xiecc.seeWeather.modules.ui" LOC="4" Name="onDestroy" PC="0"/>
+                <MethodMetric CC="2" Class="AboutActivity" Component="com.xiecc.seeWeather.modules.ui.about" LOC="20" Name="onCreate" PC="1"/>
+                <MethodMetric CC="1" Class="AboutActivity" Component="com.xiecc.seeWeather.modules.ui.about" LOC="3" Name="onClick" PC="1"/>
+                <MethodMetric CC="1" Class="AboutFragment" Component="com.xiecc.seeWeather.modules.ui.about" LOC="23" Name="onCreate" PC="1"/>
+                <MethodMetric CC="10" Class="AboutFragment" Component="com.xiecc.seeWeather.modules.ui.about" LOC="58" Name="onPreferenceClick" PC="1"/>
+                <MethodMetric CC="1" Class="AboutFragment" Component="com.xiecc.seeWeather.modules.ui.about" LOC="3" Name="onClick" PC="2"/>
+                <MethodMetric CC="1" Class="AboutFragment" Component="com.xiecc.seeWeather.modules.ui.about" LOC="7" Name="onClick" PC="2"/>
+                <MethodMetric CC="1" Class="AboutFragment" Component="com.xiecc.seeWeather.modules.ui.about" LOC="3" Name="onClick" PC="2"/>
+                <MethodMetric CC="1" Class="AboutFragment" Component="com.xiecc.seeWeather.modules.ui.about" LOC="6" Name="copyToClipboard" PC="2"/>
+                <MethodMetric CC="2" Class="SettingActivity" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="20" Name="onCreate" PC="1"/>
+                <MethodMetric CC="1" Class="SettingActivity" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="3" Name="onClick" PC="1"/>
+                <MethodMetric CC="1" Class="SettingFragment" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="15" Name="onCreate" PC="1"/>
+                <MethodMetric CC="4" Class="SettingFragment" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="14" Name="onPreferenceClick" PC="1"/>
+                <MethodMetric CC="2" Class="SettingFragment" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="13" Name="showIconDialog" PC="0"/>
+                <MethodMetric CC="2" Class="SettingFragment" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="8" Name="onClick" PC="2"/>
+                <MethodMetric CC="5" Class="SettingFragment" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="28" Name="showUpdateDialog" PC="0"/>
+                <MethodMetric CC="5" Class="SettingFragment" Component="com.xiecc.seeWeather.modules.ui.setting" LOC="23" Name="onClick" PC="2"/>
+                <MethodMetric CC="4" Class="HidingScrollListener" Component="com.xiecc.seeWeather.modules.listener" LOC="16" Name="onScrolled" PC="3"/>
+                <MethodMetric CC="1" Class="HidingScrollListener" Component="com.xiecc.seeWeather.modules.listener" LOC="0" Name="onHide" PC="0"/>
+                <MethodMetric CC="1" Class="HidingScrollListener" Component="com.xiecc.seeWeather.modules.listener" LOC="0" Name="onShow" PC="0"/>
+                <MethodMetric CC="1" Class="CityAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="4" Name="CityAdapter" PC="2"/>
+                <MethodMetric CC="1" Class="CityAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="3" Name="onCreateViewHolder" PC="2"/>
+                <MethodMetric CC="1" Class="CityAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="9" Name="onBindViewHolder" PC="2"/>
+                <MethodMetric CC="1" Class="CityAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="3" Name="onClick" PC="1"/>
+                <MethodMetric CC="1" Class="CityAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="3" Name="getItemCount" PC="0"/>
+                <MethodMetric CC="1" Class="CityAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="3" Name="setOnItemClickListener" PC="1"/>
+                <MethodMetric CC="1" Class="OnRecyclerViewItemClickListener" Component="com.xiecc.seeWeather.modules.adatper" LOC="0" Name="onItemClick" PC="2"/>
+                <MethodMetric CC="1" Class="CityViewHolder" Component="com.xiecc.seeWeather.modules.adatper" LOC="5" Name="CityViewHolder" PC="1"/>
+                <MethodMetric CC="1" Class="WeatherAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="5" Name="WeatherAdapter" PC="2"/>
+                <MethodMetric CC="5" Class="WeatherAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="15" Name="getItemViewType" PC="1"/>
+                <MethodMetric CC="5" Class="WeatherAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="15" Name="onCreateViewHolder" PC="2"/>
+                <MethodMetric CC="8" Class="WeatherAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="66" Name="onBindViewHolder" PC="2"/>
+                <MethodMetric CC="1" Class="WeatherAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="3" Name="getItemCount" PC="0"/>
+                <MethodMetric CC="8" Class="WeatherAdapter" Component="com.xiecc.seeWeather.modules.adatper" LOC="32" Name="dayForWeek" PC="1"/>
+                <MethodMetric CC="1" Class="NowWeatherViewHolder" Component="com.xiecc.seeWeather.modules.adatper" LOC="10" Name="NowWeatherViewHolder" PC="1"/>
+                <MethodMetric CC="2" Class="HoursWeatherViewHolder" Component="com.xiecc.seeWeather.modules.adatper" LOC="12" Name="HoursWeatherViewHolder" PC="1"/>
+                <MethodMetric CC="1" Class="SuggestionViewHolder" Component="com.xiecc.seeWeather.modules.adatper" LOC="12" Name="SuggestionViewHolder" PC="1"/>
+                <MethodMetric CC="2" Class="ForecastViewHolder" Component="com.xiecc.seeWeather.modules.adatper" LOC="12" Name="ForecastViewHolder" PC="1"/>
+                <MethodMetric CC="1" Class="DBManager" Component="com.xiecc.seeWeather.modules.db" LOC="3" Name="DBManager" PC="1"/>
+                <MethodMetric CC="1" Class="DBManager" Component="com.xiecc.seeWeather.modules.db" LOC="3" Name="getDatabase" PC="0"/>
+                <MethodMetric CC="1" Class="DBManager" Component="com.xiecc.seeWeather.modules.db" LOC="3" Name="setDatabase" PC="1"/>
+                <MethodMetric CC="1" Class="DBManager" Component="com.xiecc.seeWeather.modules.db" LOC="4" Name="openDatabase" PC="0"/>
+                <MethodMetric CC="3" Class="DBManager" Component="com.xiecc.seeWeather.modules.db" LOC="26" Name="openDatabase" PC="1"/>
+                <MethodMetric CC="1" Class="DBManager" Component="com.xiecc.seeWeather.modules.db" LOC="3" Name="closeDatabase" PC="0"/>
+                <MethodMetric CC="1" Class="WeatherDB" Component="com.xiecc.seeWeather.modules.db" LOC="3" Name="WeatherDB" PC="1"/>
+                <MethodMetric CC="3" Class="WeatherDB" Component="com.xiecc.seeWeather.modules.db" LOC="15" Name="loadProvinces" PC="1"/>
+                <MethodMetric CC="3" Class="WeatherDB" Component="com.xiecc.seeWeather.modules.db" LOC="15" Name="loadCities" PC="2"/>
+                <MethodMetric CC="2" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="6" Name="getInstance" PC="0"/>
+                <MethodMetric CC="1" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="3" Name="Setting" PC="1"/>
+                <MethodMetric CC="1" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="4" Name="putBoolean" PC="2"/>
+                <MethodMetric CC="1" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="3" Name="getBoolean" PC="2"/>
+                <MethodMetric CC="1" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="4" Name="putInt" PC="2"/>
+                <MethodMetric CC="1" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="3" Name="getInt" PC="2"/>
+                <MethodMetric CC="1" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="4" Name="putString" PC="2"/>
+                <MethodMetric CC="1" Class="Setting" Component="com.xiecc.seeWeather.modules.domain" LOC="3" Name="getString" PC="2"/>
+                <MethodMetric CC="2" Class="BaseApplication" Component="com.xiecc.seeWeather.base" LOC="12" Name="onCreate" PC="0"/>
+                <MethodMetric CC="2" Class="BaseApplication" Component="com.xiecc.seeWeather.base" LOC="8" Name="ExistSDCard" PC="0"/>
+                <MethodMetric CC="2" Class="BaseActivity" Component="com.xiecc.seeWeather.base" LOC="9" Name="onCreate" PC="1"/>
+                <MethodMetric CC="1" Class="BaseActivity" Component="com.xiecc.seeWeather.base" LOC="3" Name="setContentView" PC="1"/>
+                <MethodMetric CC="2" Class="BaseActivity" Component="com.xiecc.seeWeather.base" LOC="8" Name="setStatusBarColor" PC="1"/>
+                <MethodMetric CC="2" Class="BaseActivity" Component="com.xiecc.seeWeather.base" LOC="8" Name="setStatusBarColorForKitkat" PC="1"/>
+            </MethodMetrics>
+            <DesignSmells>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather</Component>
+                        <Class>ApplicationTest</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: apiService; retrofit; okHttpClient; TAG; context</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.component</Component>
+                        <Class>RetrofitSingleton</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: SIZETYPE_B; SIZETYPE_KB; SIZETYPE_MB; SIZETYPE_GB</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: PATH; PLOG_FILE_NAME; PLOG_WRITE_TO_FILE</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>PLog</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="Cyclically-dependentModularization">
+                    <Name>Cyclically-dependent Modularization</Name>
+                    <Description>The tool detected the smell in this class because this class participates in a cyclic dependency. The participating classes in the cycle are: CrashHandler; PLog; BaseApplication</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>PLog</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because put is more interested in members of the type: ACacheManager</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>ACache</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because put is more interested in members of the type: ACacheManager</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>ACache</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: TIME_HOUR; TIME_DAY; MAX_SIZE; MAX_COUNT; mInstanceMap; mCache; cacheSize; cacheCount; sizeLimit; countLimit; lastUsageDates; cacheDir; mSeparator</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>ACache</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="InsufficientModularization">
+                    <Name>Insufficient Modularization</Name>
+                    <Description>The tool detected the smell in this class becuase the class has bloated interface (large number of public methods). Total public methods in the class: 29 public methods</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>ACache</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>switchHandler</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: TAG; collapsingToolbarLayout; toolbar; drawer; fab; mRefreshLayout; bannner; mProgressBar; headerBackground; mRecyclerView; mAdapter; observer; exitTime; mLocationClient; mLocationOption; isLoaction</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>RefreshHandler</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: TAG; mRecyclerView; mProgressBar; mDBManager; mWeatherDB; collapsingToolbarLayout; dataList; selectedProvince; selectedCity; provincesList; cityList; mAdapter; LEVEL_PROVINCE; LEVEL_CITY; currentLevel</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutFragment</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.listener</Component>
+                        <Class>HidingScrollListener</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="MissingHierarchy">
+                    <Name>Missing Hierarchy</Name>
+                    <Description>The tool detected the smell because a set of type checks are performed to explicitly manage variation in behavior where a hierarchy could have been formed consisting of these participating types. The participating types that were checked are: NowWeatherViewHolder; HoursWeatherViewHolder; SuggestionViewHolder; ForecastViewHolder in method onBindViewHolder</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>NowWeatherViewHolder</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>HoursWeatherViewHolder</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>SuggestionViewHolder</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>ForecastViewHolder</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: TAG; BUFFER_SIZE; DB_NAME; PACKAGE_NAME; DB_PATH; database; context</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.db</Component>
+                        <Class>DBManager</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: mHeWeatherDataService30s</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WeatherAPI</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: mHeWeatherDataService30s</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WeatherAPI</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: aqi; basic; now; status; suggestion; dailyForecast; hourlyForecast; city; aqi; co; no2; o3; pm10; pm25; qlty; so2; city; cnty; id; lat; lon; update; loc; utc; cond; fl; hum; pcpn; pres; tmp; vis; wind; code; txt; deg; dir; sc; spd; comf; cw; drsg; flu; sport; trav; uv; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; astro; cond; date; hum; pcpn; pop; pres; tmp; vis; wind; sr; ss; codeD; codeN; txtD; txtN; max; min; deg; dir; sc; spd; date; hum; pop; pres; tmp; wind; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>Weather</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: aqi; basic; now; status; suggestion; dailyForecast; hourlyForecast; city; aqi; co; no2; o3; pm10; pm25; qlty; so2; city; cnty; id; lat; lon; update; loc; utc; cond; fl; hum; pcpn; pres; tmp; vis; wind; code; txt; deg; dir; sc; spd; comf; cw; drsg; flu; sport; trav; uv; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; astro; cond; date; hum; pcpn; pop; pres; tmp; vis; wind; sr; ss; codeD; codeN; txtD; txtN; max; min; deg; dir; sc; spd; date; hum; pop; pres; tmp; wind; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>Weather</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: city; aqi; co; no2; o3; pm10; pm25; qlty; so2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>AqiEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: city; aqi; co; no2; o3; pm10; pm25; qlty; so2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>AqiEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: aqi; co; no2; o3; pm10; pm25; qlty; so2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CityEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: aqi; co; no2; o3; pm10; pm25; qlty; so2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CityEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: city; cnty; id; lat; lon; update; loc; utc</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>BasicEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: city; cnty; id; lat; lon; update; loc; utc</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>BasicEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: loc; utc</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>UpdateEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: loc; utc</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>UpdateEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: cond; fl; hum; pcpn; pres; tmp; vis; wind; code; txt; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>NowEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: cond; fl; hum; pcpn; pres; tmp; vis; wind; code; txt; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>NowEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: code; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CondEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: code; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CondEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: comf; cw; drsg; flu; sport; trav; uv; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>SuggestionEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: comf; cw; drsg; flu; sport; trav; uv; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt; brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>SuggestionEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>ComfEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>ComfEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CwEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CwEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>DrsgEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>DrsgEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>FluEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>FluEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>SportEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>SportEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>TravEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>TravEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>UvEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: brf; txt</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>UvEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>DailyForecastEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: astro; cond; date; hum; pcpn; pop; pres; tmp; vis; wind; sr; ss; codeD; codeN; txtD; txtN; max; min; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>DailyForecastEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: astro; cond; date; hum; pcpn; pop; pres; tmp; vis; wind; sr; ss; codeD; codeN; txtD; txtN; max; min; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>DailyForecastEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: sr; ss</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>AstroEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: sr; ss</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>AstroEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: codeD; codeN; txtD; txtN</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CondEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CondEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: codeD; codeN; txtD; txtN</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>CondEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: max; min</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>TmpEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: max; min</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>TmpEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>HourlyForecastEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: date; hum; pop; pres; tmp; wind; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>HourlyForecastEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: date; hum; pop; pres; tmp; wind; deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>HourlyForecastEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: deg; dir; sc; spd</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>WindEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: ProName; ProSort</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>Province</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: ProName; ProSort</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>Province</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: CityName; ProID</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>City</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: CityName; ProID</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>City</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: CHANGE_ICONS; CLEAR_CACHE; AUTO_UPDATE; CITY_NAME; HOUR; HOUR_SELECT; API_TOKEN; KEY; ONE_HOUR; sInstance; mPrefs</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>Setting</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: name; version; changelog; updatedAt; versionShort; build; installUrl; directInstallUrl; updateUrl; binary; fsize</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>VersionAPI</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: name; version; changelog; updatedAt; versionShort; build; installUrl; directInstallUrl; updateUrl; binary; fsize</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>VersionAPI</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: fsize</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>BinaryEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: fsize</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Class>BinaryEntity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: cacheDir; mAppContext</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.base</Component>
+                        <Class>BaseApplication</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="Cyclically-dependentModularization">
+                    <Name>Cyclically-dependent Modularization</Name>
+                    <Description>The tool detected the smell in this class because this class participates in a cyclic dependency. The participating classes in the cycle are: CrashHandler; PLog; BaseApplication</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.base</Component>
+                        <Class>BaseApplication</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.base</Component>
+                        <Class>BaseActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: aCache; mSetting</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.base</Component>
+                        <Class>BaseActivity</Class>
+                    </Entity>
+                </DesignSmell>
+            </DesignSmells>
+            <ImplementationSmells>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather</Component>
+                        <Class>ExampleUnitTest</Class>
+                        <Method>addition_isCorrect</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather</Component>
+                        <Class>ExampleUnitTest</Class>
+                        <Method>addition_isCorrect</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather</Component>
+                        <Class>ExampleUnitTest</Class>
+                        <Method>addition_isCorrect</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "retrofit=new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create(gson)).baseUrl(ApiInterface.HOST).callbackExecutor(executor).addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();" is 206.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.component</Component>
+                        <Class>RetrofitSingleton</Class>
+                        <Method>init</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression t.toString().contains("GaiException") || t.toString().contains("SocketTimeoutException") || t.toString().contains("UnknownHostException") is complex.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.component</Component>
+                        <Class>RetrofitSingleton</Class>
+                        <Method>disposeFailureInfo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "if (t.toString().contains("GaiException") || t.toString().contains("SocketTimeoutException") || t.toString().contains("UnknownHostException")) {" is 144.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.component</Component>
+                        <Class>RetrofitSingleton</Class>
+                        <Method>disposeFailureInfo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "RetrofitSingleton.getApiService(context).mVersionAPI(Setting.API_TOKEN).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer&lt;VersionAPI&gt;(){" is 180.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>CheckVersion</Class>
+                        <Method>checkVersion</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "new AlertDialog.Builder(context).setTitle(title).setMessage(versionAPI.changelog).setPositiveButton("下载",new DialogInterface.OnClickListener(){" is 143.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>CheckVersion</Class>
+                        <Method>showUpdateDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1024</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1048576</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1024</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1073741824</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1048576</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1073741824</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1024</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1048576</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1073741824</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Missing default</Name>
+                    <Description>The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7cecd959</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>FileSizeUtil</Class>
+                        <Method>FormetFileSize</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1024</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>ACache</Class>
+                        <Method>put</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Empty catch clause</Name>
+                    <Description>The method has an empty catch block.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>ACache</Class>
+                        <Method>put</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>isDue</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1000</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>isDue</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 15</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>hasDateInfo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 13</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>hasDateInfo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 14</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>hasDateInfo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 13</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>getDateInfoFromDate</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 14</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>getDateInfoFromDate</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 13</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>createDateInfo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Class>Utils</Class>
+                        <Method>Bitmap2Bytes</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1000</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>FirstActivity</Class>
+                        <Method>onCreate</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>initView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 18</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>initView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>initView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>initView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onHide</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onShow</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,drawer,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);" is 141.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>initDrawer</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>initDrawer</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 18</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>initDrawer</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>fetchData</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>fetchData</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>fetchData</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onCompleted</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onError</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onNext</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "cityName=cityName.replace("市","").replace("省","").replace("自治区","").replace("特别行政区","").replace("地区","").replace("盟","");" is 121.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>fetchDataByNetWork</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "RetrofitSingleton.getApiService(this).mWeatherAPI(cityName,Setting.KEY).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).filter(new Func1&lt;WeatherAPI,Boolean&gt;(){" is 182.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>fetchDataByNetWork</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "new AlertDialog.Builder(MainActivity.this).setTitle("点赞").setMessage("去项目地址给作者个Star，鼓励下作者୧(๑•̀⌄•́๑)૭✧").setPositiveButton("好叻",new DialogInterface.OnClickListener(){" is 165.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>showFabDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2000</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onBackPressed</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>location</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1000</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>location</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "PLog.i(TAG,aMapLocation.getProvince() + aMapLocation.getCity() + aMapLocation.getDistrict()+ aMapLocation.getAdCode()+ aMapLocation.getCityCode());" is 147.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onLocationChanged</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "PLog.e("AmapError","location Error, ErrCode:" + aMapLocation.getErrorCode() + ", errInfo:"+ aMapLocation.getErrorInfo());" is 121.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onLocationChanged</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>MainActivity</Class>
+                        <Method>onActivityResult</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>RefreshHandler</Class>
+                        <Method>handleMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                        <Method>initView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 18</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                        <Method>initView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                        <Method>initRecyclerView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                        <Method>onItemClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Observable.just(1).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).flatMap(new Func1&lt;Integer,Observable&lt;Province&gt;&gt;(){" is 140.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                        <Method>queryProvinces</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Observable.just(1).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).flatMap(new Func1&lt;Integer,Observable&lt;City&gt;&gt;(){" is 136.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui</Component>
+                        <Class>ChoiceCityActivity</Class>
+                        <Method>queryCities</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutActivity</Class>
+                        <Method>onCreate</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 18</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutActivity</Class>
+                        <Method>onCreate</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 10</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutFragment</Class>
+                        <Method>onPreferenceClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("就看天气的完成离不开开源项目的支持，向以下致谢：").setMessage("Google Support Design,Gson,Rxjava,RxAndroid,Retrofit," + "Glide,systembartint").setPositiveButton("关闭",null).show();" is 204.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutFragment</Class>
+                        <Method>onPreferenceClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("点赞").setMessage("去项目地址给作者个Star，鼓励下作者୧(๑•̀⌄•́๑)૭✧").setNegativeButton("复制",new DialogInterface.OnClickListener(){" is 161.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutFragment</Class>
+                        <Method>onPreferenceClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("请作者喝杯咖啡？(〃ω〃)").setMessage("点击按钮后，作者支付宝账号将会复制到剪切板，" + "你就可以使用支付宝转账给作者啦( •̀ .̫ •́ )✧").setPositiveButton("好叻",new DialogInterface.OnClickListener(){" is 196.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.about</Component>
+                        <Class>AboutFragment</Class>
+                        <Method>onPreferenceClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingActivity</Class>
+                        <Method>onCreate</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 18</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingActivity</Class>
+                        <Method>onCreate</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("更换图标").setSingleChoiceItems(getResources().getStringArray(R.array.icons),mSetting.getInt(Setting.CHANGE_ICONS,0),new DialogInterface.OnClickListener(){" is 200.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>showIconDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("更换频率").setSingleChoiceItems(getResources().getStringArray(R.array.cache_time),mSetting.getInt(Setting.HOUR_SELECT,0),new DialogInterface.OnClickListener(){" is 204.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>showUpdateDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>showUpdateDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>showUpdateDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>showUpdateDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>showUpdateDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>onClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>onClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>onClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.ui.setting</Component>
+                        <Class>SettingFragment</Class>
+                        <Method>onClick</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression (controlsVisible &amp;&amp; dy &gt; 0) || (!controlsVisible &amp;&amp; dy &lt; 0) is complex.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.listener</Component>
+                        <Class>HidingScrollListener</Class>
+                        <Method>onScrolled</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 8</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>onBindViewHolder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Glide.with(mContext).load(mSetting.getInt(mWeatherData.now.cond.txt,R.mipmap.none)).diskCacheStrategy(DiskCacheStrategy.ALL).into(((NowWeatherViewHolder)holder).weatherIcon);" is 174.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>onBindViewHolder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Glide.with(mContext).load(mSetting.getInt(mWeatherData.dailyForecast.get(i).cond.txtD,R.mipmap.none)).crossFade().diskCacheStrategy(DiskCacheStrategy.ALL).into(((ForecastViewHolder)holder).forecastIcon[i]);" is 206.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>onBindViewHolder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "((ForecastViewHolder)holder).forecastTemp[i].setText(mWeatherData.dailyForecast.get(i).tmp.min + "° " + mWeatherData.dailyForecast.get(i).tmp.max+ "°");" is 152.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>onBindViewHolder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "((ForecastViewHolder)holder).forecastTxt[i].setText(mWeatherData.dailyForecast.get(i).cond.txtD + "。 最高" + mWeatherData.dailyForecast.get(i).tmp.max+ "℃。 "+ mWeatherData.dailyForecast.get(i).wind.sc+ " "+ mWeatherData.dailyForecast.get(i).wind.dir+ " "+ mWeatherData.dailyForecast.get(i).wind.spd+ " km/h。 "+ "降水几率 "+ ""+ mWeatherData.dailyForecast.get(i).pop+ "%。");" is 367.</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>onBindViewHolder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>onBindViewHolder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>getItemCount</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 8</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>dayForWeek</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>dayForWeek</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>dayForWeek</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>dayForWeek</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>dayForWeek</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>dayForWeek</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 7</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Class>WeatherAdapter</Class>
+                        <Method>dayForWeek</Method>
+                    </Entity>
+                </ImplementationSmell>
+            </ImplementationSmells>
+            <ArchSmells>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.xiecc.seeWeather.common; com.xiecc.seeWeather.base</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.xiecc.seeWeather.common; com.xiecc.seeWeather.modules.domain; com.xiecc.seeWeather.base</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="UnstableDependency">
+                    <Name>Unstable Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): com.xiecc.seeWeather.base</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="FeatureConcentration">
+                    <Name>Feature Concentration</Name>
+                    <Description>The tool detected the smell in this component because the component realizes more than one architectural concern/feature. Independent sets of related classes within this component are: [Util; CheckVersion; PLog; CrashHandler; Time]; [FileSizeUtil]; [ACache; ACacheManager; Utils]. LCC (Lack of Component Cohesion) = 0.33</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.common</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="FeatureConcentration">
+                    <Name>Feature Concentration</Name>
+                    <Description>The tool detected the smell in this component because the component realizes more than one architectural concern/feature. Independent sets of related classes within this component are: [CityAdapter; OnRecyclerViewItemClickListener; CityViewHolder]; [WeatherAdapter]; [NowWeatherViewHolder]; [HoursWeatherViewHolder]; [SuggestionViewHolder]; [ForecastViewHolder]. LCC (Lack of Component Cohesion) = 0.75</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.adatper</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.xiecc.seeWeather.modules.domain; com.xiecc.seeWeather.base</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.xiecc.seeWeather.modules.domain; com.xiecc.seeWeather.base; com.xiecc.seeWeather.common</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="UnstableDependency">
+                    <Name>Unstable Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): com.xiecc.seeWeather.base</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="FeatureConcentration">
+                    <Name>Feature Concentration</Name>
+                    <Description>The tool detected the smell in this component because the component realizes more than one architectural concern/feature. Independent sets of related classes within this component are: [WeatherAPI]; [Weather; AqiEntity; CityEntity; BasicEntity; UpdateEntity; NowEntity; CondEntity; WindEntity; SuggestionEntity; ComfEntity; CwEntity; DrsgEntity; FluEntity; SportEntity; TravEntity; UvEntity; DailyForecastEntity; AstroEntity; TmpEntity; HourlyForecastEntity]; [CondEntity]; [WindEntity]; [WindEntity]; [Province]; [City]; [Setting]; [VersionAPI; BinaryEntity]. LCC (Lack of Component Cohesion) = 0.31</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.modules.domain</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.xiecc.seeWeather.base; com.xiecc.seeWeather.common</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.base</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.xiecc.seeWeather.base; com.xiecc.seeWeather.common; com.xiecc.seeWeather.modules.domain</Description>
+                    <Entity>
+                        <Component>com.xiecc.seeWeather.base</Component>
+                        <Project>SeeWeather-2.03</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+            </ArchSmells>
+        </Project>
+    </Solution>
+</Analysis>

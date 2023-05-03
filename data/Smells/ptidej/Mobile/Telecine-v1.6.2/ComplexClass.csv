@@ -1,0 +1,3 @@
+FullClassPath,AntiPattern
+ com.jakewharton.telecine.VideoSizePercentageAdapter,ComplexClass
+ com.jakewharton.telecine.BugsnagTree,ComplexClass

@@ -1,0 +1,3 @@
+FullClassPath,AntiPattern
+ com.jakewharton.telecine.DeleteRecordingBroadcastReceiver,LazyClass
+ com.jakewharton.telecine.DeleteRecordingBroadcastReceiver,LazyClass

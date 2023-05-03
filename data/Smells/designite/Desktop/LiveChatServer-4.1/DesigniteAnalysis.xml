@@ -1,0 +1,2906 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Analysis Date="07-09-2022 20:26:35" Language="java" Tool="DesigniteJava" Version="2.1.0">
+    <Solution>
+        <Name>LiveChatServer-4.1</Name>
+        <Path>../../data/SourceProjects//Desktop/LiveChatServer-4.1</Path>
+        <LOC>2026</LOC>
+        <ComponentCount>7</ComponentCount>
+        <TypeCount>31</TypeCount>
+        <MethodCount>132</MethodCount>
+        <SmellDensity>0.99</SmellDensity>
+        <CodeDuplication>-1</CodeDuplication>
+        <MetricVoilations>-1</MetricVoilations>
+        <TotalArchSmellCount>2</TotalArchSmellCount>
+        <TotalDesignSmellCount>24</TotalDesignSmellCount>
+        <TotalImplSmellCount>276</TotalImplSmellCount>
+        <Project>
+            <Name>LiveChatServer-4.1</Name>
+            <LOC>2026</LOC>
+            <ComponentCount>7</ComponentCount>
+            <TypeCount>31</TypeCount>
+            <MethodCount>132</MethodCount>
+            <SmellDensity>0.99</SmellDensity>
+            <CodeDuplication>-1</CodeDuplication>
+            <MetricVoilations>-1</MetricVoilations>
+            <TotalArchSmellCount>2</TotalArchSmellCount>
+            <TotalDesignSmellCount>24</TotalDesignSmellCount>
+            <TotalImplSmellCount>276</TotalImplSmellCount>
+            <ComponentMetrics>
+                <ComponentMetric LOC="1243" Name="com.chatroom.ui" OutgoingDependencies="com.chatroom.client,com.chatroom.models,com.chatroom.configuration,com.chatroom.others" SmellDensity="0.80"/>
+                <ComponentMetric LOC="35" Name="com.chatroom.Database" OutgoingDependencies="com.chatroom.configuration,com.chatroom.others" SmellDensity="0.00"/>
+                <ComponentMetric LOC="13" Name="com.chatroom.configuration" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="116" Name="com.chatroom.others" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="400" Name="com.chatroom.server" OutgoingDependencies="com.chatroom.models,com.chatroom.configuration,com.chatroom.others" SmellDensity="2.50"/>
+                <ComponentMetric LOC="92" Name="com.chatroom.models" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="127" Name="com.chatroom.client" OutgoingDependencies="com.chatroom.models,com.chatroom.configuration,com.chatroom.others" SmellDensity="0.00"/>
+            </ComponentMetrics>
+            <ClassMetrics>
+                <ClassMetric Component="com.chatroom.ui" DIT="0" FANIN="0" FANOUT="5" LCOM="0.00" LOC="199" NC="0" NOF="12" NOM="11" NOP="0" NOPF="0" NOPM="6" Name="MainMenuOptions" WMC="18"/>
+                <ClassMetric Component="com.chatroom.ui" DIT="0" FANIN="0" FANOUT="6" LCOM="0.00" LOC="346" NC="0" NOF="27" NOM="16" NOP="0" NOPF="0" NOPM="9" Name="ChatActivity" WMC="31"/>
+                <ClassMetric Component="com.chatroom.ui" DIT="0" FANIN="1" FANOUT="4" LCOM="1.00" LOC="73" NC="0" NOF="1" NOM="3" NOP="0" NOPF="0" NOPM="3" Name="MessageListener" WMC="11"/>
+                <ClassMetric Component="com.chatroom.ui" DIT="0" FANIN="0" FANOUT="5" LCOM="0.22" LOC="169" NC="0" NOF="12" NOM="9" NOP="0" NOPF="0" NOPM="5" Name="ViewRoomsActivity" WMC="13"/>
+                <ClassMetric Component="com.chatroom.ui" DIT="0" FANIN="0" FANOUT="3" LCOM="0.00" LOC="91" NC="0" NOF="7" NOM="6" NOP="0" NOPF="0" NOPM="4" Name="MainSplash" WMC="6"/>
+                <ClassMetric Component="com.chatroom.ui" DIT="0" FANIN="0" FANOUT="6" LCOM="0.00" LOC="187" NC="0" NOF="12" NOM="11" NOP="0" NOPF="0" NOPM="8" Name="SignUpActivity" WMC="23"/>
+                <ClassMetric Component="com.chatroom.ui" DIT="0" FANIN="0" FANOUT="6" LCOM="0.00" LOC="178" NC="0" NOF="12" NOM="11" NOP="0" NOPF="0" NOPM="8" Name="SignInActivity" WMC="21"/>
+                <ClassMetric Component="com.chatroom.Database" DIT="0" FANIN="0" FANOUT="2" LCOM="-1.00" LOC="35" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="createdb" WMC="1"/>
+                <ClassMetric Component="com.chatroom.configuration" DIT="0" FANIN="17" FANOUT="0" LCOM="-1.00" LOC="13" NC="0" NOF="11" NOM="0" NOP="0" NOPF="11" NOPM="0" Name="Config" WMC="0"/>
+                <ClassMetric Component="com.chatroom.others" DIT="0" FANIN="5" FANOUT="0" LCOM="-1.00" LOC="8" NC="0" NOF="0" NOM="2" NOP="0" NOPF="0" NOPM="2" Name="Message" WMC="2"/>
+                <ClassMetric Component="com.chatroom.others" DIT="0" FANIN="0" FANOUT="0" LCOM="0.00" LOC="70" NC="0" NOF="10" NOM="6" NOP="0" NOPF="0" NOPM="6" Name="TextBubbleBorder" WMC="8"/>
+                <ClassMetric Component="com.chatroom.others" DIT="0" FANIN="3" FANOUT="1" LCOM="0.00" LOC="21" NC="0" NOF="1" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="Hash" WMC="2"/>
+                <ClassMetric Component="com.chatroom.others" DIT="0" FANIN="18" FANOUT="0" LCOM="0.00" LOC="17" NC="0" NOF="1" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="LogFileWriter" WMC="1"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="1" FANOUT="1" LCOM="0.00" LOC="8" NC="0" NOF="2" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ResponseHolder" WMC="1"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="2" FANOUT="4" LCOM="0.00" LOC="46" NC="0" NOF="4" NOM="2" NOP="0" NOPF="0" NOPM="2" Name="ClientThread" WMC="7"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="1" FANOUT="3" LCOM="0.00" LOC="37" NC="0" NOF="2" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ServerOperations" WMC="7"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="0" FANOUT="3" LCOM="-1.00" LOC="24" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ServerExec" WMC="3"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="2" FANOUT="8" LCOM="0.00" LOC="0" NC="0" NOF="6" NOM="2" NOP="0" NOPF="0" NOPM="2" Name="RequestAnalyser" WMC="34"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="1" FANOUT="4" LCOM="-1.00" LOC="19" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ResponseMaker" WMC="3"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="1" FANOUT="7" LCOM="-1.00" LOC="150" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="MessageHandler" WMC="22"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="0" FANOUT="1" LCOM="-1.00" LOC="9" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="MessagesTrackComparator" WMC="3"/>
+                <ClassMetric Component="com.chatroom.server" DIT="0" FANIN="6" FANOUT="9" LCOM="0.57" LOC="107" NC="0" NOF="22" NOM="7" NOP="0" NOPF="0" NOPM="6" Name="Server" WMC="10"/>
+                <ClassMetric Component="com.chatroom.models" DIT="0" FANIN="12" FANOUT="0" LCOM="0.00" LOC="29" NC="0" NOF="3" NOM="7" NOP="0" NOPF="0" NOPM="7" Name="Response" WMC="7"/>
+                <ClassMetric Component="com.chatroom.models" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="Type" WMC="0"/>
+                <ClassMetric Component="com.chatroom.models" DIT="0" FANIN="3" FANOUT="0" LCOM="0.00" LOC="17" NC="0" NOF="2" NOM="4" NOP="0" NOPF="0" NOPM="4" Name="MessageTrackObject" WMC="4"/>
+                <ClassMetric Component="com.chatroom.models" DIT="0" FANIN="10" FANOUT="0" LCOM="0.18" LOC="44" NC="0" NOF="5" NOM="11" NOP="0" NOPF="0" NOPM="11" Name="Request" WMC="11"/>
+                <ClassMetric Component="com.chatroom.models" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="Type" WMC="0"/>
+                <ClassMetric Component="com.chatroom.client" DIT="0" FANIN="1" FANOUT="7" LCOM="0.00" LOC="0" NC="0" NOF="13" NOM="8" NOP="0" NOPF="0" NOPM="3" Name="Client" WMC="28"/>
+                <ClassMetric Component="com.chatroom.client" DIT="0" FANIN="1" FANOUT="4" LCOM="-1.00" LOC="58" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="MessageListener" WMC="12"/>
+                <ClassMetric Component="com.chatroom.client" DIT="0" FANIN="0" FANOUT="3" LCOM="-1.00" LOC="35" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="ClientExec" WMC="5"/>
+                <ClassMetric Component="com.chatroom.client" DIT="0" FANIN="7" FANOUT="0" LCOM="0.60" LOC="34" NC="0" NOF="7" NOM="5" NOP="0" NOPF="2" NOPM="5" Name="ClientModel" WMC="5"/>
+            </ClassMetrics>
+            <MethodMetrics>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="19" Name="MainMenuOptions" PC="1"/>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="4" Name="paintComponent" PC="1"/>
+                <MethodMetric CC="2" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="21" Name="logOut" PC="0"/>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="39" Name="ListeningEvents" PC="0"/>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="3" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="3" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="10" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="9" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="57" Name="initializeAllWithProperties" PC="0"/>
+                <MethodMetric CC="4" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="27" Name="createAndJoinRoom" PC="2"/>
+                <MethodMetric CC="4" Class="MainMenuOptions" Component="com.chatroom.ui" LOC="23" Name="displayAlertDialog" PC="1"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="40" Name="ChatActivity" PC="1"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="3" Name="updateScrollbarPosition" PC="0"/>
+                <MethodMetric CC="6" Class="ChatActivity" Component="com.chatroom.ui" LOC="104" Name="ListeningEvents" PC="0"/>
+                <MethodMetric CC="2" Class="ChatActivity" Component="com.chatroom.ui" LOC="6" Name="focusLost" PC="1"/>
+                <MethodMetric CC="2" Class="ChatActivity" Component="com.chatroom.ui" LOC="4" Name="focusGained" PC="1"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="5" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="12" Name="mouseClicked" PC="1"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="12" Name="mouseClicked" PC="1"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="12" Name="mouseClicked" PC="1"/>
+                <MethodMetric CC="4" Class="ChatActivity" Component="com.chatroom.ui" LOC="17" Name="adjustmentValueChanged" PC="1"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="8" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="4" Class="ChatActivity" Component="com.chatroom.ui" LOC="31" Name="setSenderMessage" PC="0"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="5" Name="clearTextMessage" PC="0"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="10" Name="displayStatusMessages" PC="1"/>
+                <MethodMetric CC="3" Class="ChatActivity" Component="com.chatroom.ui" LOC="16" Name="setReceiverMessage" PC="2"/>
+                <MethodMetric CC="1" Class="ChatActivity" Component="com.chatroom.ui" LOC="36" Name="initializeAllWithProperties" PC="0"/>
+                <MethodMetric CC="9" Class="MessageListener" Component="com.chatroom.ui" LOC="70" Name="run" PC="0"/>
+                <MethodMetric CC="1" Class="MessageListener" Component="com.chatroom.ui" LOC="10" Name="run" PC="0"/>
+                <MethodMetric CC="1" Class="MessageListener" Component="com.chatroom.ui" LOC="10" Name="run" PC="0"/>
+                <MethodMetric CC="1" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="26" Name="ViewRoomsActivity" PC="1"/>
+                <MethodMetric CC="1" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="4" Name="paintComponent" PC="1"/>
+                <MethodMetric CC="2" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="21" Name="getRooms" PC="0"/>
+                <MethodMetric CC="4" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="26" Name="createAndJoinRoom" PC="2"/>
+                <MethodMetric CC="1" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="27" Name="ListeningEvents" PC="0"/>
+                <MethodMetric CC="1" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="9" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="10" Name="mouseClicked" PC="1"/>
+                <MethodMetric CC="1" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="56" Name="initializeAllWithProperties" PC="0"/>
+                <MethodMetric CC="1" Class="ViewRoomsActivity" Component="com.chatroom.ui" LOC="5" Name="paint" PC="1"/>
+                <MethodMetric CC="1" Class="MainSplash" Component="com.chatroom.ui" LOC="16" Name="MainSplash" PC="1"/>
+                <MethodMetric CC="1" Class="MainSplash" Component="com.chatroom.ui" LOC="4" Name="paintComponent" PC="1"/>
+                <MethodMetric CC="1" Class="MainSplash" Component="com.chatroom.ui" LOC="28" Name="ListeningEvents" PC="0"/>
+                <MethodMetric CC="1" Class="MainSplash" Component="com.chatroom.ui" LOC="10" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="MainSplash" Component="com.chatroom.ui" LOC="10" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="MainSplash" Component="com.chatroom.ui" LOC="39" Name="initializeAllWithProperties" PC="0"/>
+                <MethodMetric CC="1" Class="SignUpActivity" Component="com.chatroom.ui" LOC="27" Name="SignUpActivity" PC="1"/>
+                <MethodMetric CC="1" Class="SignUpActivity" Component="com.chatroom.ui" LOC="4" Name="paintComponent" PC="1"/>
+                <MethodMetric CC="5" Class="SignUpActivity" Component="com.chatroom.ui" LOC="56" Name="ListeningEvents" PC="0"/>
+                <MethodMetric CC="2" Class="SignUpActivity" Component="com.chatroom.ui" LOC="7" Name="focusLost" PC="1"/>
+                <MethodMetric CC="2" Class="SignUpActivity" Component="com.chatroom.ui" LOC="5" Name="focusGained" PC="1"/>
+                <MethodMetric CC="2" Class="SignUpActivity" Component="com.chatroom.ui" LOC="8" Name="focusLost" PC="1"/>
+                <MethodMetric CC="2" Class="SignUpActivity" Component="com.chatroom.ui" LOC="6" Name="focusGained" PC="1"/>
+                <MethodMetric CC="1" Class="SignUpActivity" Component="com.chatroom.ui" LOC="5" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="1" Class="SignUpActivity" Component="com.chatroom.ui" LOC="11" Name="mouseClicked" PC="1"/>
+                <MethodMetric CC="5" Class="SignUpActivity" Component="com.chatroom.ui" LOC="33" Name="signUp" PC="2"/>
+                <MethodMetric CC="1" Class="SignUpActivity" Component="com.chatroom.ui" LOC="58" Name="initializeAllWithProperties" PC="0"/>
+                <MethodMetric CC="1" Class="SignInActivity" Component="com.chatroom.ui" LOC="27" Name="SignInActivity" PC="1"/>
+                <MethodMetric CC="1" Class="SignInActivity" Component="com.chatroom.ui" LOC="4" Name="paintComponent" PC="1"/>
+                <MethodMetric CC="5" Class="SignInActivity" Component="com.chatroom.ui" LOC="56" Name="ListeningEvents" PC="0"/>
+                <MethodMetric CC="2" Class="SignInActivity" Component="com.chatroom.ui" LOC="7" Name="focusLost" PC="1"/>
+                <MethodMetric CC="2" Class="SignInActivity" Component="com.chatroom.ui" LOC="5" Name="focusGained" PC="1"/>
+                <MethodMetric CC="2" Class="SignInActivity" Component="com.chatroom.ui" LOC="8" Name="focusLost" PC="1"/>
+                <MethodMetric CC="2" Class="SignInActivity" Component="com.chatroom.ui" LOC="6" Name="focusGained" PC="1"/>
+                <MethodMetric CC="1" Class="SignInActivity" Component="com.chatroom.ui" LOC="11" Name="mouseClicked" PC="1"/>
+                <MethodMetric CC="1" Class="SignInActivity" Component="com.chatroom.ui" LOC="5" Name="actionPerformed" PC="1"/>
+                <MethodMetric CC="3" Class="SignInActivity" Component="com.chatroom.ui" LOC="25" Name="signIn" PC="2"/>
+                <MethodMetric CC="1" Class="SignInActivity" Component="com.chatroom.ui" LOC="57" Name="initializeAllWithProperties" PC="0"/>
+                <MethodMetric CC="1" Class="createdb" Component="com.chatroom.Database" LOC="33" Name="main" PC="1"/>
+                <MethodMetric CC="1" Class="Message" Component="com.chatroom.others" LOC="3" Name="print" PC="1"/>
+                <MethodMetric CC="1" Class="Message" Component="com.chatroom.others" LOC="3" Name="println" PC="1"/>
+                <MethodMetric CC="1" Class="TextBubbleBorder" Component="com.chatroom.others" LOC="3" Name="TextBubbleBorder" PC="1"/>
+                <MethodMetric CC="1" Class="TextBubbleBorder" Component="com.chatroom.others" LOC="12" Name="TextBubbleBorder" PC="4"/>
+                <MethodMetric CC="1" Class="TextBubbleBorder" Component="com.chatroom.others" LOC="4" Name="TextBubbleBorder" PC="5"/>
+                <MethodMetric CC="1" Class="TextBubbleBorder" Component="com.chatroom.others" LOC="3" Name="getBorderInsets" PC="1"/>
+                <MethodMetric CC="1" Class="TextBubbleBorder" Component="com.chatroom.others" LOC="3" Name="getBorderInsets" PC="2"/>
+                <MethodMetric CC="3" Class="TextBubbleBorder" Component="com.chatroom.others" LOC="33" Name="paintBorder" PC="6"/>
+                <MethodMetric CC="2" Class="Hash" Component="com.chatroom.others" LOC="18" Name="getHash" PC="1"/>
+                <MethodMetric CC="1" Class="LogFileWriter" Component="com.chatroom.others" LOC="14" Name="Log" PC="1"/>
+                <MethodMetric CC="1" Class="ResponseHolder" Component="com.chatroom.server" LOC="4" Name="ResponseHolder" PC="2"/>
+                <MethodMetric CC="1" Class="ClientThread" Component="com.chatroom.server" LOC="3" Name="ClientThread" PC="1"/>
+                <MethodMetric CC="6" Class="ClientThread" Component="com.chatroom.server" LOC="37" Name="run" PC="0"/>
+                <MethodMetric CC="7" Class="ServerOperations" Component="com.chatroom.server" LOC="33" Name="run" PC="0"/>
+                <MethodMetric CC="3" Class="ServerExec" Component="com.chatroom.server" LOC="22" Name="main" PC="1"/>
+                <MethodMetric CC="29" Class="RequestAnalyser" Component="com.chatroom.server" LOC="0" Name="run" PC="0"/>
+                <MethodMetric CC="5" Class="RequestAnalyser" Component="com.chatroom.server" LOC="15" Name="logout" PC="3"/>
+                <MethodMetric CC="3" Class="ResponseMaker" Component="com.chatroom.server" LOC="17" Name="run" PC="0"/>
+                <MethodMetric CC="22" Class="MessageHandler" Component="com.chatroom.server" LOC="148" Name="run" PC="0"/>
+                <MethodMetric CC="3" Class="MessagesTrackComparator" Component="com.chatroom.server" LOC="7" Name="compare" PC="2"/>
+                <MethodMetric CC="1" Class="Server" Component="com.chatroom.server" LOC="28" Name="Server" PC="1"/>
+                <MethodMetric CC="1" Class="Server" Component="com.chatroom.server" LOC="9" Name="finalize" PC="0"/>
+                <MethodMetric CC="1" Class="Server" Component="com.chatroom.server" LOC="3" Name="getRoomId" PC="0"/>
+                <MethodMetric CC="1" Class="Server" Component="com.chatroom.server" LOC="4" Name="shutdown" PC="0"/>
+                <MethodMetric CC="1" Class="Server" Component="com.chatroom.server" LOC="18" Name="getClientNameFromId" PC="1"/>
+                <MethodMetric CC="3" Class="Server" Component="com.chatroom.server" LOC="8" Name="getKey" PC="1"/>
+                <MethodMetric CC="2" Class="Server" Component="com.chatroom.server" LOC="13" Name="connect" PC="0"/>
+                <MethodMetric CC="1" Class="Response" Component="com.chatroom.models" LOC="5" Name="Response" PC="3"/>
+                <MethodMetric CC="1" Class="Response" Component="com.chatroom.models" LOC="3" Name="getId" PC="0"/>
+                <MethodMetric CC="1" Class="Response" Component="com.chatroom.models" LOC="3" Name="getContents" PC="0"/>
+                <MethodMetric CC="1" Class="Response" Component="com.chatroom.models" LOC="3" Name="getSuccess" PC="0"/>
+                <MethodMetric CC="1" Class="Response" Component="com.chatroom.models" LOC="3" Name="setId" PC="1"/>
+                <MethodMetric CC="1" Class="Response" Component="com.chatroom.models" LOC="3" Name="setContents" PC="1"/>
+                <MethodMetric CC="1" Class="Response" Component="com.chatroom.models" LOC="3" Name="setSuccess" PC="1"/>
+                <MethodMetric CC="1" Class="MessageTrackObject" Component="com.chatroom.models" LOC="4" Name="MessageTrackObject" PC="2"/>
+                <MethodMetric CC="1" Class="MessageTrackObject" Component="com.chatroom.models" LOC="3" Name="updateCount" PC="0"/>
+                <MethodMetric CC="1" Class="MessageTrackObject" Component="com.chatroom.models" LOC="3" Name="getCount" PC="0"/>
+                <MethodMetric CC="1" Class="MessageTrackObject" Component="com.chatroom.models" LOC="3" Name="getId" PC="0"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="6" Name="Request" PC="4"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="getId" PC="0"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="getClientId" PC="0"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="getRoomId" PC="0"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="getContents" PC="0"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="getIsConsole" PC="0"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="setIsConsole" PC="1"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="setId" PC="1"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="setClientId" PC="1"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="setRoomId" PC="1"/>
+                <MethodMetric CC="1" Class="Request" Component="com.chatroom.models" LOC="3" Name="setContents" PC="1"/>
+                <MethodMetric CC="1" Class="Client" Component="com.chatroom.client" LOC="5" Name="Client" PC="2"/>
+                <MethodMetric CC="1" Class="Client" Component="com.chatroom.client" LOC="12" Name="connect" PC="0"/>
+                <MethodMetric CC="5" Class="Client" Component="com.chatroom.client" LOC="0" Name="mainOptions" PC="0"/>
+                <MethodMetric CC="2" Class="Client" Component="com.chatroom.client" LOC="16" Name="logOut" PC="0"/>
+                <MethodMetric CC="2" Class="Client" Component="com.chatroom.client" LOC="25" Name="viewRooms" PC="0"/>
+                <MethodMetric CC="4" Class="Client" Component="com.chatroom.client" LOC="23" Name="createAndJoinRoom" PC="2"/>
+                <MethodMetric CC="6" Class="Client" Component="com.chatroom.client" LOC="31" Name="conversation" PC="0"/>
+                <MethodMetric CC="7" Class="Client" Component="com.chatroom.client" LOC="62" Name="mainFunc" PC="0"/>
+                <MethodMetric CC="12" Class="MessageListener" Component="com.chatroom.client" LOC="56" Name="run" PC="0"/>
+                <MethodMetric CC="5" Class="ClientExec" Component="com.chatroom.client" LOC="33" Name="main" PC="1"/>
+                <MethodMetric CC="1" Class="ClientModel" Component="com.chatroom.client" LOC="13" Name="ClientModel" PC="2"/>
+                <MethodMetric CC="1" Class="ClientModel" Component="com.chatroom.client" LOC="3" Name="getClientID" PC="0"/>
+                <MethodMetric CC="1" Class="ClientModel" Component="com.chatroom.client" LOC="3" Name="setClientID" PC="1"/>
+                <MethodMetric CC="1" Class="ClientModel" Component="com.chatroom.client" LOC="3" Name="getRoomId" PC="0"/>
+                <MethodMetric CC="1" Class="ClientModel" Component="com.chatroom.client" LOC="3" Name="setRoomId" PC="1"/>
+            </MethodMetrics>
+            <DesignSmells>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because getRooms is more interested in members of the type: ClientModel</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because signUp is more interested in members of the type: ClientModel</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because signIn is more interested in members of the type: ClientModel</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.Database</Component>
+                        <Class>createdb</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: USER_NAME; USER_PWD; DATABASE_HOST; DATABASE_URL; DATABASE_NAME; TABLE_NAME; CLIENT_ID; CLIENT_NAME; CLIENT_PWD; colorPrimary; errors</Description>
+                    <Entity>
+                        <Component>com.chatroom.configuration</Component>
+                        <Class>Config</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenModularization">
+                    <Name>Broken Modularization</Name>
+                    <Description>The tool detected the smell in this class because it contains only data members without any method implementation. Following fields are declared in this class: USER_NAME; USER_PWD; DATABASE_HOST; DATABASE_URL; DATABASE_NAME; TABLE_NAME; CLIENT_ID; CLIENT_NAME; CLIENT_PWD; colorPrimary; errors</Description>
+                    <Entity>
+                        <Component>com.chatroom.configuration</Component>
+                        <Class>Config</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="Cyclically-dependentModularization">
+                    <Name>Cyclically-dependent Modularization</Name>
+                    <Description>The tool detected the smell in this class because this class participates in a cyclic dependency. The participating classes in the cycle are: MessageHandler; ClientThread; Server; RequestAnalyser; ResponseMaker; ServerOperations</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>ClientThread</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>ServerExec</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="ImperativeAbstraction">
+                    <Name>Imperative Abstraction</Name>
+                    <Description>The tool detected the smell in this class because it looks like that an operation is turned into a class. This class contains only the following public method: run</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>MessageHandler</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>MessagesTrackComparator</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.chatroom.models</Component>
+                        <Class>Type</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.models</Component>
+                        <Class>Type</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.chatroom.models</Component>
+                        <Class>Type</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.models</Component>
+                        <Class>Type</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="ImperativeAbstraction">
+                    <Name>Imperative Abstraction</Name>
+                    <Description>The tool detected the smell in this class because it looks like that an operation is turned into a class. This class contains only the following public method: run</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>MessageListener</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>ClientExec</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: clientID; roomId; host; port; objectOutputStream; objectInputStream; socket</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>ClientModel</Class>
+                    </Entity>
+                </DesignSmell>
+            </DesignSmells>
+            <ImplementationSmells>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>ListeningEvents</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>actionPerformed</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 614</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "if (create) request=new Request(Request.Type.CREATE_ROOM.ordinal(),clientModel.getClientID(),clientModel.getRoomId(),rName);" is 124.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>createAndJoinRoom</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "clientModel.setRoomId(Integer.parseInt(response.getContents().substring(hashIndex + 1,response.getContents().indexOf(" ",hashIndex))));" is 135.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>createAndJoinRoom</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "int choice=JOptionPane.showOptionDialog(null,jPanel,"Enter Room Name",JOptionPane.OK_CANCEL_OPTION,JOptionPane.PLAIN_MESSAGE,null,null,null);" is 141.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>displayAlertDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>displayAlertDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 64</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>displayAlertDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>displayAlertDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainMenuOptions</Class>
+                        <Method>displayAlertDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "rightBubbleConstraints=new GridBagConstraints(0,i,1,1,1.0,0,GridBagConstraints.NORTHEAST,GridBagConstraints.NONE,new Insets(0,0,5,0),0,0);" is 138.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "leftBubbleConstraints=new GridBagConstraints(0,i,1,1,1.0,0,GridBagConstraints.NORTHWEST,GridBagConstraints.NONE,new Insets(0,0,5,0),0,0);" is 137.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "centerConstraints=new GridBagConstraints(0,i,1,1,1.0,0,GridBagConstraints.CENTER,GridBagConstraints.NONE,new Insets(0,0,5,0),0,0);" is 130.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "displayStatusMessages("NOTE: You've entered the server. &lt;br/&gt;" + "For personal message type '@user_name your_message' without quotes");" is 135.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "request=new Request(Request.Type.STATUS_MSG.ordinal(),clientModel.getClientID(),clientModel.getRoomId(),"joined the chat");" is 123.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ChatActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression isSenderMsg || (!isReadMode &amp;&amp; tracker != jsb.getMaximum()) is complex.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ListeningEvents</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Method</Name>
+                    <Description>The method has 104 lines of code.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ListeningEvents</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ListeningEvents</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 300</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>ListeningEvents</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression isSenderMsg || (!isReadMode &amp;&amp; tracker != jsb.getMaximum()) is complex.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>adjustmentValueChanged</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>adjustmentValueChanged</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 300</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>adjustmentValueChanged</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression !jTfMessageHere.getText().equals("Type your message here") &amp;&amp; jTfMessageHere.getText().trim().length() &gt; 0 &amp;&amp; jTfMessageHere.getText().trim().length() &lt;= 300 is complex.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setSenderMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "if (!jTfMessageHere.getText().equals("Type your message here") &amp;&amp; jTfMessageHere.getText().trim().length() &gt; 0 &amp;&amp; jTfMessageHere.getText().trim().length() &lt;= 300) {" is 164.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setSenderMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "request=new Request(Request.Type.MSG.ordinal(),clientModel.getClientID(),clientModel.getRoomId(),jTfMessageHere.getText());" is 123.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setSenderMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "String text=String.format("&lt;html&gt;&lt;div&gt;&lt;p style=\"width:%s;word-break: break-all;\"&gt;%s&lt;/p&gt;&lt;/div&gt;&lt;/html&gt;",temp,jTfMessageHere.getText());" is 135.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setSenderMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 300</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setSenderMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setSenderMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 51</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setSenderMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 400</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>displayStatusMessages</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "String text=String.format("&lt;html&gt;&lt;div style=\"font-size:8px;text-align:right;\"&gt;%3$s&lt;/div&gt;&lt;div style=\"width:%1$spx;\"&gt;&lt;p style=\"width:%s;word-break: break-all;\"&gt;%2$s&lt;/p&gt;&lt;/div&gt;&lt;/html&gt;",temp,message,senderName + "&lt;br&gt;");" is 221.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setReceiverMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setReceiverMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 51</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>setReceiverMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 550</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 490</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 530</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 614</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ChatActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 9</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MessageListener</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "if (response.getId() == Response.Type.STATUS_MSG.ordinal() || response.getId() == Response.Type.LOGOUT.ordinal()) displayStatusMessages(response.getContents());" is 160.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MessageListener</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "if (create) request=new Request(Request.Type.CREATE_ROOM.ordinal(),clientModel.getClientID(),clientModel.getRoomId(),rName);" is 124.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>createAndJoinRoom</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "clientModel.setRoomId(Integer.parseInt(response.getContents().substring(hashIndex + 1,response.getContents().indexOf(" ",hashIndex))));" is 135.</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>createAndJoinRoom</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 175</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 160</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 614</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>ViewRoomsActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 614</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>MainSplash</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>SignUpActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>SignUpActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>SignUpActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 185</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 614</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignUpActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>SignInActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>SignInActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>SignInActivity</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 35</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 185</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 864</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 614</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Class>SignInActivity</Class>
+                        <Method>initializeAllWithProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "connection=DriverManager.getConnection(Config.DATABASE_URL + '/' + Config.DATABASE_NAME+ "?allowMultiQueries=true",Config.USER_NAME,Config.USER_PWD);" is 149.</Description>
+                    <Entity>
+                        <Component>com.chatroom.Database</Component>
+                        <Class>createdb</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "String Queries="CREATE TABLE IF NOT EXISTS " + Config.TABLE_NAME + "("+ Config.CLIENT_ID+ " int auto_increment,"+ Config.CLIENT_NAME+ " VARCHAR(50) not null, "+ Config.CLIENT_PWD+ " VARCHAR(150), "+ "primary key("+ Config.CLIENT_ID+ "))";" is 238.</Description>
+                    <Entity>
+                        <Component>com.chatroom.Database</Component>
+                        <Class>createdb</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>TextBubbleBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 8</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>TextBubbleBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 7</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>TextBubbleBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>TextBubbleBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Parameter List</Name>
+                    <Description>The method has 5 parameters. </Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>TextBubbleBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Parameter List</Name>
+                    <Description>The method has 6 parameters. </Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>paintBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "RoundRectangle2D.Double bubble=new RoundRectangle2D.Double(0 + strokePad,0 + strokePad,width - thickness,bottomLineY,radii,radii);" is 130.</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>paintBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>paintBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>TextBubbleBorder</Class>
+                        <Method>paintBorder</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>Hash</Class>
+                        <Method>getHash</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 32</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>Hash</Class>
+                        <Method>getHash</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "printWriter=new PrintWriter(new FileOutputStream(new File(System.getProperty("user.home") + "/CHATROOM/LOGS.txt"),true));" is 121.</Description>
+                    <Entity>
+                        <Component>com.chatroom.others</Component>
+                        <Class>LogFileWriter</Class>
+                        <Method>Log</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>ServerOperations</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>ServerOperations</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>ServerExec</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>ServerExec</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 29</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 7</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 8</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Missing default</Name>
+                    <Description>The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@65ff1e6d</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "if (request.getClientId() != -1) Message.println(Server.getClientNameFromId(request.getClientId()) + " logged out sucessfully");" is 128.</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>RequestAnalyser</Class>
+                        <Method>logout</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression ((request.getId() == Request.Type.STATUS_MSG.ordinal()) || id != request.getClientId()) || request.getIsConsole() is complex.</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>MessageHandler</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 22</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>MessageHandler</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Method</Name>
+                    <Description>The method has 148 lines of code.</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>MessageHandler</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "connection=DriverManager.getConnection(Config.DATABASE_URL + "/" + Config.DATABASE_NAME,Config.USER_NAME,Config.USER_PWD);" is 122.</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>Server</Class>
+                        <Method>Server</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>Server</Class>
+                        <Method>Server</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Connection connection=DriverManager.getConnection(Config.DATABASE_URL + "/" + Config.DATABASE_NAME,Config.USER_NAME,Config.USER_PWD);" is 133.</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Class>Server</Class>
+                        <Method>getClientNameFromId</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>Client</Class>
+                        <Method>mainOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>Client</Class>
+                        <Method>mainOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>Client</Class>
+                        <Method>mainOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Missing default</Name>
+                    <Description>The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@54c3bae</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>Client</Class>
+                        <Method>mainOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Message.println("NOTE: You've entered the server. \n" + "Type your message and press enter to send.\n" + "To send message to a particular user use: '@user_name your_message' without quotes\n"+ "For exiting the room type 'sv_exit' without quotes\n"+ "For logging out type 'sv_logout' without quotes");" is 300.</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>Client</Class>
+                        <Method>conversation</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>Client</Class>
+                        <Method>mainFunc</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression response.getId() == Response.Type.MSG.ordinal() || response.getId() == Response.Type.STATUS_MSG.ordinal() || response.getId() == Response.Type.P_MSG.ordinal() is complex.</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>MessageListener</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 12</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>MessageListener</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "else if (response.getId() == Response.Type.STATUS_MSG.ordinal() &amp;&amp; response.getContents().equals("sv_exit_successful")) {" is 121.</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>MessageListener</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "else if (response.getId() == Response.Type.MSG.ordinal() || response.getId() == Response.Type.STATUS_MSG.ordinal() || response.getId() == Response.Type.P_MSG.ordinal()) {" is 170.</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>MessageListener</Class>
+                        <Method>run</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>ClientExec</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>ClientExec</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.chatroom.client</Component>
+                        <Class>ClientExec</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+            </ImplementationSmells>
+            <ArchSmells>
+                <ArchSmell Key="FeatureConcentration">
+                    <Name>Feature Concentration</Name>
+                    <Description>The tool detected the smell in this component because the component realizes more than one architectural concern/feature. Independent sets of related classes within this component are: [MainMenuOptions]; [ChatActivity; MessageListener]; [ViewRoomsActivity]; [MainSplash]; [SignUpActivity]; [SignInActivity]. LCC (Lack of Component Cohesion) = 0.86</Description>
+                    <Entity>
+                        <Component>com.chatroom.ui</Component>
+                        <Project>LiveChatServer-4.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="FeatureConcentration">
+                    <Name>Feature Concentration</Name>
+                    <Description>The tool detected the smell in this component because the component realizes more than one architectural concern/feature. Independent sets of related classes within this component are: [ResponseHolder; ResponseMaker; Server; ClientThread; RequestAnalyser; MessageHandler; ServerOperations; ServerExec]; [MessagesTrackComparator]. LCC (Lack of Component Cohesion) = 0.22</Description>
+                    <Entity>
+                        <Component>com.chatroom.server</Component>
+                        <Project>LiveChatServer-4.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+            </ArchSmells>
+        </Project>
+    </Solution>
+</Analysis>

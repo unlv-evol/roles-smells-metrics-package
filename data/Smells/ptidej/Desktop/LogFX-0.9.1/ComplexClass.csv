@@ -1,0 +1,8 @@
+FullClassPath,AntiPattern
+com.athaydes.logfx.ui.Dialog,ComplexClass
+com.athaydes.logfx.ui.LogView,ComplexClass
+com.athaydes.logfx.concurrency.TaskRunner,ComplexClass
+com.athaydes.logfx.config.ConfigParser,ComplexClass
+com.athaydes.logfx.file.FileReader,ComplexClass
+com.athaydes.logfx.log.LogFXLogger,ComplexClass
+com.athaydes.logfx.ui.Arrow,ComplexClass

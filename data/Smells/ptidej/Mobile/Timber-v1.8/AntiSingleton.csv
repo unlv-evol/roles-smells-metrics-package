@@ -1,0 +1,9 @@
+FullClassPath,AntiPattern
+com.naman14.timber.MusicPlayer,AntiSingleton
+com.naman14.timber.adapters.BaseQueueAdapter,AntiSingleton
+com.naman14.timber.fragments.ArtistMusicFragment,AntiSingleton
+com.naman14.timber.adapters.SlidingQueueAdapter,AntiSingleton
+com.naman14.timber.WearBrowserService,AntiSingleton
+com.naman14.timber.dataloaders.PlaylistLoader,AntiSingleton
+com.naman14.timber.dataloaders.TopTracksLoader,AntiSingleton
+com.naman14.timber.subfragments.QuickControlsFragment,AntiSingleton

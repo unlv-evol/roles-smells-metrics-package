@@ -1,0 +1,17 @@
+FullClassPath,AntiPattern
+com.amaze.filemanager.ui.fragments.CompressedExplorerFragment,ClassDataShouldBePrivate
+com.amaze.filemanager.asynchronous.management.ServiceWatcherUtil,ClassDataShouldBePrivate
+com.amaze.filemanager.adapters.RecyclerAdapter,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.fragments.SearchWorkerFragment,ClassDataShouldBePrivate
+com.amaze.filemanager.database.models.utilities.OperationData,ClassDataShouldBePrivate
+com.amaze.filemanager.adapters.CompressedExplorerAdapter,ClassDataShouldBePrivate
+com.amaze.filemanager.utils.MainActivityHelper,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.fragments.MainFragment,ClassDataShouldBePrivate
+com.amaze.filemanager.database.models.utilities.SftpEntry,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.activities.DatabaseViewerActivity,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.fragments.DbViewerFragment,ClassDataShouldBePrivate
+com.amaze.filemanager.database.models.utilities.OperationDataWithName,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.activities.MainActivity,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.activities.TextEditorActivity,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.fragments.AppsListFragment,ClassDataShouldBePrivate
+com.amaze.filemanager.ui.fragments.TabFragment,ClassDataShouldBePrivate

@@ -1,0 +1,7 @@
+FullClassPath,AntiPattern
+org.pgptool.gui.ui.keyslist.KeysExporterUiImpl,LongParameterList
+org.pgptool.gui.ui.tools.checklistbox.CheckListCellRenderer,LongParameterList
+org.pgptool.gui.ui.mainframe.EncryptBackActionCellRenderer,LongParameterList
+org.pgptool.gui.encryption.implpgp.EncryptionServicePgpImpl,LongParameterList
+org.jdesktop.swingx.imported.GraphicsUtilities,LongParameterList
+org.jdesktop.swingx.imported.JXLabel,LongParameterList

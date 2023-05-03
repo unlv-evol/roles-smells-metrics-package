@@ -1,0 +1,11 @@
+FullClassPath,AntiPattern
+org.gnucash.android.receivers.TransactionRecorder,LazyClass
+org.gnucash.android.ui.wizard.FirstRunWizardModel,LazyClass
+org.gnucash.android.importer.GncXmlImporter,LazyClass
+org.gnucash.android.ui.settings.PreferenceHeadersFragment,LazyClass
+org.gnucash.android.util.CommoditiesCursorAdapter,LazyClass
+org.gnucash.android.receivers.BootReceiver,LazyClass
+org.gnucash.android.util.AmountParser,LazyClass
+org.gnucash.android.ui.wizard.WelcomePageFragment,LazyClass
+org.gnucash.android.ui.colorpicker.HsvColorComparator,LazyClass
+org.gnucash.android.receivers.AccountCreator,LazyClass

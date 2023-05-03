@@ -1,0 +1,3 @@
+FullClassPath,AntiPattern
+org.gnucash.android.model.Recurrence,Blob
+org.gnucash.android.model.ScheduledAction,Blob

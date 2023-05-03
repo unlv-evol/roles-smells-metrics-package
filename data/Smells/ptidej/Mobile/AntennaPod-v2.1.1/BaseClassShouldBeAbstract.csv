@@ -1,0 +1,2 @@
+FullClassPath,AntiPattern
+de.danoeh.antennapod.core.menuhandler.MenuItemUtils,BaseClassShouldBeAbstract

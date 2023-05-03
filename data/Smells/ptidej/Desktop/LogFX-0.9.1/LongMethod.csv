@@ -1,0 +1,8 @@
+FullClassPath,AntiPattern
+com.athaydes.logfx.text.DateTimeFormatGuesser,LongMethod
+com.athaydes.logfx.ui.HighlightOptions,LongMethod
+com.athaydes.logfx.concurrency.TaskRunner,LongMethod
+com.athaydes.logfx.config.Config,LongMethod
+com.athaydes.logfx.LogFX,LongMethod
+com.athaydes.logfx.ui.AboutLogFXView,LongMethod
+com.athaydes.logfx.ui.FontPicker,LongMethod

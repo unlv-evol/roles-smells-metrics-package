@@ -1,0 +1,7 @@
+/out
+/generated
+/test-coverage
+/.gradle
+/build
+/lib/*src.zip
+.DS_Store

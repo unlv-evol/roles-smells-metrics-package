@@ -1,0 +1,4 @@
+FullClassPath,AntiPattern
+ com.jakewharton.telecine.CaptureHelper,LongParameterList
+ com.jakewharton.telecine.BugsnagTree,LongParameterList
+ com.jakewharton.telecine.RecordingSession,LongParameterList

@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+groupxii.server.security.SecurityKey,ClassDataShouldBePrivate
+groupxii.database.Entry,ClassDataShouldBePrivate
+groupxii.client.connector.Connector,ClassDataShouldBePrivate
+groupxii.client.TokenManager,ClassDataShouldBePrivate

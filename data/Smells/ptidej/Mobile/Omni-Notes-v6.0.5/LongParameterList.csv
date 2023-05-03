@@ -1,0 +1,11 @@
+FullClassPath,AntiPattern
+it.feio.android.omninotes.helpers.PermissionsHelper,LongParameterList
+it.feio.android.omninotes.models.Note,LongParameterList
+it.feio.android.omninotes.models.Attachment,LongParameterList
+it.feio.android.omninotes.widget.ListWidgetProvider,LongParameterList
+it.feio.android.omninotes.async.DataBackupIntentService,LongParameterList
+it.feio.android.omninotes.widget.WidgetProvider,LongParameterList
+it.feio.android.omninotes.utils.AnimationsHelper,LongParameterList
+it.feio.android.omninotes.widget.ListRemoteViewsFactory,LongParameterList
+it.feio.android.omninotes.widget.SimpleWidgetProvider,LongParameterList
+it.feio.android.omninotes.models.Category,LongParameterList

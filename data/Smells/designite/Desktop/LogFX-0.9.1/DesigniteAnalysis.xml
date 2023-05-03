@@ -1,0 +1,2508 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Analysis Date="07-09-2022 20:26:46" Language="java" Tool="DesigniteJava" Version="2.1.0">
+    <Solution>
+        <Name>LogFX-0.9.1</Name>
+        <Path>../../data/SourceProjects//Desktop/LogFX-0.9.1</Path>
+        <LOC>3809</LOC>
+        <ComponentCount>10</ComponentCount>
+        <TypeCount>72</TypeCount>
+        <MethodCount>349</MethodCount>
+        <SmellDensity>4.20</SmellDensity>
+        <CodeDuplication>-1</CodeDuplication>
+        <MetricVoilations>-1</MetricVoilations>
+        <TotalArchSmellCount>16</TotalArchSmellCount>
+        <TotalDesignSmellCount>44</TotalDesignSmellCount>
+        <TotalImplSmellCount>171</TotalImplSmellCount>
+        <Project>
+            <Name>LogFX-0.9.1</Name>
+            <LOC>3809</LOC>
+            <ComponentCount>10</ComponentCount>
+            <TypeCount>72</TypeCount>
+            <MethodCount>349</MethodCount>
+            <SmellDensity>4.20</SmellDensity>
+            <CodeDuplication>-1</CodeDuplication>
+            <MetricVoilations>-1</MetricVoilations>
+            <TotalArchSmellCount>16</TotalArchSmellCount>
+            <TotalDesignSmellCount>44</TotalDesignSmellCount>
+            <TotalImplSmellCount>171</TotalImplSmellCount>
+            <ComponentMetrics>
+                <ComponentMetric LOC="25" Name="org.slf4j.impl" OutgoingDependencies="com.athaydes.logfx.log" SmellDensity="0.00"/>
+                <ComponentMetric LOC="23" Name="com.athaydes.logfx" OutgoingDependencies="com.athaydes.logfx.config,com.athaydes.logfx.ui,com.athaydes.logfx.concurrency,com.athaydes.logfx.file,com.athaydes.logfx.log" SmellDensity="86.96"/>
+                <ComponentMetric LOC="2214" Name="com.athaydes.logfx.ui" OutgoingDependencies="com.athaydes.logfx.file,com.athaydes.logfx.concurrency,com.athaydes.logfx.text,com.athaydes.logfx.binding,com.athaydes.logfx.data,com.athaydes.logfx,com.athaydes.logfx.config" SmellDensity="2.26"/>
+                <ComponentMetric LOC="801" Name="com.athaydes.logfx.file" OutgoingDependencies="com.athaydes.logfx.config,com.athaydes.logfx.concurrency" SmellDensity="3.75"/>
+                <ComponentMetric LOC="137" Name="com.athaydes.logfx.config" OutgoingDependencies="com.athaydes.logfx.binding,com.athaydes.logfx.ui,com.athaydes.logfx.log,com.athaydes.logfx.concurrency,com.athaydes.logfx.data" SmellDensity="21.90"/>
+                <ComponentMetric LOC="16" Name="com.athaydes.logfx.binding" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="134" Name="com.athaydes.logfx.concurrency" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="186" Name="com.athaydes.logfx.log" OutgoingDependencies="com.athaydes.logfx.config" SmellDensity="16.13"/>
+                <ComponentMetric LOC="256" Name="com.athaydes.logfx.text" OutgoingDependencies="" SmellDensity="0.00"/>
+                <ComponentMetric LOC="17" Name="com.athaydes.logfx.data" OutgoingDependencies="" SmellDensity="0.00"/>
+            </ComponentMetrics>
+            <ClassMetrics>
+                <ClassMetric Component="org.slf4j.impl" DIT="0" FANIN="0" FANOUT="1" LCOM="0.75" LOC="25" NC="0" NOF="4" NOM="4" NOP="0" NOPF="1" NOPM="3" Name="StaticLoggerBinder" WMC="4"/>
+                <ClassMetric Component="com.athaydes.logfx" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="20" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="SetupMacTrayIcon" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx" DIT="0" FANIN="0" FANOUT="13" LCOM="0.15" LOC="0" NC="0" NOF="10" NOM="13" NOP="0" NOPF="0" NOPM="3" Name="LogFX" WMC="26"/>
+                <ClassMetric Component="com.athaydes.logfx" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="3" NC="0" NOF="1" NOM="0" NOP="0" NOPF="1" NOPM="0" Name="Constants" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="0" FANOUT="0" LCOM="0.67" LOC="21" NC="0" NOF="2" NOM="3" NOP="0" NOPF="0" NOPM="2" Name="LogFxButton" WMC="3"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="6" FANOUT="12" LCOM="0.08" LOC="252" NC="0" NOF="19" NOM="24" NOP="0" NOPF="1" NOPM="1" Name="LogView" WMC="40"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="0" FANOUT="0" LCOM="0.00" LOC="16" NC="0" NOF="1" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="FileOpener" WMC="2"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="3" LCOM="0.00" LOC="89" NC="0" NOF="5" NOM="2" NOP="0" NOPF="0" NOPM="0" Name="GoToDateView" WMC="6"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="40" NC="0" NOF="4" NOM="4" NOP="0" NOPF="0" NOPM="0" Name="DateTimeTextField" WMC="6"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="1" FANIN="1" FANOUT="4" LCOM="0.80" LOC="59" NC="0" NOF="2" NOM="5" NOP="0" NOPF="0" NOPM="1" Name="LogLine" WMC="6"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="1" LCOM="0.00" LOC="27" NC="0" NOF="2" NOM="2" NOP="0" NOPF="0" NOPM="0" Name="BackgroundTransition" WMC="4"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="2" LCOM="0.00" LOC="145" NC="1" NOF="4" NOM="9" NOP="0" NOPF="0" NOPM="0" Name="SelectionHandler" WMC="26"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="1" LCOM="0.00" LOC="32" NC="0" NOF="1" NOM="4" NOP="0" NOPF="0" NOPM="0" Name="SelectionManager" WMC="8"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="0" NOM="2" NOP="0" NOPF="0" NOPM="0" Name="SelectableNode" WMC="2"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="4" LCOM="0.00" LOC="119" NC="0" NOF="1" NOM="2" NOP="0" NOPF="0" NOPM="2" Name="FileDragAndDrop" WMC="12"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="DropTarget" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="2" LCOM="0.00" LOC="41" NC="0" NOF="1" NOM="3" NOP="0" NOPF="0" NOPM="2" Name="AboutLogFXView" WMC="3"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="2" LCOM="0.00" LOC="83" NC="0" NOF="6" NOM="4" NOP="0" NOPF="0" NOPM="3" Name="ColorChooser" WMC="6"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="33" NC="0" NOF="2" NOM="2" NOP="0" NOPF="0" NOPM="0" Name="ManualEditor" WMC="3"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="7" FANOUT="3" LCOM="0.20" LOC="0" NC="0" NOF="11" NOM="20" NOP="0" NOPF="0" NOPM="19" Name="Dialog" WMC="33"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="0" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="MessageLevel" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="DialogPosition" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="0" FANOUT="0" LCOM="0.50" LOC="18" NC="0" NOF="3" NOM="4" NOP="0" NOPF="0" NOPM="0" Name="StageTranslateTransition" WMC="4"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="4" LCOM="0.18" LOC="229" NC="0" NOF="13" NOM="11" NOP="0" NOPF="0" NOPM="2" Name="HighlightOptions" WMC="16"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="1" FANIN="0" FANOUT="0" LCOM="0.00" LOC="13" NC="0" NOF="1" NOM="2" NOP="0" NOPF="0" NOPM="0" Name="StandardLogColorsRow" WMC="2"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="1" FANIN="0" FANOUT="3" LCOM="0.00" LOC="67" NC="0" NOF="3" NOM="6" NOP="0" NOPF="0" NOPM="0" Name="HighlightExpressionRow" WMC="9"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="0" FANOUT="1" LCOM="1.00" LOC="24" NC="2" NOF="4" NOM="2" NOP="0" NOPF="0" NOPM="0" Name="Row" WMC="2"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="0" FANOUT="3" LCOM="-1.00" LOC="19" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="StartUpView" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="1" LCOM="0.67" LOC="32" NC="0" NOF="3" NOM="3" NOP="0" NOPF="0" NOPM="2" Name="Arrow" WMC="5"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="Direction" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="3" FANOUT="6" LCOM="0.12" LOC="460" NC="0" NOF="11" NOM="17" NOP="0" NOPF="0" NOPM="14" Name="LogViewPane" WMC="48"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="1" LCOM="-1.00" LOC="33" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="LogViewScrollPane" WMC="7"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="5" LCOM="0.13" LOC="102" NC="0" NOF="6" NOM="15" NOP="0" NOPF="0" NOPM="1" Name="LogViewWrapper" WMC="22"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="2" FANOUT="2" LCOM="0.00" LOC="70" NC="0" NOF="2" NOM="4" NOP="0" NOPF="0" NOPM="0" Name="LogViewHeader" WMC="8"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="0" FANOUT="0" LCOM="-1.00" LOC="20" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="FileDoesNotExistPane" WMC="2"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="1" FANOUT="0" LCOM="0.75" LOC="24" NC="0" NOF="2" NOM="4" NOP="0" NOPF="0" NOPM="2" Name="BottomMessagePane" WMC="5"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="7" FANOUT="3" LCOM="1.00" LOC="65" NC="0" NOF="2" NOM="5" NOP="0" NOPF="0" NOPM="4" Name="FxUtils" WMC="10"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="0" FANOUT="2" LCOM="-1.00" LOC="24" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="FontPicker" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx.ui" DIT="0" FANIN="5" FANOUT="0" LCOM="0.40" LOC="50" NC="0" NOF="7" NOM="10" NOP="0" NOPF="7" NOPM="9" Name="AwesomeIcons" WMC="10"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="3" FANOUT="1" LCOM="-1.00" LOC="68" NC="2" NOF="0" NOM="8" NOP="0" NOPF="0" NOPM="0" Name="FileContentReader" WMC="8"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="4" FANOUT="0" LCOM="-1.00" LOC="22" NC="2" NOF="0" NOM="4" NOP="0" NOPF="0" NOPM="0" Name="FileQueryResult" WMC="4"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="1" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="20" NC="0" NOF="1" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="OutsideRangeQueryResult" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="1" FANIN="0" FANOUT="9" LCOM="0.13" LOC="468" NC="0" NOF="12" NOM="16" NOP="0" NOPF="0" NOPM="9" Name="FileReader" WMC="88"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="LoadMode" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="SearchDirection" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="5" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="Comparison" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="1" FANOUT="1" LCOM="0.00" LOC="18" NC="0" NOF="2" NOM="4" NOP="0" NOPF="0" NOPM="0" Name="EarlyExitFromFileWindow" WMC="4"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="1" FANOUT="0" LCOM="0.00" LOC="49" NC="0" NOF="2" NOM="8" NOP="0" NOPF="0" NOPM="1" Name="FileLineStarts" WMC="12"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="1" FANIN="0" FANOUT="0" LCOM="0.67" LOC="21" NC="0" NOF="1" NOM="6" NOP="0" NOPF="0" NOPM="6" Name="SuccessfulQueryResult" WMC="6"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="1" FANIN="1" FANOUT="1" LCOM="-1.00" LOC="16" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="UnsuccessfulQueryResult" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.file" DIT="0" FANIN="2" FANOUT="2" LCOM="0.00" LOC="112" NC="0" NOF="8" NOM="7" NOP="0" NOPF="0" NOPM="4" Name="FileChangeWatcher" WMC="18"/>
+                <ClassMetric Component="com.athaydes.logfx.config" DIT="0" FANIN="2" FANOUT="2" LCOM="0.00" LOC="18" NC="0" NOF="7" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="ConfigProperties" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx.config" DIT="0" FANIN="4" FANOUT="2" LCOM="1.00" LOC="0" NC="0" NOF="5" NOM="4" NOP="0" NOPF="1" NOPM="4" Name="Properties" WMC="4"/>
+                <ClassMetric Component="com.athaydes.logfx.config" DIT="0" FANIN="1" FANOUT="5" LCOM="0.00" LOC="115" NC="0" NOF="3" NOM="11" NOP="0" NOPF="0" NOPM="8" Name="Config" WMC="16"/>
+                <ClassMetric Component="com.athaydes.logfx.config" DIT="0" FANIN="1" FANOUT="2" LCOM="0.15" LOC="0" NC="0" NOF="3" NOM="13" NOP="0" NOPF="0" NOPM="1" Name="ConfigParser" WMC="62"/>
+                <ClassMetric Component="com.athaydes.logfx.config" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="ConfigVersion" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.binding" DIT="0" FANIN="4" FANOUT="0" LCOM="0.00" LOC="16" NC="0" NOF="1" NOM="3" NOP="0" NOPF="0" NOPM="3" Name="BindableValue" WMC="3"/>
+                <ClassMetric Component="com.athaydes.logfx.concurrency" DIT="0" FANIN="6" FANOUT="2" LCOM="0.44" LOC="124" NC="0" NOF="5" NOM="9" NOP="0" NOPF="0" NOPM="9" Name="TaskRunner" WMC="17"/>
+                <ClassMetric Component="com.athaydes.logfx.concurrency" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="1" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="TaskState" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.concurrency" DIT="0" FANIN="2" FANOUT="0" LCOM="-1.00" LOC="9" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="Cancellable" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx.log" DIT="0" FANIN="0" FANOUT="3" LCOM="0.64" LOC="126" NC="0" NOF="3" NOM="33" NOP="0" NOPF="0" NOPM="30" Name="LogFXLogger" WMC="37"/>
+                <ClassMetric Component="com.athaydes.logfx.log" DIT="0" FANIN="2" FANOUT="1" LCOM="-1.00" LOC="25" NC="2" NOF="1" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="LogTarget" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx.log" DIT="1" FANIN="0" FANOUT="1" LCOM="-1.00" LOC="10" NC="0" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="1" Name="FileLogTarget" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx.log" DIT="1" FANIN="0" FANOUT="0" LCOM="0.00" LOC="9" NC="0" NOF="1" NOM="2" NOP="0" NOPF="0" NOPM="2" Name="PrintStreamLogTarget" WMC="2"/>
+                <ClassMetric Component="com.athaydes.logfx.log" DIT="0" FANIN="3" FANOUT="0" LCOM="-1.00" LOC="4" NC="0" NOF="0" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="LogLevel" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.log" DIT="0" FANIN="5" FANOUT="2" LCOM="-1.00" LOC="12" NC="0" NOF="2" NOM="0" NOP="0" NOPF="0" NOPM="0" Name="LogFXLogFactory" WMC="0"/>
+                <ClassMetric Component="com.athaydes.logfx.text" DIT="0" FANIN="2" FANOUT="0" LCOM="0.00" LOC="45" NC="0" NOF="4" NOM="10" NOP="0" NOPF="0" NOPM="10" Name="HighlightExpression" WMC="11"/>
+                <ClassMetric Component="com.athaydes.logfx.text" DIT="0" FANIN="1" FANOUT="1" LCOM="0.67" LOC="132" NC="0" NOF="8" NOM="3" NOP="0" NOPF="1" NOPM="3" Name="DateTimeFormatGuesser" WMC="12"/>
+                <ClassMetric Component="com.athaydes.logfx.text" DIT="1" FANIN="0" FANOUT="0" LCOM="0.00" LOC="16" NC="0" NOF="1" NOM="2" NOP="0" NOPF="0" NOPM="1" Name="MultiDateTimeFormatGuess" WMC="4"/>
+                <ClassMetric Component="com.athaydes.logfx.text" DIT="1" FANIN="1" FANOUT="0" LCOM="0.00" LOC="52" NC="0" NOF="3" NOM="6" NOP="0" NOPF="0" NOPM="4" Name="SingleDateTimeFormatGuess" WMC="9"/>
+                <ClassMetric Component="com.athaydes.logfx.text" DIT="0" FANIN="1" FANOUT="0" LCOM="-1.00" LOC="11" NC="2" NOF="0" NOM="1" NOP="0" NOPF="0" NOPM="0" Name="DateTimeFormatGuess" WMC="1"/>
+                <ClassMetric Component="com.athaydes.logfx.data" DIT="0" FANIN="2" FANOUT="0" LCOM="0.00" LOC="17" NC="0" NOF="2" NOM="3" NOP="0" NOPF="0" NOPM="3" Name="LogLineColors" WMC="3"/>
+            </ClassMetrics>
+            <MethodMetrics>
+                <MethodMetric CC="1" Class="StaticLoggerBinder" Component="org.slf4j.impl" LOC="3" Name="getSingleton" PC="0"/>
+                <MethodMetric CC="1" Class="StaticLoggerBinder" Component="org.slf4j.impl" LOC="3" Name="StaticLoggerBinder" PC="0"/>
+                <MethodMetric CC="1" Class="StaticLoggerBinder" Component="org.slf4j.impl" LOC="3" Name="getLoggerFactory" PC="0"/>
+                <MethodMetric CC="1" Class="StaticLoggerBinder" Component="org.slf4j.impl" LOC="3" Name="getLoggerFactoryClassStr" PC="0"/>
+                <MethodMetric CC="1" Class="SetupMacTrayIcon" Component="com.athaydes.logfx" LOC="12" Name="run" PC="0"/>
+                <MethodMetric CC="1" Class="LogFX" Component="com.athaydes.logfx" LOC="8" Name="LogFX" PC="0"/>
+                <MethodMetric CC="1" Class="LogFX" Component="com.athaydes.logfx" LOC="35" Name="start" PC="1"/>
+                <MethodMetric CC="3" Class="LogFX" Component="com.athaydes.logfx" LOC="12" Name="updateBottomMessagePane" PC="1"/>
+                <MethodMetric CC="1" Class="LogFX" Component="com.athaydes.logfx" LOC="7" Name="setIconsOn" PC="1"/>
+                <MethodMetric CC="1" Class="LogFX" Component="com.athaydes.logfx" LOC="17" Name="fileMenu" PC="0"/>
+                <MethodMetric CC="1" Class="LogFX" Component="com.athaydes.logfx" LOC="8" Name="helpMenu" PC="0"/>
+                <MethodMetric CC="3" Class="LogFX" Component="com.athaydes.logfx" LOC="12" Name="openFilesFromConfig" PC="0"/>
+                <MethodMetric CC="1" Class="LogFX" Component="com.athaydes.logfx" LOC="3" Name="open" PC="1"/>
+                <MethodMetric CC="3" Class="LogFX" Component="com.athaydes.logfx" LOC="12" Name="open" PC="2"/>
+                <MethodMetric CC="4" Class="LogFX" Component="com.athaydes.logfx" LOC="0" Name="openViewFor" PC="2"/>
+                <MethodMetric CC="1" Class="LogFX" Component="com.athaydes.logfx" LOC="24" Name="viewMenu" PC="0"/>
+                <MethodMetric CC="4" Class="LogFX" Component="com.athaydes.logfx" LOC="25" Name="bindMenuItemToDialog" PC="2"/>
+                <MethodMetric CC="2" Class="LogFX" Component="com.athaydes.logfx" LOC="7" Name="main" PC="1"/>
+                <MethodMetric CC="1" Class="LogFxButton" Component="com.athaydes.logfx.ui" LOC="6" Name="LogFxButton" PC="3"/>
+                <MethodMetric CC="1" Class="LogFxButton" Component="com.athaydes.logfx.ui" LOC="5" Name="closeButton" PC="1"/>
+                <MethodMetric CC="1" Class="LogFxButton" Component="com.athaydes.logfx.ui" LOC="3" Name="defaultLabel" PC="1"/>
+                <MethodMetric CC="3" Class="LogView" Component="com.athaydes.logfx.ui" LOC="24" Name="LogView" PC="5"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="allowRefreshProperty" PC="0"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="getSelection" PC="0"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="loadFileContents" PC="0"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="setOnFileExists" PC="1"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="pageUp" PC="0"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="pageDown" PC="0"/>
+                <MethodMetric CC="3" Class="LogView" Component="com.athaydes.logfx.ui" LOC="21" Name="move" PC="1"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="tailingFileProperty" PC="0"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="7" Name="toTop" PC="0"/>
+                <MethodMetric CC="5" Class="LogView" Component="com.athaydes.logfx.ui" LOC="32" Name="goTo" PC="2"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="onFileUpdate" PC="1"/>
+                <MethodMetric CC="2" Class="LogView" Component="com.athaydes.logfx.ui" LOC="10" Name="findFileDateTimeFormatterFromFileContents" PC="0"/>
+                <MethodMetric CC="2" Class="LogView" Component="com.athaydes.logfx.ui" LOC="18" Name="addTopLines" PC="1"/>
+                <MethodMetric CC="2" Class="LogView" Component="com.athaydes.logfx.ui" LOC="18" Name="addBottomLines" PC="1"/>
+                <MethodMetric CC="2" Class="LogView" Component="com.athaydes.logfx.ui" LOC="6" Name="onFileChange" PC="0"/>
+                <MethodMetric CC="2" Class="LogView" Component="com.athaydes.logfx.ui" LOC="5" Name="onFileChange" PC="1"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="immediateOnFileChange" PC="0"/>
+                <MethodMetric CC="2" Class="LogView" Component="com.athaydes.logfx.ui" LOC="18" Name="immediateOnFileChange" PC="1"/>
+                <MethodMetric CC="3" Class="LogView" Component="com.athaydes.logfx.ui" LOC="21" Name="updateWith" PC="1"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="4" Name="updateLine" PC="2"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="lineAt" PC="1"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="3" Name="getFile" PC="0"/>
+                <MethodMetric CC="1" Class="LogView" Component="com.athaydes.logfx.ui" LOC="7" Name="closeFileReader" PC="0"/>
+                <MethodMetric CC="2" Class="FileOpener" Component="com.athaydes.logfx.ui" LOC="10" Name="FileOpener" PC="2"/>
+                <MethodMetric CC="5" Class="GoToDateView" Component="com.athaydes.logfx.ui" LOC="40" Name="GoToDateView" PC="2"/>
+                <MethodMetric CC="1" Class="GoToDateView" Component="com.athaydes.logfx.ui" LOC="3" Name="show" PC="0"/>
+                <MethodMetric CC="3" Class="DateTimeTextField" Component="com.athaydes.logfx.ui" LOC="23" Name="DateTimeTextField" PC="0"/>
+                <MethodMetric CC="1" Class="DateTimeTextField" Component="com.athaydes.logfx.ui" LOC="5" Name="localTimeOffset" PC="0"/>
+                <MethodMetric CC="1" Class="DateTimeTextField" Component="com.athaydes.logfx.ui" LOC="3" Name="validProperty" PC="0"/>
+                <MethodMetric CC="1" Class="DateTimeTextField" Component="com.athaydes.logfx.ui" LOC="3" Name="getValue" PC="0"/>
+                <MethodMetric CC="1" Class="LogLine" Component="com.athaydes.logfx.ui" LOC="7" Name="LogLine" PC="4"/>
+                <MethodMetric CC="1" Class="LogLine" Component="com.athaydes.logfx.ui" LOC="4" Name="setText" PC="3"/>
+                <MethodMetric CC="1" Class="LogLine" Component="com.athaydes.logfx.ui" LOC="4" Name="setColors" PC="2"/>
+                <MethodMetric CC="2" Class="LogLine" Component="com.athaydes.logfx.ui" LOC="8" Name="setSelect" PC="1"/>
+                <MethodMetric CC="1" Class="LogLine" Component="com.athaydes.logfx.ui" LOC="4" Name="animate" PC="1"/>
+                <MethodMetric CC="3" Class="BackgroundTransition" Component="com.athaydes.logfx.ui" LOC="20" Name="BackgroundTransition" PC="1"/>
+                <MethodMetric CC="1" Class="BackgroundTransition" Component="com.athaydes.logfx.ui" LOC="3" Name="interpolate" PC="1"/>
+                <MethodMetric CC="4" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="17" Name="SelectionHandler" PC="1"/>
+                <MethodMetric CC="2" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="8" Name="onDragDetected" PC="1"/>
+                <MethodMetric CC="4" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="14" Name="onMouseReleased" PC="1"/>
+                <MethodMetric CC="3" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="12" Name="getTargetNode" PC="1"/>
+                <MethodMetric CC="1" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="3" Name="getSelection" PC="0"/>
+                <MethodMetric CC="1" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="3" Name="getSelectedItems" PC="0"/>
+                <MethodMetric CC="3" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="15" Name="enableDragEventsOn" PC="1"/>
+                <MethodMetric CC="2" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="6" Name="disableDragEventsOn" PC="1"/>
+                <MethodMetric CC="6" Class="SelectionHandler" Component="com.athaydes.logfx.ui" LOC="23" Name="selectAllBetween" PC="2"/>
+                <MethodMetric CC="1" Class="SelectionManager" Component="com.athaydes.logfx.ui" LOC="3" Name="getSelectedItems" PC="0"/>
+                <MethodMetric CC="3" Class="SelectionManager" Component="com.athaydes.logfx.ui" LOC="12" Name="select" PC="2"/>
+                <MethodMetric CC="2" Class="SelectionManager" Component="com.athaydes.logfx.ui" LOC="6" Name="unselectAll" PC="0"/>
+                <MethodMetric CC="2" Class="SelectionManager" Component="com.athaydes.logfx.ui" LOC="8" Name="getContent" PC="0"/>
+                <MethodMetric CC="1" Class="SelectableNode" Component="com.athaydes.logfx.ui" LOC="0" Name="setSelect" PC="1"/>
+                <MethodMetric CC="1" Class="SelectableNode" Component="com.athaydes.logfx.ui" LOC="0" Name="getText" PC="0"/>
+                <MethodMetric CC="7" Class="FileDragAndDrop" Component="com.athaydes.logfx.ui" LOC="67" Name="install" PC="4"/>
+                <MethodMetric CC="5" Class="FileDragAndDrop" Component="com.athaydes.logfx.ui" LOC="33" Name="install" PC="2"/>
+                <MethodMetric CC="1" Class="AboutLogFXView" Component="com.athaydes.logfx.ui" LOC="3" Name="AboutLogFXView" PC="1"/>
+                <MethodMetric CC="1" Class="AboutLogFXView" Component="com.athaydes.logfx.ui" LOC="25" Name="createNode" PC="0"/>
+                <MethodMetric CC="1" Class="AboutLogFXView" Component="com.athaydes.logfx.ui" LOC="7" Name="show" PC="0"/>
+                <MethodMetric CC="3" Class="ColorChooser" Component="com.athaydes.logfx.ui" LOC="32" Name="ColorChooser" PC="2"/>
+                <MethodMetric CC="1" Class="ColorChooser" Component="com.athaydes.logfx.ui" LOC="3" Name="node" PC="0"/>
+                <MethodMetric CC="1" Class="ColorChooser" Component="com.athaydes.logfx.ui" LOC="3" Name="addListener" PC="1"/>
+                <MethodMetric CC="1" Class="ColorChooser" Component="com.athaydes.logfx.ui" LOC="3" Name="getColor" PC="0"/>
+                <MethodMetric CC="1" Class="ManualEditor" Component="com.athaydes.logfx.ui" LOC="7" Name="ManualEditor" PC="3"/>
+                <MethodMetric CC="2" Class="ManualEditor" Component="com.athaydes.logfx.ui" LOC="22" Name="fieldFor" PC="3"/>
+                <MethodMetric CC="4" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="0" Name="getDelay" PC="0"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="setPrimaryStage" PC="1"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="Dialog" PC="2"/>
+                <MethodMetric CC="3" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="22" Name="Dialog" PC="3"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="getBox" PC="0"/>
+                <MethodMetric CC="3" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="11" Name="closeWhenLoseFocus" PC="0"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="setResizable" PC="1"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="setTitle" PC="1"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="setOnHidden" PC="1"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="setAlwaysOnTop" PC="1"/>
+                <MethodMetric CC="3" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="14" Name="makeTransparentWhenLoseFocus" PC="0"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="show" PC="0"/>
+                <MethodMetric CC="3" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="14" Name="show" PC="1"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="hide" PC="0"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="3" Name="isVisible" PC="0"/>
+                <MethodMetric CC="2" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="8" Name="setOwner" PC="1"/>
+                <MethodMetric CC="2" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="8" Name="setStyle" PC="1"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="4" Name="setSize" PC="2"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="9" Name="showConfirmDialog" PC="1"/>
+                <MethodMetric CC="1" Class="Dialog" Component="com.athaydes.logfx.ui" LOC="43" Name="showMessage" PC="2"/>
+                <MethodMetric CC="1" Class="StageTranslateTransition" Component="com.athaydes.logfx.ui" LOC="4" Name="StageTranslateTransition" PC="1"/>
+                <MethodMetric CC="1" Class="StageTranslateTransition" Component="com.athaydes.logfx.ui" LOC="3" Name="setToY" PC="1"/>
+                <MethodMetric CC="1" Class="StageTranslateTransition" Component="com.athaydes.logfx.ui" LOC="3" Name="setDuration" PC="1"/>
+                <MethodMetric CC="1" Class="StageTranslateTransition" Component="com.athaydes.logfx.ui" LOC="3" Name="interpolate" PC="1"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="31" Name="HighlightOptions" PC="3"/>
+                <MethodMetric CC="3" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="11" Name="enableFilters" PC="1"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="28" Name="createHelpIcon" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="5" Name="addRow" PC="1"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="3" Name="nextColor" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="3" Name="getObservableExpressions" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="3" Name="getStandardLogColors" PC="0"/>
+                <MethodMetric CC="3" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="8" Name="logLineColorsFor" PC="1"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="3" Name="filterEnabled" PC="0"/>
+                <MethodMetric CC="2" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="9" Name="getLineFilter" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightOptions" Component="com.athaydes.logfx.ui" LOC="11" Name="showHighlightOptionsDialog" PC="1"/>
+                <MethodMetric CC="1" Class="StandardLogColorsRow" Component="com.athaydes.logfx.ui" LOC="7" Name="StandardLogColorsRow" PC="1"/>
+                <MethodMetric CC="1" Class="StandardLogColorsRow" Component="com.athaydes.logfx.ui" LOC="3" Name="update" PC="3"/>
+                <MethodMetric CC="1" Class="HighlightExpressionRow" Component="com.athaydes.logfx.ui" LOC="7" Name="HighlightExpressionRow" PC="3"/>
+                <MethodMetric CC="1" Class="HighlightExpressionRow" Component="com.athaydes.logfx.ui" LOC="5" Name="upDownButtons" PC="0"/>
+                <MethodMetric CC="2" Class="HighlightExpressionRow" Component="com.athaydes.logfx.ui" LOC="12" Name="moveUpEventHandler" PC="0"/>
+                <MethodMetric CC="2" Class="HighlightExpressionRow" Component="com.athaydes.logfx.ui" LOC="12" Name="moveDownEventHandler" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightExpressionRow" Component="com.athaydes.logfx.ui" LOC="12" Name="removeButton" PC="0"/>
+                <MethodMetric CC="2" Class="HighlightExpressionRow" Component="com.athaydes.logfx.ui" LOC="14" Name="update" PC="3"/>
+                <MethodMetric CC="1" Class="Row" Component="com.athaydes.logfx.ui" LOC="17" Name="Row" PC="4"/>
+                <MethodMetric CC="1" Class="Row" Component="com.athaydes.logfx.ui" LOC="0" Name="update" PC="3"/>
+                <MethodMetric CC="1" Class="StartUpView" Component="com.athaydes.logfx.ui" LOC="14" Name="StartUpView" PC="3"/>
+                <MethodMetric CC="1" Class="Arrow" Component="com.athaydes.logfx.ui" LOC="6" Name="Arrow" PC="1"/>
+                <MethodMetric CC="3" Class="Arrow" Component="com.athaydes.logfx.ui" LOC="10" Name="fillPolygon" PC="2"/>
+                <MethodMetric CC="1" Class="Arrow" Component="com.athaydes.logfx.ui" LOC="10" Name="arrowButton" PC="3"/>
+                <MethodMetric CC="13" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="99" Name="LogViewPane" PC="3"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="3" Name="orientationProperty" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="3" Name="showContextMenu" PC="0"/>
+                <MethodMetric CC="2" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="8" Name="switchOrientation" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="3" Name="prefHeightProperty" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="3" Name="getNode" PC="0"/>
+                <MethodMetric CC="5" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="19" Name="indexOf" PC="1"/>
+                <MethodMetric CC="3" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="22" Name="add" PC="3"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="3" Name="getAllLogViews" PC="0"/>
+                <MethodMetric CC="3" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="12" Name="getFocusedView" PC="0"/>
+                <MethodMetric CC="3" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="9" Name="close" PC="0"/>
+                <MethodMetric CC="4" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="10" Name="focusOn" PC="1"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="3" Name="panesDividersProperty" PC="0"/>
+                <MethodMetric CC="3" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="12" Name="setDividerPositions" PC="1"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="3" Name="getSeparatorsPositions" PC="0"/>
+                <MethodMetric CC="4" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="11" Name="getScrollPaneFor" PC="1"/>
+                <MethodMetric CC="1" Class="LogViewPane" Component="com.athaydes.logfx.ui" LOC="4" Name="lineNumberToScrollVvalue" PC="1"/>
+                <MethodMetric CC="7" Class="LogViewScrollPane" Component="com.athaydes.logfx.ui" LOC="31" Name="LogViewScrollPane" PC="1"/>
+                <MethodMetric CC="4" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="27" Name="LogViewWrapper" PC="3"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="3" Name="getLogView" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="3" Name="getScrollPane" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="3" Name="isShowingFileContents" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="5" Name="toDateTime" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="5" Name="toTop" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="4" Name="pageUp" PC="0"/>
+                <MethodMetric CC="2" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="5" Name="pageDown" PC="0"/>
+                <MethodMetric CC="2" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="6" Name="startTailingFile" PC="0"/>
+                <MethodMetric CC="2" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="6" Name="stopTailingFile" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="3" Name="isTailingFile" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="8" Name="closeView" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="3" Name="stop" PC="0"/>
+                <MethodMetric CC="2" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="8" Name="switchTailFile" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewWrapper" Component="com.athaydes.logfx.ui" LOC="5" Name="scrollTo" PC="1"/>
+                <MethodMetric CC="5" Class="LogViewHeader" Component="com.athaydes.logfx.ui" LOC="57" Name="LogViewHeader" PC="3"/>
+                <MethodMetric CC="1" Class="LogViewHeader" Component="com.athaydes.logfx.ui" LOC="3" Name="tailFileProperty" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewHeader" Component="com.athaydes.logfx.ui" LOC="3" Name="pauseRefreshProperty" PC="0"/>
+                <MethodMetric CC="1" Class="LogViewHeader" Component="com.athaydes.logfx.ui" LOC="3" Name="togglePauseRefresh" PC="0"/>
+                <MethodMetric CC="2" Class="FileDoesNotExistPane" Component="com.athaydes.logfx.ui" LOC="18" Name="FileDoesNotExistPane" PC="0"/>
+                <MethodMetric CC="1" Class="BottomMessagePane" Component="com.athaydes.logfx.ui" LOC="4" Name="warningIfFiltersEnabled" PC="0"/>
+                <MethodMetric CC="1" Class="BottomMessagePane" Component="com.athaydes.logfx.ui" LOC="4" Name="BottomMessagePane" PC="1"/>
+                <MethodMetric CC="1" Class="BottomMessagePane" Component="com.athaydes.logfx.ui" LOC="6" Name="setShow" PC="2"/>
+                <MethodMetric CC="2" Class="BottomMessagePane" Component="com.athaydes.logfx.ui" LOC="6" Name="maybeUpdateMinHeight" PC="0"/>
+                <MethodMetric CC="1" Class="FxUtils" Component="com.athaydes.logfx.ui" LOC="3" Name="simpleBackground" PC="1"/>
+                <MethodMetric CC="3" Class="FxUtils" Component="com.athaydes.logfx.ui" LOC="24" Name="setupStylesheet" PC="1"/>
+                <MethodMetric CC="1" Class="FxUtils" Component="com.athaydes.logfx.ui" LOC="3" Name="isMac" PC="0"/>
+                <MethodMetric CC="2" Class="FxUtils" Component="com.athaydes.logfx.ui" LOC="9" Name="toAbsoluteFileUri" PC="1"/>
+                <MethodMetric CC="3" Class="FxUtils" Component="com.athaydes.logfx.ui" LOC="7" Name="addIfNotPresent" PC="2"/>
+                <MethodMetric CC="1" Class="FontPicker" Component="com.athaydes.logfx.ui" LOC="22" Name="showFontPicker" PC="1"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="2" Name="AwesomeIcons" PC="0"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="3" Name="createToggleButton" PC="1"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="5" Name="createToggleButton" PC="2"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="3" Name="createIconButton" PC="1"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="3" Name="createIconButton" PC="2"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="3" Name="createIconButton" PC="2"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="5" Name="createIconButton" PC="3"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="5" Name="createIconLabel" PC="2"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="3" Name="createIconLabel" PC="1"/>
+                <MethodMetric CC="1" Class="AwesomeIcons" Component="com.athaydes.logfx.ui" LOC="6" Name="createIconLabel" PC="2"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="setLineFilter" PC="1"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="moveUp" PC="1"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="moveDown" PC="1"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="moveTo" PC="2"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="top" PC="0"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="tail" PC="0"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="refresh" PC="0"/>
+                <MethodMetric CC="1" Class="FileContentReader" Component="com.athaydes.logfx.file" LOC="0" Name="getFile" PC="0"/>
+                <MethodMetric CC="1" Class="FileQueryResult" Component="com.athaydes.logfx.file" LOC="0" Name="isSuccess" PC="0"/>
+                <MethodMetric CC="1" Class="FileQueryResult" Component="com.athaydes.logfx.file" LOC="0" Name="fileLineNumber" PC="0"/>
+                <MethodMetric CC="1" Class="FileQueryResult" Component="com.athaydes.logfx.file" LOC="0" Name="isBeforeRange" PC="0"/>
+                <MethodMetric CC="1" Class="FileQueryResult" Component="com.athaydes.logfx.file" LOC="0" Name="isAfterRange" PC="0"/>
+                <MethodMetric CC="1" Class="FileReader" Component="com.athaydes.logfx.file" LOC="4" Name="of" PC="2"/>
+                <MethodMetric CC="1" Class="FileReader" Component="com.athaydes.logfx.file" LOC="3" Name="FileReader" PC="2"/>
+                <MethodMetric CC="3" Class="FileReader" Component="com.athaydes.logfx.file" LOC="13" Name="FileReader" PC="3"/>
+                <MethodMetric CC="2" Class="FileReader" Component="com.athaydes.logfx.file" LOC="8" Name="setLineFilter" PC="1"/>
+                <MethodMetric CC="4" Class="FileReader" Component="com.athaydes.logfx.file" LOC="15" Name="moveUp" PC="1"/>
+                <MethodMetric CC="4" Class="FileReader" Component="com.athaydes.logfx.file" LOC="15" Name="moveDown" PC="1"/>
+                <MethodMetric CC="23" Class="FileReader" Component="com.athaydes.logfx.file" LOC="96" Name="moveTo" PC="2"/>
+                <MethodMetric CC="6" Class="FileReader" Component="com.athaydes.logfx.file" LOC="24" Name="checkLastValidLine" PC="4"/>
+                <MethodMetric CC="6" Class="FileReader" Component="com.athaydes.logfx.file" LOC="31" Name="adjustFileWindowToStartAt" PC="2"/>
+                <MethodMetric CC="1" Class="FileReader" Component="com.athaydes.logfx.file" LOC="6" Name="top" PC="0"/>
+                <MethodMetric CC="1" Class="FileReader" Component="com.athaydes.logfx.file" LOC="6" Name="tail" PC="0"/>
+                <MethodMetric CC="3" Class="FileReader" Component="com.athaydes.logfx.file" LOC="15" Name="refresh" PC="0"/>
+                <MethodMetric CC="1" Class="FileReader" Component="com.athaydes.logfx.file" LOC="3" Name="getFile" PC="0"/>
+                <MethodMetric CC="12" Class="FileReader" Component="com.athaydes.logfx.file" LOC="79" Name="loadFromTop" PC="3"/>
+                <MethodMetric CC="15" Class="FileReader" Component="com.athaydes.logfx.file" LOC="90" Name="loadFromBottom" PC="3"/>
+                <MethodMetric CC="5" Class="FileReader" Component="com.athaydes.logfx.file" LOC="24" Name="seekLineStartBefore" PC="2"/>
+                <MethodMetric CC="1" Class="EarlyExitFromFileWindow" Component="com.athaydes.logfx.file" LOC="4" Name="EarlyExitFromFileWindow" PC="1"/>
+                <MethodMetric CC="1" Class="EarlyExitFromFileWindow" Component="com.athaydes.logfx.file" LOC="4" Name="EarlyExitFromFileWindow" PC="1"/>
+                <MethodMetric CC="1" Class="EarlyExitFromFileWindow" Component="com.athaydes.logfx.file" LOC="3" Name="getFileQueryResult" PC="0"/>
+                <MethodMetric CC="1" Class="EarlyExitFromFileWindow" Component="com.athaydes.logfx.file" LOC="3" Name="canSkipWindow" PC="0"/>
+                <MethodMetric CC="2" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="6" Name="FileLineStarts" PC="1"/>
+                <MethodMetric CC="1" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="4" Name="addFirst" PC="1"/>
+                <MethodMetric CC="1" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="4" Name="addLast" PC="1"/>
+                <MethodMetric CC="1" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="3" Name="clear" PC="0"/>
+                <MethodMetric CC="2" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="8" Name="getFirst" PC="0"/>
+                <MethodMetric CC="2" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="8" Name="getLast" PC="0"/>
+                <MethodMetric CC="2" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="6" Name="trim" PC="1"/>
+                <MethodMetric CC="1" Class="FileLineStarts" Component="com.athaydes.logfx.file" LOC="3" Name="toString" PC="0"/>
+                <MethodMetric CC="1" Class="SuccessfulQueryResult" Component="com.athaydes.logfx.file" LOC="3" Name="SuccessfulQueryResult" PC="1"/>
+                <MethodMetric CC="1" Class="SuccessfulQueryResult" Component="com.athaydes.logfx.file" LOC="3" Name="isSuccess" PC="0"/>
+                <MethodMetric CC="1" Class="SuccessfulQueryResult" Component="com.athaydes.logfx.file" LOC="3" Name="fileLineNumber" PC="0"/>
+                <MethodMetric CC="1" Class="SuccessfulQueryResult" Component="com.athaydes.logfx.file" LOC="3" Name="isBeforeRange" PC="0"/>
+                <MethodMetric CC="1" Class="SuccessfulQueryResult" Component="com.athaydes.logfx.file" LOC="3" Name="isAfterRange" PC="0"/>
+                <MethodMetric CC="1" Class="SuccessfulQueryResult" Component="com.athaydes.logfx.file" LOC="3" Name="toString" PC="0"/>
+                <MethodMetric CC="2" Class="FileChangeWatcher" Component="com.athaydes.logfx.file" LOC="11" Name="FileChangeWatcher" PC="3"/>
+                <MethodMetric CC="4" Class="FileChangeWatcher" Component="com.athaydes.logfx.file" LOC="20" Name="startIfNotWatching" PC="0"/>
+                <MethodMetric CC="6" Class="FileChangeWatcher" Component="com.athaydes.logfx.file" LOC="42" Name="watchFile" PC="1"/>
+                <MethodMetric CC="1" Class="FileChangeWatcher" Component="com.athaydes.logfx.file" LOC="9" Name="notifyWatcher" PC="1"/>
+                <MethodMetric CC="1" Class="FileChangeWatcher" Component="com.athaydes.logfx.file" LOC="3" Name="isWatching" PC="0"/>
+                <MethodMetric CC="1" Class="FileChangeWatcher" Component="com.athaydes.logfx.file" LOC="3" Name="isClosed" PC="0"/>
+                <MethodMetric CC="3" Class="FileChangeWatcher" Component="com.athaydes.logfx.file" LOC="11" Name="close" PC="0"/>
+                <MethodMetric CC="1" Class="ConfigProperties" Component="com.athaydes.logfx.config" LOC="9" Name="ConfigProperties" PC="0"/>
+                <MethodMetric CC="1" Class="Properties" Component="com.athaydes.logfx.config" LOC="3" Name="getLogLevel" PC="0"/>
+                <MethodMetric CC="1" Class="Properties" Component="com.athaydes.logfx.config" LOC="3" Name="getLogTarget" PC="0"/>
+                <MethodMetric CC="1" Class="Properties" Component="com.athaydes.logfx.config" LOC="3" Name="getCustomStylesheet" PC="0"/>
+                <MethodMetric CC="1" Class="Properties" Component="com.athaydes.logfx.config" LOC="3" Name="isRefreshStylesheet" PC="0"/>
+                <MethodMetric CC="2" Class="Config" Component="com.athaydes.logfx.config" LOC="20" Name="Config" PC="2"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="3" Name="standardLogColorsProperty" PC="0"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="3" Name="getObservableExpressions" PC="0"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="3" Name="getObservableFiles" PC="0"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="3" Name="panesOrientationProperty" PC="0"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="3" Name="getPaneDividerPositions" PC="0"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="3" Name="fontProperty" PC="0"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="3" Name="filtersEnabledProperty" PC="0"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="10" Name="readConfigFile" PC="1"/>
+                <MethodMetric CC="1" Class="Config" Component="com.athaydes.logfx.config" LOC="17" Name="dumpConfigToFile" PC="0"/>
+                <MethodMetric CC="5" Class="Config" Component="com.athaydes.logfx.config" LOC="39" Name="dumpConfigToFile" PC="8"/>
+                <MethodMetric CC="1" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="3" Name="isAfterV1" PC="0"/>
+                <MethodMetric CC="1" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="3" Name="ConfigParser" PC="1"/>
+                <MethodMetric CC="9" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="26" Name="parseConfigFile" PC="2"/>
+                <MethodMetric CC="3" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="16" Name="parseVersion" PC="1"/>
+                <MethodMetric CC="5" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="25" Name="parseStandardLogColors" PC="1"/>
+                <MethodMetric CC="4" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="17" Name="parseExpressions" PC="1"/>
+                <MethodMetric CC="6" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="0" Name="parseFilters" PC="1"/>
+                <MethodMetric CC="4" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="12" Name="parseFiles" PC="1"/>
+                <MethodMetric CC="11" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="62" Name="parseGuiSection" PC="1"/>
+                <MethodMetric CC="14" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="0" Name="parseHighlightExpression" PC="2"/>
+                <MethodMetric CC="1" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="3" Name="highlightParseError" PC="2"/>
+                <MethodMetric CC="1" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="3" Name="toDoubles" PC="1"/>
+                <MethodMetric CC="2" Class="ConfigParser" Component="com.athaydes.logfx.config" LOC="6" Name="logInvalidProperty" PC="4"/>
+                <MethodMetric CC="1" Class="BindableValue" Component="com.athaydes.logfx.binding" LOC="3" Name="BindableValue" PC="1"/>
+                <MethodMetric CC="1" Class="BindableValue" Component="com.athaydes.logfx.binding" LOC="4" Name="setValue" PC="1"/>
+                <MethodMetric CC="1" Class="BindableValue" Component="com.athaydes.logfx.binding" LOC="3" Name="getValue" PC="0"/>
+                <MethodMetric CC="1" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="2" Name="shutdown" PC="0"/>
+                <MethodMetric CC="1" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="3" Name="TaskRunner" PC="0"/>
+                <MethodMetric CC="1" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="8" Name="TaskRunner" PC="1"/>
+                <MethodMetric CC="1" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="3" Name="getGlobalInstance" PC="0"/>
+                <MethodMetric CC="1" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="3" Name="runAsync" PC="1"/>
+                <MethodMetric CC="8" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="55" Name="runWithMaxFrequency" PC="2"/>
+                <MethodMetric CC="2" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="17" Name="repeat" PC="3"/>
+                <MethodMetric CC="1" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="4" Name="scheduleRepeatingTask" PC="2"/>
+                <MethodMetric CC="1" Class="TaskRunner" Component="com.athaydes.logfx.concurrency" LOC="4" Name="shutdown" PC="0"/>
+                <MethodMetric CC="1" Class="Cancellable" Component="com.athaydes.logfx.concurrency" LOC="0" Name="cancel" PC="0"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="LogFXLogger" PC="1"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="isTraceEnabled" PC="0"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="trace" PC="1"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="trace" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="trace" PC="3"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="trace" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="trace" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="isDebugEnabled" PC="0"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="debug" PC="1"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="debug" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="debug" PC="3"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="debug" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="debug" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="isInfoEnabled" PC="0"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="info" PC="1"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="info" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="info" PC="3"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="info" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="info" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="isWarnEnabled" PC="0"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="warn" PC="1"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="warn" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="warn" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="warn" PC="3"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="warn" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="isErrorEnabled" PC="0"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="error" PC="1"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="error" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="error" PC="3"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="error" PC="2"/>
+                <MethodMetric CC="1" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="3" Name="error" PC="2"/>
+                <MethodMetric CC="2" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="7" Name="formatAndLog" PC="3"/>
+                <MethodMetric CC="4" Class="LogFXLogger" Component="com.athaydes.logfx.log" LOC="21" Name="log" PC="3"/>
+                <MethodMetric CC="1" Class="LogTarget" Component="com.athaydes.logfx.log" LOC="0" Name="write" PC="1"/>
+                <MethodMetric CC="1" Class="FileLogTarget" Component="com.athaydes.logfx.log" LOC="8" Name="write" PC="1"/>
+                <MethodMetric CC="1" Class="PrintStreamLogTarget" Component="com.athaydes.logfx.log" LOC="3" Name="PrintStreamLogTarget" PC="1"/>
+                <MethodMetric CC="1" Class="PrintStreamLogTarget" Component="com.athaydes.logfx.log" LOC="3" Name="write" PC="1"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="HighlightExpression" PC="4"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="6" Name="HighlightExpression" PC="4"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="getBkgColor" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="getFillColor" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="getPattern" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="isFiltered" PC="0"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="getLogLineColors" PC="0"/>
+                <MethodMetric CC="2" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="6" Name="matches" PC="1"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="withFilter" PC="1"/>
+                <MethodMetric CC="1" Class="HighlightExpression" Component="com.athaydes.logfx.text" LOC="3" Name="toString" PC="0"/>
+                <MethodMetric CC="2" Class="DateTimeFormatGuesser" Component="com.athaydes.logfx.text" LOC="15" Name="standard" PC="0"/>
+                <MethodMetric CC="1" Class="DateTimeFormatGuesser" Component="com.athaydes.logfx.text" LOC="4" Name="DateTimeFormatGuesser" PC="2"/>
+                <MethodMetric CC="9" Class="DateTimeFormatGuesser" Component="com.athaydes.logfx.text" LOC="36" Name="guessDateTimeFormats" PC="1"/>
+                <MethodMetric CC="1" Class="MultiDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="3" Name="MultiDateTimeFormatGuess" PC="1"/>
+                <MethodMetric CC="3" Class="MultiDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="10" Name="convert" PC="1"/>
+                <MethodMetric CC="1" Class="SingleDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="4" Name="SingleDateTimeFormatGuess" PC="2"/>
+                <MethodMetric CC="2" Class="SingleDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="12" Name="convert" PC="1"/>
+                <MethodMetric CC="1" Class="SingleDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="13" Name="dateTimeFromTemporal" PC="1"/>
+                <MethodMetric CC="3" Class="SingleDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="10" Name="equals" PC="1"/>
+                <MethodMetric CC="1" Class="SingleDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="5" Name="hashCode" PC="0"/>
+                <MethodMetric CC="1" Class="SingleDateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="3" Name="toString" PC="0"/>
+                <MethodMetric CC="1" Class="DateTimeFormatGuess" Component="com.athaydes.logfx.text" LOC="0" Name="convert" PC="1"/>
+                <MethodMetric CC="1" Class="LogLineColors" Component="com.athaydes.logfx.data" LOC="4" Name="LogLineColors" PC="2"/>
+                <MethodMetric CC="1" Class="LogLineColors" Component="com.athaydes.logfx.data" LOC="3" Name="getBackground" PC="0"/>
+                <MethodMetric CC="1" Class="LogLineColors" Component="com.athaydes.logfx.data" LOC="3" Name="getFill" PC="0"/>
+            </MethodMetrics>
+            <DesignSmells>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>org.slf4j.impl</Component>
+                        <Class>StaticLoggerBinder</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: SINGLETON; REQUESTED_API_VERSION; loggerFactoryClassStr; loggerFactory</Description>
+                    <Entity>
+                        <Component>org.slf4j.impl</Component>
+                        <Class>StaticLoggerBinder</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: LOGFX_VERSION</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>Constants</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: LOGFX_VERSION</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>Constants</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogFxButton</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: log; DO_NOTHING; MAX_LINES; DELTA_FACTOR; highlightOptions; fileReaderExecutor; tailingFile; allowRefresh; fileContentReader; file; fileChangeWatcher; logLineFactory; taskRunner; selectionHandler; dateTimeFormatGuesser; onFileExists; onFileUpdate; dateTimeFormatGuess; expressionsChangeListener</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogView</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileOpener</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because GoToDateView is more interested in members of the type: Dialog</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>GoToDateView</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="BrokenHierarchy">
+                    <Name>Broken Hierarchy</Name>
+                    <Description>The tool detected a potential instance of the smell because this type does not implement or override any method from it's supertype(s): SelectionHandler</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogLine</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>DropTarget</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>MessageLevel</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>DialogPosition</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>StageTranslateTransition</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>StandardLogColorsRow</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightExpressionRow</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>StartUpView</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Direction</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="Cyclically-dependentModularization">
+                    <Name>Cyclically-dependent Modularization</Name>
+                    <Description>The tool detected the smell in this class because this class participates in a cyclic dependency. The participating classes in the cycle are: LogViewWrapper; LogViewScrollPane; LogViewPane</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDoesNotExistPane</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FontPicker</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: CLOSE; ARROW_DOWN; HELP; TRASH; CLOCK; PAUSE; PENCIL</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AwesomeIcons</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: before</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>OutsideRangeQueryResult</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>LoadMode</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>SearchDirection</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>Comparison</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>SuccessfulQueryResult</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>UnsuccessfulQueryResult</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: LOGFX_DIR; logLevel; logTarget; refreshStylesheet; customStylesheet</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>Properties</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="Cyclically-dependentModularization">
+                    <Name>Cyclically-dependent Modularization</Name>
+                    <Description>The tool detected the smell in this class because this class participates in a cyclic dependency. The participating classes in the cycle are: LogTarget; LogFXLogFactory; Properties</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>Properties</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because Config is more interested in members of the type: ConfigProperties</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>Config</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="FeatureEnvy">
+                    <Name>Feature Envy</Name>
+                    <Description>The tool detected a instance of this smell because dumpConfigToFile is more interested in members of the type: ConfigProperties</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>Config</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigVersion</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.concurrency</Component>
+                        <Class>TaskState</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogFXLogger</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="InsufficientModularization">
+                    <Name>Insufficient Modularization</Name>
+                    <Description>The tool detected the smell in this class becuase the class has bloated interface (large number of public methods). Total public methods in the class: 30 public methods</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogFXLogger</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="Cyclically-dependentModularization">
+                    <Name>Cyclically-dependent Modularization</Name>
+                    <Description>The tool detected the smell in this class because this class participates in a cyclic dependency. The participating classes in the cycle are: LogTarget; LogFXLogFactory; Properties</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogTarget</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>FileLogTarget</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>PrintStreamLogTarget</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogLevel</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnnecessaryAbstraction">
+                    <Name>Unnecessary Abstraction</Name>
+                    <Description>The tool detected the smell in this class because the class contains only a few data members without any method implementation, that indicates that the abstraction might not be required. Following fields are declared in this class: currentLevel; logFilePath</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogFXLogFactory</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="DeficientEncapsulation">
+                    <Name>Deficient Encapsulation</Name>
+                    <Description>The tool detected the smell in this class because the class exposes fields belonging to it with public accessibility. Following fields are declared with public accessiblity: log; MAX_CHARS_TO_LOOK_FOR_DATE; logLinePatterns; logLineDateFormatters; guesses; THIS_YEAR; pattern; formatter</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>DateTimeFormatGuesser</Class>
+                    </Entity>
+                </DesignSmell>
+                <DesignSmell Key="UnutilizedAbstraction">
+                    <Name>Unutilized Abstraction</Name>
+                    <Description>The tool detected the smell in this class because this class is potentially unused. (Please ignore the smell if the reported class is auto-generated and/or used to serve a specific known purpose.)</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>MultiDateTimeFormatGuess</Class>
+                    </Entity>
+                </DesignSmell>
+            </DesignSmells>
+            <ImplementationSmells>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "this.highlightOptions=new HighlightOptions(config.standardLogColorsProperty(),config.getObservableExpressions(),config.filtersEnabledProperty());" is 145.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>LogFX</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "this.logsPane=new LogViewPane(taskRunner,() -&gt; new StartUpView(getHostServices(),stage,this::open),config.getObservableFiles().isEmpty());" is 138.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>LogFX</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "logsPane.panesDividersProperty().addListener(observable -&gt; config.getPaneDividerPositions().setAll(logsPane.getSeparatorsPositions()));" is 135.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>start</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 800</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>start</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 600</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>start</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "final List&lt;InputStream&gt; imageStreams=Arrays.asList(LogFX.class.getResourceAsStream("/images/favicon-large.png"),LogFX.class.getResourceAsStream("/images/favicon-small.png"),LogFX.class.getResourceAsStream("/images/favicon-tiny.png"));" is 234.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>setIconsOn</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Missing default</Name>
+                    <Description>The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@63782ad0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>openViewFor</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 12</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Class>LogFX</Class>
+                        <Method>main</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Parameter List</Name>
+                    <Description>The method has 5 parameters. </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogView</Class>
+                        <Method>LogView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "log.warn("Failed to open date-time in log, could not recognize dates in the log (took {} ms)",System.currentTimeMillis() - startTime);" is 134.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogView</Class>
+                        <Method>goTo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Dialog.showMessage("Unable to open date-time.\n" + "The date-times in the file could not be recognized.",Dialog.MessageLevel.WARNING);" is 134.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogView</Class>
+                        <Method>goTo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2_000</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogView</Class>
+                        <Method>onFileChange</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2_000</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogView</Class>
+                        <Method>onFileChange</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "viewWrappers.addAll(logViewsGetter.get().stream().filter(wrapper -&gt; wrapper.getLogView() == selectedLogView).collect(toList()));" is 128.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>GoToDateView</Class>
+                        <Method>GoToDateView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>GoToDateView</Class>
+                        <Method>GoToDateView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 240.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>GoToDateView</Class>
+                        <Method>GoToDateView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>GoToDateView</Class>
+                        <Method>GoToDateView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>GoToDateView</Class>
+                        <Method>GoToDateView</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3600000</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>DateTimeTextField</Class>
+                        <Method>localTimeOffset</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>DateTimeTextField</Class>
+                        <Method>localTimeOffset</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 650</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>BackgroundTransition</Class>
+                        <Method>BackgroundTransition</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>BackgroundTransition</Class>
+                        <Method>BackgroundTransition</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "content.putString(getSelectedItems().stream().map(SelectableNode::getText).collect(Collectors.joining(System.lineSeparator())));" is 128.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>SelectionManager</Class>
+                        <Method>getContent</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 8</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 8</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDragAndDrop</Class>
+                        <Method>install</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 25</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AboutLogFXView</Class>
+                        <Method>createNode</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 500</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AboutLogFXView</Class>
+                        <Method>createNode</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 300</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AboutLogFXView</Class>
+                        <Method>createNode</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 500</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AboutLogFXView</Class>
+                        <Method>createNode</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AboutLogFXView</Class>
+                        <Method>createNode</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 500</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AboutLogFXView</Class>
+                        <Method>createNode</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>ColorChooser</Class>
+                        <Method>ColorChooser</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>ColorChooser</Class>
+                        <Method>ColorChooser</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>ManualEditor</Class>
+                        <Method>ManualEditor</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>ManualEditor</Class>
+                        <Method>ManualEditor</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>ManualEditor</Class>
+                        <Method>ManualEditor</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 30</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>ManualEditor</Class>
+                        <Method>fieldFor</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 114</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>ManualEditor</Class>
+                        <Method>fieldFor</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>getDelay</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>getDelay</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 15</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>getDelay</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Missing default</Name>
+                    <Description>The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@5417f849</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>getDelay</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>Dialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 0.5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>makeTransparentWhenLoseFocus</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 0.25</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>show</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 30</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>show</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "Animation blurAnimation=new Timeline(new KeyFrame(Duration.millis(450),new KeyValue(blurText.angleProperty(),45.0),new KeyValue(blurText.radiusProperty(),20.0)));" is 162.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 100</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 450</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 45.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 500</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 0.1</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 20</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 250.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Dialog</Class>
+                        <Method>showMessage</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "expressionsBox.getChildren().addAll(observableExpressions.stream().map(ex -&gt; new HighlightExpressionRow(ex,observableExpressions,expressionsBox)).toArray(HighlightExpressionRow[]::new));" is 186.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>HighlightOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>HighlightOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>HighlightOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>HighlightOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 14</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>HighlightOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>HighlightOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>HighlightOptions</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "List&lt;HighlightExpression&gt; newExpressions=observableExpressions.stream().map((e) -&gt; e.withFilter(enable)).collect(Collectors.toList());" is 134.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>enableFilters</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "expressionsBox.getChildren().setAll(observableExpressions.stream().map(ex -&gt; new HighlightExpressionRow(ex,observableExpressions,expressionsBox)).toArray(HighlightExpressionRow[]::new));" is 186.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>enableFilters</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "htmlText=new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/html/highlight-options-help.html"),StandardCharsets.UTF_8)).lines().collect(joining("\n"));" is 174.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>createHelpIcon</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "List&lt;HighlightExpression&gt; filteredExpressions=observableExpressions.stream().filter(HighlightExpression::isFiltered).collect(Collectors.toList());" is 146.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>getLineFilter</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 850.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>showHighlightOptionsDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 260.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightOptions</Class>
+                        <Method>showHighlightOptionsDialog</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "getChildren().addAll(expressionField,bkgColorPicker.node(),fillColorPicker.node(),isFilteredBox,upDownButtons(),removeButton());" is 128.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightExpressionRow</Class>
+                        <Method>HighlightExpressionRow</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "upDownArrows.getChildren().addAll(Arrow.arrowButton(UP,moveUpEventHandler(),"Move rule up"),Arrow.arrowButton(DOWN,moveDownEventHandler(),"Move rule down"));" is 157.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightExpressionRow</Class>
+                        <Method>upDownButtons</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>HighlightExpressionRow</Class>
+                        <Method>upDownButtons</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "InvalidationListener updater=(ignore) -&gt; update(bkgColorPicker.getColor(),fillColorPicker.getColor(),isFilteredBox.selectedProperty().get());" is 141.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Row</Class>
+                        <Method>Row</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Row</Class>
+                        <Method>Row</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 300</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Row</Class>
+                        <Method>Row</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 500</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Row</Class>
+                        <Method>Row</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>Arrow</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>Arrow</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>fillPolygon</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>fillPolygon</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>arrowButton</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>arrowButton</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 8</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>arrowButton</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 12.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>Arrow</Class>
+                        <Method>arrowButton</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 13</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "copyMenuItem.setOnAction(event -&gt; getFocusedView().ifPresent(wrapper -&gt; wrapper.logView.getSelection().ifPresent(content -&gt; {" is 125.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "minimizeMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.M,KeyCombination.SHORTCUT_DOWN,KeyCombination.SHIFT_DOWN));" is 122.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "getFocusedView().ifPresent(wrapper -&gt; taskRunner.repeat(pane.getItems().size() - 1,Duration.ofMillis(150),() -&gt; Platform.runLater(() -&gt; {" is 137.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "pane.setContextMenu(new ContextMenu(copyMenuItem,new SeparatorMenuItem(),toTopMenuItem,tailMenuItem,pageUpMenuItem,pageDownMenuItem,goToDateMenuItem,new SeparatorMenuItem(),pauseMenuItem,new SeparatorMenuItem(),minimizeMenuItem,maximizeMenuItem,closeMenuItem));" is 261.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 150</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>LogViewPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "return pane.getItems().stream().filter(it -&gt; it instanceof LogViewWrapper).map(LogViewWrapper.class::cast).collect(toList());" is 125.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>getAllLogViews</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 0.5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewPane</Class>
+                        <Method>lineNumberToScrollVvalue</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewScrollPane</Class>
+                        <Method>LogViewScrollPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewScrollPane</Class>
+                        <Method>LogViewScrollPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewWrapper</Class>
+                        <Method>LogViewWrapper</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "pauseRefreshButton.setTooltip(new Tooltip("Pause file auto-refresh.\n" + "Disables moving up/down and all file reads."));" is 121.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewHeader</Class>
+                        <Method>LogViewHeader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewHeader</Class>
+                        <Method>LogViewHeader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewHeader</Class>
+                        <Method>LogViewHeader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewHeader</Class>
+                        <Method>LogViewHeader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewHeader</Class>
+                        <Method>LogViewHeader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10_000</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewHeader</Class>
+                        <Method>LogViewHeader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 1_000_000.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>LogViewHeader</Class>
+                        <Method>LogViewHeader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 800</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDoesNotExistPane</Class>
+                        <Method>FileDoesNotExistPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 200</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDoesNotExistPane</Class>
+                        <Method>FileDoesNotExistPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDoesNotExistPane</Class>
+                        <Method>FileDoesNotExistPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 10.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FileDoesNotExistPane</Class>
+                        <Method>FileDoesNotExistPane</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "return bkgByPaint.computeIfAbsent(paint,ignored -&gt; new Background(new BackgroundFill(paint,CornerRadii.EMPTY,Insets.EMPTY)));" is 125.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FxUtils</Class>
+                        <Method>simpleBackground</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "FileChangeWatcher stylesheetWatcher=new FileChangeWatcher(Properties.getCustomStylesheet().get(),TaskRunner.getGlobalInstance(),resetStylesheet);" is 145.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FxUtils</Class>
+                        <Method>setupStylesheet</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "EventHandler&lt;ActionEvent&gt; eventHandler=(event) -&gt; fontProperty.setValue(new Font(fontNames.getValue(),fontSizes.getValue()));" is 125.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FontPicker</Class>
+                        <Method>showFontPicker</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 6</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FontPicker</Class>
+                        <Method>showFontPicker</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 42</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FontPicker</Class>
+                        <Method>showFontPicker</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 5</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>FontPicker</Class>
+                        <Method>showFontPicker</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AwesomeIcons</Class>
+                        <Method>createToggleButton</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AwesomeIcons</Class>
+                        <Method>createIconButton</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AwesomeIcons</Class>
+                        <Method>createIconButton</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 16</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Class>AwesomeIcons</Class>
+                        <Method>createIconLabel</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4096</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>FileReader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "throw new IllegalStateException("Cannot open LogFX's own log when log level is set to DEBUG or finer.\n" + "That would case an infinite loop when LogFX refreshes the view with the file contents, " + "which causes the file contents to change with new log messages, which causes the view "+ "to be refreshed, and so on.");" is 320.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>FileReader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 50</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>FileReader</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression isFirstLine &amp;&amp; direction == SearchDirection.UP &amp;&amp; lineComparison == Comparison.AFTER is complex.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>moveTo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 23</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>moveTo</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "loadFromBottom(initialLine - 1L,fileWindowSize - topList.size(),MOVE).ifPresent(extraLines -&gt; topList.addAll(0,extraLines));" is 124.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>refresh</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression log.isTraceEnabled() &amp;&amp; bytesRead &gt; 0 &amp;&amp; bytesRead &lt; bufferSize is complex.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>loadFromTop</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Conditional</Name>
+                    <Description>The conditional expression isNewLine &amp;&amp; i &gt; 0 &amp;&amp; buffer[i - 1] == '\r' is complex.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>loadFromTop</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 12</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>loadFromTop</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 15</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>loadFromBottom</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "final int bytesRead=bufferStartIndex == 0L &amp;&amp; previousStartIndex &gt; 0 ? reader.read(buffer,0,(int)previousStartIndex) : reader.read(buffer);" is 139.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileReader</Class>
+                        <Method>loadFromBottom</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileChangeWatcher</Class>
+                        <Method>FileChangeWatcher</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "watchKey=path.getParent().register(watchService,new WatchEvent.Kind[]{StandardWatchEventKinds.ENTRY_MODIFY,StandardWatchEventKinds.ENTRY_CREATE,StandardWatchEventKinds.OVERFLOW,StandardWatchEventKinds.ENTRY_DELETE},SensitivityWatchEventModifier.HIGH);" is 251.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Class>FileChangeWatcher</Class>
+                        <Method>watchFile</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 4</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigProperties</Class>
+                        <Method>ConfigProperties</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2000L</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>Config</Class>
+                        <Method>Config</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "standardLogColorsFuture.thenAccept(logLineColors -&gt; expressionsFuture.thenAccept(expressions -&gt; enableFiltersFuture.thenAccept(enableFilters -&gt; filesFuture.thenAccept(files -&gt; panesOrientationFuture.thenAccept(orientation -&gt; paneDividersFuture.thenAccept(dividers -&gt; fontFuture.thenAccept(font -&gt; dumpConfigToFile(logLineColors,expressions,enableFilters,files,orientation,dividers,font,path.toFile()))))))));" is 408.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>Config</Class>
+                        <Method>dumpConfigToFile</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Parameter List</Name>
+                    <Description>The method has 8 parameters. </Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>Config</Class>
+                        <Method>dumpConfigToFile</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 9</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseConfigFile</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseStandardLogColors</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Missing default</Name>
+                    <Description>The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6ffbae2e</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseFilters</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 11</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseGuiSection</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseGuiSection</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseGuiSection</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseGuiSection</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 12.0</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseGuiSection</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseGuiSection</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 14</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseHighlightExpression</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Missing default</Name>
+                    <Description>The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7c57eaa6</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Class>ConfigParser</Class>
+                        <Method>parseHighlightExpression</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.concurrency</Component>
+                        <Class>TaskRunner</Class>
+                        <Method>TaskRunner</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 8</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.concurrency</Component>
+                        <Class>TaskRunner</Class>
+                        <Method>runWithMaxFrequency</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "builder.append(formatter.format(Instant.now().atZone(ZoneId.systemDefault()))).append(" [").append(Thread.currentThread().getName()).append(']').append(' ').append(logLevel.name()).append(' ').append(name).append(" - ").append(message);" is 236.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogFXLogger</Class>
+                        <Method>log</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 128</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogFXLogger</Class>
+                        <Method>log</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 2</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Class>LogFXLogger</Class>
+                        <Method>log</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "return "{" + "expression=" + expression + ", bkgColor="+ bkgColor+ ", fillColor="+ fillColor+ ", isFiltered="+ isFiltered+ '}';" is 127.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>HighlightExpression</Class>
+                        <Method>toString</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "formatters.addAll(Arrays.asList(DateTimeFormatter.ISO_DATE_TIME,DateTimeFormatter.RFC_1123_DATE_TIME,DateTimeFormatter.ofPattern("yyyy-M-d'T'H:m:s[.SSS][z]"),DateTimeFormatter.ofPattern("yyyy-M-d'T'H:m:s[:SSS][Z]"),DateTimeFormatter.ofPattern("yyyy-M-d H:m:s[.SSS][Z]"),DateTimeFormatter.ofPattern("MMM dd H:m:s[.SSS][ z][ yyyy]"),DateTimeFormatter.ofPattern("MMM dd[ yyyy] H:m:s[.SSS][ z]"),DateTimeFormatter.ofPattern("d/MMM/yyyy:H:m:s[:SSS][ Z]")));" is 452.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>DateTimeFormatGuesser</Class>
+                        <Method>standard</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Complex Method</Name>
+                    <Description>Cyclomatic complexity of the method is 9</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>DateTimeFormatGuesser</Class>
+                        <Method>guessDateTimeFormats</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "log.trace("Trying to guess date-time formats in log using {} patterns and {} date-time formatters",logLinePatterns.size(),logLineDateFormatters.size());" is 152.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>DateTimeFormatGuesser</Class>
+                        <Method>guessDateTimeFormats</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "log.info("Found {} date-time-formatter guesses in provided file sample (search took {} ms)",result.size(),System.currentTimeMillis() - start);" is 142.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>DateTimeFormatGuesser</Class>
+                        <Method>guessDateTimeFormats</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 3</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>DateTimeFormatGuesser</Class>
+                        <Method>guessDateTimeFormats</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Long Statement</Name>
+                    <Description>The length of the statement "ZoneId zone=Optional.&lt;ZoneId&gt;ofNullable(ta.query(offset())).orElse(Optional.ofNullable(ta.query(zoneId())).orElse(ZoneOffset.UTC));" is 131.</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>SingleDateTimeFormatGuess</Class>
+                        <Method>dateTimeFromTemporal</Method>
+                    </Entity>
+                </ImplementationSmell>
+                <ImplementationSmell>
+                    <Name>Magic Number</Name>
+                    <Description>The method contains a magic number: 31</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.text</Component>
+                        <Class>SingleDateTimeFormatGuess</Class>
+                        <Method>hashCode</Method>
+                    </Entity>
+                </ImplementationSmell>
+            </ImplementationSmells>
+            <ArchSmells>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx; com.athaydes.logfx.ui</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx; com.athaydes.logfx.config; com.athaydes.logfx.ui</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="GodComponent">
+                    <Name>God Component</Name>
+                    <Description>The tool detected the smell in this component because the component contains high number of classes. Number of classes in the component are: 35</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.ui; com.athaydes.logfx</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.ui; com.athaydes.logfx.file; com.athaydes.logfx.config</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.ui; com.athaydes.logfx; com.athaydes.logfx.file; com.athaydes.logfx.config</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="UnstableDependency">
+                    <Name>Unstable Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): com.athaydes.logfx</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.ui</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.file; com.athaydes.logfx.config; com.athaydes.logfx.ui</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.file; com.athaydes.logfx.config; com.athaydes.logfx.ui; com.athaydes.logfx</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="UnstableDependency">
+                    <Name>Unstable Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): com.athaydes.logfx.config</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.file</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.config; com.athaydes.logfx.ui</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.config; com.athaydes.logfx.ui; com.athaydes.logfx.file</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="UnstableDependency">
+                    <Name>Unstable Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): com.athaydes.logfx.ui</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.config</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.log; com.athaydes.logfx.config</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="CyclicDependency">
+                    <Name>Cyclic Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component participates in a cyclic dependency. The participating components in the cycle are: com.athaydes.logfx.log; com.athaydes.logfx.config; com.athaydes.logfx.ui; com.athaydes.logfx</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+                <ArchSmell Key="UnstableDependency">
+                    <Name>Unstable Dependency</Name>
+                    <Description>The tool detected the smell in this component because this component depends on other components that are less stable than itself. This component depends on following less stable component(s): com.athaydes.logfx.config</Description>
+                    <Entity>
+                        <Component>com.athaydes.logfx.log</Component>
+                        <Project>LogFX-0.9.1</Project>
+                    </Entity>
+                    <ResponsibleClasses>NA</ResponsibleClasses>
+                </ArchSmell>
+            </ArchSmells>
+        </Project>
+    </Solution>
+</Analysis>

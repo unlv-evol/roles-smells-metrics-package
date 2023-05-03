@@ -1,0 +1,160 @@
+index,Fullpathname,Classname,loc,numAttr,numMethod,setters,getters,isPersist,isCollection,numWordName,isOrEr,isController,numIfs,numParameters,numImports,numOutboundInvocation,numInnerClasses,isStaticClass,isInterface,isInnerClass,isClass,isEnum,classPublicity,numPublicMethods,numPrivateMethods,numProtectedMethods,isAbstract,label
+0,ipscan-v3.7.3/src/net/azib/ipscan/Main.java,Main,129,1,6,0,0,FALSE,FALSE,1,FALSE,FALSE,4,7,10,18,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+1,ipscan-v3.7.3/src/net/azib/ipscan/config/CommandLineProcessor.java,CommandLineProcessor,173,11,8,0,0,FALSE,FALSE,3,TRUE,FALSE,16,6,11,10,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+2,ipscan-v3.7.3/src/net/azib/ipscan/config/CommandProcessor.java,CommandProcessor,17,0,0,0,0,FALSE,FALSE,2,TRUE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+3,ipscan-v3.7.3/src/net/azib/ipscan/config/CommentsConfig.java,CommentsConfig,66,1,4,1,3,FALSE,FALSE,2,FALSE,FALSE,6,9,5,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+4,ipscan-v3.7.3/src/net/azib/ipscan/config/ComponentRegistry.java,ComponentRegistry,59,0,2,0,0,FALSE,FALSE,2,FALSE,FALSE,0,1,16,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+5,ipscan-v3.7.3/src/net/azib/ipscan/config/Config.java,Config,113,9,10,0,4,FALSE,FALSE,1,FALSE,FALSE,3,1,3,7,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+6,ipscan-v3.7.3/src/net/azib/ipscan/config/ConfigModule.java,ConfigModule,18,0,1,0,0,FALSE,FALSE,2,FALSE,FALSE,0,1,2,7,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+7,ipscan-v3.7.3/src/net/azib/ipscan/config/FavoritesConfig.java,FavoritesConfig,43,0,3,0,2,FALSE,FALSE,2,FALSE,FALSE,0,4,2,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+8,ipscan-v3.7.3/src/net/azib/ipscan/config/GUIConfig.java,GUIConfig,120,11,8,3,3,FALSE,FALSE,4,FALSE,FALSE,5,6,6,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+9,ipscan-v3.7.3/src/net/azib/ipscan/config/Labels.java,Labels,106,5,4,0,3,FALSE,FALSE,1,FALSE,FALSE,3,3,7,8,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+10,ipscan-v3.7.3/src/net/azib/ipscan/config/LoggerFactory.java,LoggerFactory,26,0,1,0,1,FALSE,FALSE,2,FALSE,FALSE,0,0,1,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+11,ipscan-v3.7.3/src/net/azib/ipscan/config/NamedListConfig.java,NamedListConfig,118,3,9,0,1,FALSE,FALSE,3,FALSE,FALSE,3,6,4,10,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+12,ipscan-v3.7.3/src/net/azib/ipscan/config/OpenersConfig.java,OpenersConfig,85,1,3,0,1,FALSE,FALSE,2,FALSE,FALSE,6,4,3,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+13,ipscan-v3.7.3/src/net/azib/ipscan/config/Platform.java,Platform,37,6,1,0,0,FALSE,FALSE,1,FALSE,FALSE,0,3,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+14,ipscan-v3.7.3/src/net/azib/ipscan/config/ScannerConfig.java,ScannerConfig,76,15,1,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+15,ipscan-v3.7.3/src/net/azib/ipscan/config/Version.java,Version,86,15,4,0,3,FALSE,FALSE,1,FALSE,FALSE,3,0,3,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+16,ipscan-v3.7.3/src/net/azib/ipscan/core/LibraryLoader.java,LibraryLoader,53,0,1,0,0,FALSE,FALSE,2,TRUE,FALSE,1,1,1,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+17,ipscan-v3.7.3/src/net/azib/ipscan/core/Plugin.java,Plugin,25,0,0,0,0,FALSE,FALSE,1,FALSE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Information Holder
+18,ipscan-v3.7.3/src/net/azib/ipscan/core/PluginLoader.java,PluginLoader,124,1,7,0,4,FALSE,FALSE,2,TRUE,FALSE,9,8,9,16,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+19,ipscan-v3.7.3/src/net/azib/ipscan/core/PortIterator.java,PortIterator,107,6,5,0,0,FALSE,FALSE,2,TRUE,FALSE,4,0,1,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+20,ipscan-v3.7.3/src/net/azib/ipscan/core/Scanner.java,Scanner,90,3,4,0,0,FALSE,FALSE,1,TRUE,FALSE,3,3,8,14,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+21,ipscan-v3.7.3/src/net/azib/ipscan/core/ScannerDispatcherThread.java,ScannerDispatcherThread,201,11,3,0,0,FALSE,FALSE,3,FALSE,FALSE,4,3,14,21,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+22,ipscan-v3.7.3/src/net/azib/ipscan/core/ScannerDispatcherThreadFactory.java,ScannerDispatcherThreadFactory,36,4,1,0,0,FALSE,FALSE,4,FALSE,FALSE,0,3,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+23,ipscan-v3.7.3/src/net/azib/ipscan/core/ScanningProgressCallback.java,ScanningProgressCallback,28,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,1,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+24,ipscan-v3.7.3/src/net/azib/ipscan/core/ScanningResult.java,ScanningResult,131,4,9,3,3,FALSE,FALSE,2,FALSE,FALSE,1,4,5,11,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+25,ipscan-v3.7.3/src/net/azib/ipscan/core/ScanningResultCallback.java,ScanningResultCallback,29,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+26,ipscan-v3.7.3/src/net/azib/ipscan/core/ScanningResultComparator.java,ScanningResultComparator,64,2,2,0,0,FALSE,FALSE,3,TRUE,FALSE,7,4,3,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+27,ipscan-v3.7.3/src/net/azib/ipscan/core/ScanningResultList.java,ScanningResultList,339,9,19,0,6,FALSE,FALSE,3,FALSE,FALSE,12,14,10,30,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Structurer
+28,ipscan-v3.7.3/src/net/azib/ipscan/core/ScanningSubject.java,ScanningSubject,169,8,15,2,4,FALSE,FALSE,2,FALSE,FALSE,6,6,7,10,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+29,ipscan-v3.7.3/src/net/azib/ipscan/core/UserErrorException.java,UserErrorException,33,1,0,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+30,ipscan-v3.7.3/src/net/azib/ipscan/core/net/CombinedUnprivilegedPinger.java,CombinedUnprivilegedPinger,46,2,2,0,0,FALSE,FALSE,3,TRUE,FALSE,1,2,3,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+31,ipscan-v3.7.3/src/net/azib/ipscan/core/net/ICMPSharedPinger.java,ICMPSharedPinger,241,7,2,0,0,FALSE,FALSE,6,TRUE,FALSE,6,2,16,26,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+32,ipscan-v3.7.3/src/net/azib/ipscan/core/net/JavaPinger.java,JavaPinger,34,1,2,0,0,FALSE,FALSE,2,TRUE,FALSE,1,2,3,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+33,ipscan-v3.7.3/src/net/azib/ipscan/core/net/PingResult.java,PingResult,95,7,13,1,7,FALSE,FALSE,2,FALSE,FALSE,3,3,1,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+34,ipscan-v3.7.3/src/net/azib/ipscan/core/net/Pinger.java,Pinger,27,0,0,0,0,FALSE,FALSE,1,TRUE,FALSE,0,0,3,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+35,ipscan-v3.7.3/src/net/azib/ipscan/core/net/PingerRegistry.java,PingerRegistry,99,3,4,0,1,FALSE,FALSE,2,FALSE,FALSE,4,2,12,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+36,ipscan-v3.7.3/src/net/azib/ipscan/core/net/TCPPinger.java,TCPPinger,100,3,3,0,0,FALSE,FALSE,4,TRUE,FALSE,4,4,8,13,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+37,ipscan-v3.7.3/src/net/azib/ipscan/core/net/UDPPinger.java,UDPPinger,83,3,2,0,0,FALSE,FALSE,4,TRUE,FALSE,2,2,8,9,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+38,ipscan-v3.7.3/src/net/azib/ipscan/core/net/WinIpHlp.java,WinIpHlp,20,0,2,0,0,FALSE,FALSE,3,FALSE,FALSE,0,2,3,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+39,ipscan-v3.7.3/src/net/azib/ipscan/core/net/WinIpHlpDll.java,WinIpHlpDll,167,1,0,0,0,FALSE,FALSE,4,FALSE,FALSE,1,0,8,4,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+40,ipscan-v3.7.3/src/net/azib/ipscan/core/net/WinKernel32.java,WinKernel32,15,1,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,2,1,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Information Holder
+41,ipscan-v3.7.3/src/net/azib/ipscan/core/net/WindowsPinger.java,WindowsPinger,115,2,5,0,0,FALSE,FALSE,2,TRUE,FALSE,5,7,14,14,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+42,ipscan-v3.7.3/src/net/azib/ipscan/core/state/ScanningState.java,ScanningState,38,6,1,0,0,FALSE,FALSE,2,FALSE,FALSE,1,0,0,0,0,TRUE,FALSE,FALSE,FALSE,TRUE,public,0,0,0,FALSE,Information Holder
+43,ipscan-v3.7.3/src/net/azib/ipscan/core/state/StateMachine.java,StateMachine,184,3,14,0,1,FALSE,FALSE,2,FALSE,FALSE,7,6,3,7,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+44,ipscan-v3.7.3/src/net/azib/ipscan/core/state/StateTransitionListener.java,StateTransitionListener,25,0,0,0,0,FALSE,FALSE,3,TRUE,FALSE,0,0,1,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+45,ipscan-v3.7.3/src/net/azib/ipscan/core/values/Empty.java,Empty,34,1,2,1,0,FALSE,FALSE,1,FALSE,FALSE,1,2,0,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+46,ipscan-v3.7.3/src/net/azib/ipscan/core/values/InetAddressHolder.java,InetAddressHolder,71,2,4,0,0,FALSE,FALSE,3,TRUE,FALSE,7,2,1,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+47,ipscan-v3.7.3/src/net/azib/ipscan/core/values/IntegerWithUnit.java,IntegerWithUnit,56,2,5,0,0,FALSE,FALSE,3,FALSE,FALSE,5,2,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+48,ipscan-v3.7.3/src/net/azib/ipscan/core/values/NotAvailable.java,NotAvailable,30,1,2,0,0,FALSE,FALSE,2,FALSE,FALSE,1,1,1,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+49,ipscan-v3.7.3/src/net/azib/ipscan/core/values/NotScanned.java,NotScanned,30,1,2,0,0,FALSE,FALSE,2,FALSE,FALSE,1,1,1,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+50,ipscan-v3.7.3/src/net/azib/ipscan/core/values/NumericRangeList.java,NumericRangeList,96,3,2,0,0,FALSE,FALSE,3,FALSE,FALSE,6,1,1,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+51,ipscan-v3.7.3/src/net/azib/ipscan/di/InjectException.java,InjectException,11,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,0,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+52,ipscan-v3.7.3/src/net/azib/ipscan/di/Injector.java,Injector,65,1,9,0,0,FALSE,FALSE,1,TRUE,FALSE,2,10,7,9,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+53,ipscan-v3.7.3/src/net/azib/ipscan/exporters/AbstractExporter.java,AbstractExporter,56,2,7,0,1,FALSE,FALSE,2,TRUE,FALSE,1,5,2,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+54,ipscan-v3.7.3/src/net/azib/ipscan/exporters/CSVExporter.java,CSVExporter,56,2,5,1,2,FALSE,FALSE,4,TRUE,FALSE,2,3,1,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+55,ipscan-v3.7.3/src/net/azib/ipscan/exporters/ExportProcessor.java,ExportProcessor,89,3,1,0,0,FALSE,FALSE,2,TRUE,FALSE,3,2,6,7,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+56,ipscan-v3.7.3/src/net/azib/ipscan/exporters/Exporter.java,Exporter,83,0,0,0,0,FALSE,FALSE,1,TRUE,FALSE,0,0,4,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+57,ipscan-v3.7.3/src/net/azib/ipscan/exporters/ExporterException.java,ExporterException,25,1,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,0,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+58,ipscan-v3.7.3/src/net/azib/ipscan/exporters/ExporterRegistry.java,ExporterRegistry,59,1,2,0,0,FALSE,FALSE,2,FALSE,FALSE,1,1,4,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+59,ipscan-v3.7.3/src/net/azib/ipscan/exporters/IPListExporter.java,IPListExporter,67,3,5,1,2,FALSE,FALSE,4,TRUE,FALSE,2,4,6,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+60,ipscan-v3.7.3/src/net/azib/ipscan/exporters/SQLExporter.java,SQLExporter,32,1,4,1,2,FALSE,FALSE,4,TRUE,FALSE,0,2,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+61,ipscan-v3.7.3/src/net/azib/ipscan/exporters/TXTExporter.java,TXTExporter,176,1,7,1,2,FALSE,FALSE,4,TRUE,FALSE,12,8,21,13,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+62,ipscan-v3.7.3/src/net/azib/ipscan/exporters/XMLExporter.java,XMLExporter,91,3,7,1,2,FALSE,FALSE,4,TRUE,FALSE,3,5,4,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+63,ipscan-v3.7.3/src/net/azib/ipscan/feeders/AbstractFeeder.java,AbstractFeeder,26,0,2,0,1,FALSE,FALSE,2,TRUE,FALSE,0,0,1,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+64,ipscan-v3.7.3/src/net/azib/ipscan/feeders/Feeder.java,Feeder,47,0,0,0,0,FALSE,FALSE,1,TRUE,FALSE,0,0,2,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+65,ipscan-v3.7.3/src/net/azib/ipscan/feeders/FeederCreator.java,FeederCreator,49,0,0,0,0,FALSE,FALSE,2,TRUE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+66,ipscan-v3.7.3/src/net/azib/ipscan/feeders/FeederException.java,FeederException,26,1,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,0,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+67,ipscan-v3.7.3/src/net/azib/ipscan/feeders/FeederRegistry.java,FeederRegistry,16,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Information Holder
+68,ipscan-v3.7.3/src/net/azib/ipscan/feeders/FileFeeder.java,FileFeeder,122,5,6,0,2,FALSE,FALSE,2,TRUE,FALSE,5,1,14,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+69,ipscan-v3.7.3/src/net/azib/ipscan/feeders/RandomFeeder.java,RandomFeeder,96,7,5,0,2,FALSE,FALSE,2,TRUE,FALSE,1,0,5,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+70,ipscan-v3.7.3/src/net/azib/ipscan/feeders/RangeFeeder.java,RangeFeeder,100,7,6,0,2,FALSE,FALSE,2,TRUE,FALSE,2,0,5,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+71,ipscan-v3.7.3/src/net/azib/ipscan/feeders/RescanFeeder.java,RescanFeeder,87,3,7,0,3,FALSE,FALSE,2,TRUE,FALSE,1,1,6,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+72,ipscan-v3.7.3/src/net/azib/ipscan/feeders/SmartTextFeeder.java,SmartTextFeeder,58,0,5,0,2,FALSE,FALSE,3,TRUE,FALSE,1,0,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+73,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/AbstractFetcher.java,AbstractFetcher,54,0,7,0,5,FALSE,FALSE,2,TRUE,FALSE,0,0,4,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+74,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/CommentFetcher.java,CommentFetcher,32,2,2,0,1,FALSE,FALSE,2,TRUE,FALSE,0,1,2,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+75,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/Fetcher.java,Fetcher,63,0,0,0,0,FALSE,FALSE,1,TRUE,FALSE,0,0,4,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+76,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/FetcherException.java,FetcherException,29,1,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,0,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+77,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/FetcherPrefs.java,FetcherPrefs,20,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+78,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/FetcherRegistry.java,FetcherRegistry,177,6,10,0,3,FALSE,FALSE,2,FALSE,FALSE,5,8,4,13,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+79,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/FetcherRegistryUpdateListener.java,FetcherRegistryUpdateListener,22,0,0,0,0,FALSE,FALSE,4,TRUE,FALSE,0,0,0,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,public,0,0,0,FALSE,Service Provider
+80,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/FilteredPortsFetcher.java,FilteredPortsFetcher,38,0,2,0,1,FALSE,FALSE,3,TRUE,FALSE,1,1,5,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+81,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/HTTPProxyFetcher.java,HTTPProxyFetcher,32,0,2,0,2,FALSE,FALSE,6,TRUE,FALSE,0,2,2,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+82,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/HTTPSenderFetcher.java,HTTPSenderFetcher,24,0,1,0,1,FALSE,FALSE,6,TRUE,FALSE,0,0,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+83,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/HostnameFetcher.java,HostnameFetcher,109,4,5,0,1,FALSE,FALSE,2,TRUE,FALSE,3,4,13,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+84,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/IPFetcher.java,IPFetcher,29,1,2,0,1,FALSE,FALSE,3,TRUE,FALSE,0,1,2,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+85,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/LastAliveTimeFetcher.java,LastAliveTimeFetcher,30,0,2,0,1,FALSE,FALSE,4,TRUE,FALSE,0,1,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+86,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/MACFetcher.java,MACFetcher,43,3,5,0,1,FALSE,FALSE,4,TRUE,FALSE,2,4,4,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+87,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/MACVendorFetcher.java,MACVendorFetcher,52,3,4,0,1,FALSE,FALSE,5,TRUE,FALSE,2,2,6,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+88,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/NetBIOSInfoFetcher.java,NetBIOSInfoFetcher,62,1,2,0,1,FALSE,FALSE,7,TRUE,FALSE,1,1,7,3,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+89,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/PacketLossFetcher.java,PacketLossFetcher,33,0,2,0,1,FALSE,FALSE,3,TRUE,FALSE,0,1,6,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+90,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/PingFetcher.java,PingFetcher,110,6,6,0,2,FALSE,FALSE,2,TRUE,FALSE,4,2,14,10,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+91,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/PingTTLFetcher.java,PingTTLFetcher,34,0,2,0,1,FALSE,FALSE,5,TRUE,FALSE,0,1,5,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+92,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/PortTextFetcher.java,PortTextFetcher,140,7,10,3,6,FALSE,FALSE,3,TRUE,FALSE,3,7,19,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+93,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/PortsFetcher.java,PortsFetcher,163,7,9,0,5,FALSE,FALSE,2,TRUE,FALSE,6,4,17,13,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+94,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/UnixMACFetcher.java,UnixMACFetcher,57,1,1,0,0,FALSE,FALSE,5,TRUE,FALSE,4,1,7,12,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+95,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/WebDetectFetcher.java,WebDetectFetcher,26,0,1,0,1,FALSE,FALSE,3,TRUE,FALSE,0,0,1,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+96,ipscan-v3.7.3/src/net/azib/ipscan/fetchers/WinMACFetcher.java,WinMACFetcher,29,0,1,0,0,FALSE,FALSE,5,TRUE,FALSE,2,1,6,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+97,ipscan-v3.7.3/src/net/azib/ipscan/gui/AboutDialog.java,AboutDialog,92,0,3,0,1,FALSE,FALSE,2,FALSE,FALSE,1,2,9,21,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+98,ipscan-v3.7.3/src/net/azib/ipscan/gui/AbstractModalDialog.java,AbstractModalDialog,228,1,6,0,1,FALSE,FALSE,3,FALSE,FALSE,12,5,9,24,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+99,ipscan-v3.7.3/src/net/azib/ipscan/gui/DetailsWindow.java,DetailsWindow,118,6,2,0,1,FALSE,FALSE,2,FALSE,FALSE,5,0,16,16,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+100,ipscan-v3.7.3/src/net/azib/ipscan/gui/EditFavoritesDialog.java,EditFavoritesDialog,113,2,2,0,0,FALSE,FALSE,3,FALSE,FALSE,2,0,8,14,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+101,ipscan-v3.7.3/src/net/azib/ipscan/gui/EditOpenersDialog.java,EditOpenersDialog,258,9,4,0,0,FALSE,FALSE,3,FALSE,FALSE,6,0,15,35,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+102,ipscan-v3.7.3/src/net/azib/ipscan/gui/GUI.java,GUI,110,4,4,0,1,FALSE,FALSE,3,FALSE,FALSE,8,6,14,23,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+103,ipscan-v3.7.3/src/net/azib/ipscan/gui/GettingStartedDialog.java,GettingStartedDialog,100,6,4,0,1,FALSE,FALSE,3,FALSE,FALSE,2,1,8,19,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+104,ipscan-v3.7.3/src/net/azib/ipscan/gui/InfoDialog.java,InfoDialog,79,3,4,1,2,FALSE,FALSE,2,FALSE,FALSE,0,1,10,8,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+105,ipscan-v3.7.3/src/net/azib/ipscan/gui/InputDialog.java,InputDialog,107,5,5,1,1,FALSE,FALSE,2,FALSE,FALSE,0,4,5,14,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+106,ipscan-v3.7.3/src/net/azib/ipscan/gui/MacApplicationMenu.java,MacApplicationMenu,75,4,2,0,1,FALSE,FALSE,3,FALSE,FALSE,4,3,8,11,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+107,ipscan-v3.7.3/src/net/azib/ipscan/gui/MainMenu.java,MainMenu,82,0,1,0,0,FALSE,FALSE,2,FALSE,FALSE,2,2,10,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+108,ipscan-v3.7.3/src/net/azib/ipscan/gui/MainWindow.java,MainWindow,237,9,8,0,1,FALSE,FALSE,2,FALSE,FALSE,3,13,25,23,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+109,ipscan-v3.7.3/src/net/azib/ipscan/gui/PreferencesDialog.java,PreferencesDialog,505,30,11,0,0,FALSE,FALSE,2,FALSE,FALSE,11,2,19,43,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+110,ipscan-v3.7.3/src/net/azib/ipscan/gui/ResultTable.java,ResultTable,241,6,12,0,2,FALSE,FALSE,2,FALSE,FALSE,6,8,20,20,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+111,ipscan-v3.7.3/src/net/azib/ipscan/gui/SWTAwareStateMachine.java,SWTAwareStateMachine,36,1,1,0,0,FALSE,FALSE,6,FALSE,FALSE,1,1,3,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+112,ipscan-v3.7.3/src/net/azib/ipscan/gui/SelectFetchersDialog.java,SelectFetchersDialog,208,5,2,0,0,FALSE,FALSE,3,FALSE,FALSE,2,1,16,30,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+113,ipscan-v3.7.3/src/net/azib/ipscan/gui/Startup.java,Startup,51,3,2,0,0,FALSE,FALSE,1,FALSE,FALSE,2,0,8,9,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+114,ipscan-v3.7.3/src/net/azib/ipscan/gui/StatisticsDialog.java,StatisticsDialog,87,1,3,0,0,FALSE,FALSE,2,FALSE,FALSE,5,1,6,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+115,ipscan-v3.7.3/src/net/azib/ipscan/gui/StatusBar.java,StatusBar,173,10,8,4,2,FALSE,FALSE,2,FALSE,FALSE,8,4,16,14,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+116,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/BrowserLauncher.java,BrowserLauncher,19,0,1,0,0,FALSE,FALSE,2,TRUE,FALSE,1,1,2,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+117,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/ColumnsActions.java,ColumnsActions,157,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,4,0,12,25,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+118,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/CommandsMenuActions.java,CommandsMenuActions,264,8,1,0,0,FALSE,FALSE,3,FALSE,FALSE,11,1,19,17,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+119,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/FavoritesMenuActions.java,FavoritesMenuActions,131,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,2,0,16,9,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+120,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/FeederActions.java,FeederActions,126,1,0,0,0,FALSE,FALSE,2,FALSE,FALSE,7,0,14,21,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+121,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/GotoMenuActions.java,GotoMenuActions,186,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,6,0,12,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+122,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/HelpMenuActions.java,HelpMenuActions,162,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,4,0,19,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+123,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/OpenerLauncher.java,OpenerLauncher,143,2,4,0,1,FALSE,FALSE,2,TRUE,FALSE,8,7,13,9,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+124,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/ScanMenuActions.java,ScanMenuActions,235,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,9,0,24,34,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+125,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/StartStopScanningAction.java,StartStopScanningAction,268,14,7,0,1,FALSE,FALSE,4,FALSE,FALSE,20,8,22,50,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+126,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/TerminalLauncher.java,TerminalLauncher,74,2,2,0,0,FALSE,FALSE,2,TRUE,FALSE,4,2,9,6,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+127,ipscan-v3.7.3/src/net/azib/ipscan/gui/actions/ToolsActions.java,ToolsActions,229,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,7,0,15,18,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+128,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/AbstractFeederGUI.java,AbstractFeederGUI,99,5,5,0,3,FALSE,FALSE,5,FALSE,FALSE,3,3,12,12,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+129,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/ControlsArea.java,ControlsArea,13,0,1,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+130,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/FeederArea.java,FeederArea,13,0,1,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+131,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/FeederGUIRegistry.java,FeederGUIRegistry,101,5,6,0,0,FALSE,FALSE,5,FALSE,FALSE,1,3,7,7,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+132,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/FeederSelectionCombo.java,FeederSelectionCombo,13,0,1,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+133,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/FileFeederGUI.java,FileFeederGUI,77,1,5,0,0,FALSE,FALSE,5,FALSE,FALSE,1,1,12,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+134,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/RandomFeederGUI.java,RandomFeederGUI,117,3,5,0,0,FALSE,FALSE,5,FALSE,FALSE,0,1,8,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+135,ipscan-v3.7.3/src/net/azib/ipscan/gui/feeders/RangeFeederGUI.java,RangeFeederGUI,223,6,7,0,0,FALSE,FALSE,5,FALSE,FALSE,9,4,15,18,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+136,ipscan-v3.7.3/src/net/azib/ipscan/gui/fetchers/PingFetcherPrefs.java,PingFetcherPrefs,30,1,1,0,0,FALSE,FALSE,3,FALSE,FALSE,0,1,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+137,ipscan-v3.7.3/src/net/azib/ipscan/gui/fetchers/PortTextFetcherPrefs.java,PortTextFetcherPrefs,143,4,5,0,0,FALSE,FALSE,4,FALSE,FALSE,2,3,16,21,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Interfacer
+138,ipscan-v3.7.3/src/net/azib/ipscan/gui/fetchers/PortsFetcherPrefs.java,PortsFetcherPrefs,30,1,1,0,0,FALSE,FALSE,3,FALSE,FALSE,0,1,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+139,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/AbstractMenu.java,AbstractMenu,17,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,2,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,TRUE,Service Provider
+140,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/ColumnsMenu.java,ColumnsMenu,27,0,0,0,0,FALSE,FALSE,2,FALSE,FALSE,0,0,4,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+141,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/CommandsMenu.java,CommandsMenu,38,0,1,0,1,FALSE,FALSE,2,FALSE,FALSE,0,0,6,2,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+142,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/ExtendableMenu.java,ExtendableMenu,43,0,3,0,0,FALSE,FALSE,2,FALSE,FALSE,4,11,6,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,default,0,0,0,FALSE,Service Provider
+143,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/FavoritesMenu.java,FavoritesMenu,29,0,1,0,1,FALSE,FALSE,2,FALSE,FALSE,0,0,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+144,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/GotoMenu.java,GotoMenu,34,0,1,0,1,FALSE,FALSE,2,FALSE,FALSE,0,0,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+145,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/HelpMenu.java,HelpMenu,43,0,1,0,1,FALSE,FALSE,2,FALSE,FALSE,1,0,4,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+146,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/OpenersContextMenu.java,OpenersContextMenu,11,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+147,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/OpenersMenu.java,OpenersMenu,31,0,1,0,1,FALSE,FALSE,2,FALSE,FALSE,0,0,5,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+148,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/ResultsContextMenu.java,ResultsContextMenu,11,0,0,0,0,FALSE,FALSE,3,FALSE,FALSE,0,0,3,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+149,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/ScanMenu.java,ScanMenu,36,0,1,0,1,FALSE,FALSE,2,FALSE,FALSE,1,0,4,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+150,ipscan-v3.7.3/src/net/azib/ipscan/gui/menu/ToolsMenu.java,ToolsMenu,51,0,2,0,1,FALSE,FALSE,2,FALSE,FALSE,0,2,7,1,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+151,ipscan-v3.7.3/src/net/azib/ipscan/gui/util/LayoutHelper.java,LayoutHelper,64,0,5,0,0,FALSE,FALSE,2,TRUE,FALSE,1,15,8,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+152,ipscan-v3.7.3/src/net/azib/ipscan/util/GoogleAnalytics.java,GoogleAnalytics,74,0,6,0,0,FALSE,FALSE,2,FALSE,FALSE,3,8,9,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+153,ipscan-v3.7.3/src/net/azib/ipscan/util/IOUtils.java,IOUtils,38,0,4,0,0,FALSE,FALSE,3,FALSE,FALSE,4,4,5,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+154,ipscan-v3.7.3/src/net/azib/ipscan/util/InetAddressUtils.java,InetAddressUtils,188,2,11,0,2,FALSE,FALSE,3,FALSE,FALSE,8,15,11,15,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+155,ipscan-v3.7.3/src/net/azib/ipscan/util/MDNSResolver.java,MDNSResolver,84,3,7,0,0,FALSE,FALSE,5,TRUE,FALSE,2,10,7,10,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+156,ipscan-v3.7.3/src/net/azib/ipscan/util/NetBIOSResolver.java,NetBIOSResolver,96,9,7,0,0,FALSE,FALSE,6,TRUE,FALSE,4,12,6,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider
+157,ipscan-v3.7.3/src/net/azib/ipscan/util/SequenceIterator.java,SequenceIterator,44,2,3,0,0,FALSE,FALSE,2,TRUE,FALSE,2,0,1,5,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Information Holder
+158,ipscan-v3.7.3/src/net/azib/ipscan/util/ThreadResourceBinder.java,ThreadResourceBinder,34,1,4,0,0,FALSE,FALSE,3,TRUE,FALSE,1,3,6,4,0,TRUE,FALSE,FALSE,TRUE,FALSE,public,0,0,0,FALSE,Service Provider

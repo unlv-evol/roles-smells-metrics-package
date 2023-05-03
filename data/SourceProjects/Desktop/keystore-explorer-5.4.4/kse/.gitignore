@@ -1,0 +1,14 @@
+/bin
+/build
+/build-test
+/dist
+/api
+/lib/AppleJavaExtensions.jar
+/nsis/kse.nsi
+/dmg/appdmg.json
+/dmg/.DS_Store
+/create-dmg
+/MANIFEST.MF
+.gradle
+.classpath
+.DS_Store

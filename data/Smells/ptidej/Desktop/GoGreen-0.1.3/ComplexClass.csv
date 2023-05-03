@@ -1,0 +1,11 @@
+FullClassPath,AntiPattern
+groupxii.client.controllers.LocalProductsController,ComplexClass
+groupxii.client.connector.Connector,ComplexClass
+groupxii.database.PanelListEntry,ComplexClass
+groupxii.client.controllers.LoginController,ComplexClass
+groupxii.database.Database,ComplexClass
+groupxii.server.Transportation,ComplexClass
+groupxii.database.UserEntry,ComplexClass
+groupxii.database.VehicleListEntry,ComplexClass
+groupxii.server.security.JwtGeneratingFilter,ComplexClass
+groupxii.database.MealListEntry,ComplexClass

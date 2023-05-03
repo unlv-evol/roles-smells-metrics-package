@@ -1,0 +1,5 @@
+FullClassPath,AntiPattern
+ com.jakewharton.telecine.TelecineService,LongMethod
+ com.jakewharton.telecine.CheatSheet,LongMethod
+ com.jakewharton.telecine.TelecineApplication,LongMethod
+ com.jakewharton.telecine.TelecineActivity,LongMethod

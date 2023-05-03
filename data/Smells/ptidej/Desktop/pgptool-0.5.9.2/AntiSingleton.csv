@@ -1,0 +1,8 @@
+FullClassPath,AntiPattern
+org.pgptool.gui.filecomparison.ChecksumCalcInputStreamSupervisorImpl,AntiSingleton
+org.pgptool.gui.ui.tools.WindowIcon,AntiSingleton
+org.pgptool.gui.ui.tools.UiUtils,AntiSingleton
+org.pgptool.gui.ui.mainframe.EncryptBackActionCellRenderer,AntiSingleton
+org.pgptool.gui.app.EntryPoint,AntiSingleton
+org.pgptool.gui.filecomparison.ChecksumCalcOutputStreamSupervisorImpl,AntiSingleton
+org.pgptool.gui.usage.api.UsageLoggerDelegator,AntiSingleton

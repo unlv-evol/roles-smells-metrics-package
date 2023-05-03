@@ -1,0 +1,3 @@
+FullClassPath,AntiPattern
+org.pgptool.gui.ui.tools.checklistbox.ModelMultSelInCheckListBinding,Blob
+org.pgptool.gui.ui.tools.checklistbox.JCheckList,Blob

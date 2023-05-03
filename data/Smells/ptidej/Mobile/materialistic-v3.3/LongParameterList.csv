@@ -1,0 +1,10 @@
+FullClassPath,AntiPattern
+io.github.hidroh.materialistic.FabAwareScrollBehavior,LongParameterList
+io.github.hidroh.materialistic.data.SyncContentProvider,LongParameterList
+io.github.hidroh.materialistic.widget.AsteriskSpan,LongParameterList
+io.github.hidroh.materialistic.accounts.EmptyAccountAuthenticator,LongParameterList
+io.github.hidroh.materialistic.AppUtils,LongParameterList
+io.github.hidroh.materialistic.accounts.UserServicesClient,LongParameterList
+io.github.hidroh.materialistic.widget.PeekabooTouchHelperCallback,LongParameterList
+io.github.hidroh.materialistic.accounts.AccountAuthenticator,LongParameterList
+io.github.hidroh.materialistic.data.ItemSyncAdapter,LongParameterList

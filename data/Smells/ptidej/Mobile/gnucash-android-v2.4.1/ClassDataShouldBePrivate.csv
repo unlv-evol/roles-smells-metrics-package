@@ -1,0 +1,8 @@
+FullClassPath,AntiPattern
+org.gnucash.android.ui.account.AccountsActivity,ClassDataShouldBePrivate
+org.gnucash.android.model.Money,ClassDataShouldBePrivate
+org.gnucash.android.export.ofx.OfxHelper,ClassDataShouldBePrivate
+org.gnucash.android.ui.colorpicker.ColorPickerPalette,ClassDataShouldBePrivate
+org.gnucash.android.app.GnuCashApplication,ClassDataShouldBePrivate
+org.gnucash.android.model.Commodity,ClassDataShouldBePrivate
+org.gnucash.android.ui.settings.BackupPreferenceFragment,ClassDataShouldBePrivate

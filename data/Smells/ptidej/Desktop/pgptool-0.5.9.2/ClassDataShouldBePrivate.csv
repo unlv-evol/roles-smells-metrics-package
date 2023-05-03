@@ -1,0 +1,9 @@
+FullClassPath,AntiPattern
+org.pgptool.gui.ui.tools.UiUtils,ClassDataShouldBePrivate
+org.pgptool.gui.app.EntryPoint,ClassDataShouldBePrivate
+org.pgptool.gui.ui.keyslist.KeysListPm,ClassDataShouldBePrivate
+org.pgptool.gui.ui.decryptone.DecryptOneView,ClassDataShouldBePrivate
+org.pgptool.gui.ui.getkeypassword.GetKeyPasswordOneKeyView,ClassDataShouldBePrivate
+org.jdesktop.swingx.imported.JXLabel,ClassDataShouldBePrivate
+org.pgptool.gui.usage.api.UsageLoggerDelegator,ClassDataShouldBePrivate
+org.pgptool.gui.ui.getkeypassword.GetKeyPasswordManyKeysView,ClassDataShouldBePrivate

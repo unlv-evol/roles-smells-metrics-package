@@ -1,0 +1,9 @@
+FullClassPath,AntiPattern
+com.naman14.timber.lastfmapi.models.ScrobbleInfo,LazyClass
+com.naman14.timber.lastfmapi.models.ScrobbleInfo,LazyClass
+com.naman14.timber.lastfmapi.models.AlbumTracks,LazyClass
+com.naman14.timber.lastfmapi.models.AlbumTracks,LazyClass
+com.naman14.timber.utils.SortOrder,LazyClass
+com.naman14.timber.utils.SortOrder,LazyClass
+com.naman14.timber.lastfmapi.models.AlbumBio,LazyClass
+com.naman14.timber.lastfmapi.models.AlbumBio,LazyClass

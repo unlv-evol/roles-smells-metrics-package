@@ -1,0 +1,7 @@
+FullClassPath,AntiPattern
+com.xiecc.seeWeather.modules.ui.ChoiceCityActivity,LongMethod
+com.xiecc.seeWeather.modules.ui.MainActivity,LongMethod
+com.xiecc.seeWeather.modules.ui.setting.SettingFragment,LongMethod
+com.xiecc.seeWeather.common.ACache,LongMethod
+com.xiecc.seeWeather.modules.db.DBManager,LongMethod
+com.xiecc.seeWeather.modules.ui.about.AboutFragment,LongMethod

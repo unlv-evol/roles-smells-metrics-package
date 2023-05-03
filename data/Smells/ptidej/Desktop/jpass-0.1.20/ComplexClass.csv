@@ -1,0 +1,4 @@
+FullClassPath,AntiPattern
+jpass.ui.helper.FileHelper,ComplexClass
+jpass.ui.EntryDialog,ComplexClass
+jpass.ui.MessageDialog,ComplexClass
