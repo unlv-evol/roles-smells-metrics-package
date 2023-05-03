@@ -1,0 +1,6 @@
+*.config
+*.jar
+env
+tools/*.txt
+.DS_Store
+__pycache__
